@@ -1,0 +1,102 @@
+sgx_create_enclave is ok.
+ ret==0------zystble---------------------initialize_enclave()_time:1.257772s
+read crypt file ok
+splitting
+line_num: 56
+load ok
+In this project, we test wordcount with SGX!
+
+############################ Cache Hit ##########################z
+
+0||1
+19/05/16 19:07:04 INFO input.FileInputFormat: Total input paths to process : 14
+19/05/16 19:07:04 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/05/16 19:07:04 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/05/16 19:07:04 INFO mapred.JobClient: Running job: job_201905091532_0396
+19/05/16 19:07:05 INFO mapred.JobClient:  map 0% reduce 0%
+19/05/16 19:07:21 INFO mapred.JobClient:  map 2% reduce 0%
+19/05/16 19:07:22 INFO mapred.JobClient:  map 3% reduce 0%
+19/05/16 19:07:24 INFO mapred.JobClient:  map 8% reduce 0%
+19/05/16 19:07:25 INFO mapred.JobClient:  map 10% reduce 0%
+19/05/16 19:07:27 INFO mapred.JobClient:  map 14% reduce 0%
+19/05/16 19:07:28 INFO mapred.JobClient:  map 15% reduce 0%
+19/05/16 19:07:30 INFO mapred.JobClient:  map 19% reduce 0%
+19/05/16 19:07:31 INFO mapred.JobClient:  map 20% reduce 0%
+19/05/16 19:07:33 INFO mapred.JobClient:  map 24% reduce 0%
+19/05/16 19:07:34 INFO mapred.JobClient:  map 25% reduce 0%
+19/05/16 19:07:36 INFO mapred.JobClient:  map 29% reduce 0%
+19/05/16 19:07:37 INFO mapred.JobClient:  map 30% reduce 0%
+19/05/16 19:07:39 INFO mapred.JobClient:  map 34% reduce 0%
+19/05/16 19:07:40 INFO mapred.JobClient:  map 35% reduce 0%
+19/05/16 19:07:42 INFO mapred.JobClient:  map 40% reduce 0%
+19/05/16 19:07:43 INFO mapred.JobClient:  map 41% reduce 0%
+19/05/16 19:07:45 INFO mapred.JobClient:  map 44% reduce 0%
+19/05/16 19:07:46 INFO mapred.JobClient:  map 45% reduce 0%
+19/05/16 19:07:48 INFO mapred.JobClient:  map 47% reduce 0%
+19/05/16 19:07:49 INFO mapred.JobClient:  map 48% reduce 0%
+19/05/16 19:07:51 INFO mapred.JobClient:  map 50% reduce 9%
+19/05/16 19:07:52 INFO mapred.JobClient:  map 52% reduce 9%
+19/05/16 19:07:54 INFO mapred.JobClient:  map 56% reduce 9%
+19/05/16 19:07:55 INFO mapred.JobClient:  map 57% reduce 9%
+19/05/16 19:07:57 INFO mapred.JobClient:  map 61% reduce 9%
+19/05/16 19:07:58 INFO mapred.JobClient:  map 62% reduce 9%
+19/05/16 19:08:00 INFO mapred.JobClient:  map 66% reduce 11%
+19/05/16 19:08:01 INFO mapred.JobClient:  map 67% reduce 11%
+19/05/16 19:08:03 INFO mapred.JobClient:  map 71% reduce 11%
+19/05/16 19:08:04 INFO mapred.JobClient:  map 72% reduce 11%
+19/05/16 19:08:06 INFO mapred.JobClient:  map 76% reduce 16%
+19/05/16 19:08:07 INFO mapred.JobClient:  map 77% reduce 16%
+19/05/16 19:08:09 INFO mapred.JobClient:  map 81% reduce 16%
+19/05/16 19:08:10 INFO mapred.JobClient:  map 82% reduce 16%
+19/05/16 19:08:12 INFO mapred.JobClient:  map 86% reduce 16%
+19/05/16 19:08:13 INFO mapred.JobClient:  map 87% reduce 16%
+19/05/16 19:08:15 INFO mapred.JobClient:  map 91% reduce 19%
+19/05/16 19:08:16 INFO mapred.JobClient:  map 92% reduce 19%
+19/05/16 19:08:18 INFO mapred.JobClient:  map 95% reduce 19%
+19/05/16 19:08:21 INFO mapred.JobClient:  map 96% reduce 19%
+19/05/16 19:08:24 INFO mapred.JobClient:  map 98% reduce 19%
+19/05/16 19:08:27 INFO mapred.JobClient:  map 99% reduce 19%
+19/05/16 19:08:30 INFO mapred.JobClient:  map 100% reduce 30%
+19/05/16 19:08:39 INFO mapred.JobClient:  map 100% reduce 100%
+19/05/16 19:08:44 INFO mapred.JobClient: Job complete: job_201905091532_0396
+19/05/16 19:08:44 INFO mapred.JobClient: Counters: 30
+19/05/16 19:08:44 INFO mapred.JobClient:   Job Counters 
+19/05/16 19:08:44 INFO mapred.JobClient:     Launched reduce tasks=1
+19/05/16 19:08:44 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=491434
+19/05/16 19:08:44 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/05/16 19:08:44 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/05/16 19:08:44 INFO mapred.JobClient:     Rack-local map tasks=13
+19/05/16 19:08:44 INFO mapred.JobClient:     Launched map tasks=17
+19/05/16 19:08:44 INFO mapred.JobClient:     Data-local map tasks=4
+19/05/16 19:08:44 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=55121
+19/05/16 19:08:44 INFO mapred.JobClient:   File Output Format Counters 
+19/05/16 19:08:44 INFO mapred.JobClient:     Bytes Written=11327
+19/05/16 19:08:44 INFO mapred.JobClient:   FileSystemCounters
+19/05/16 19:08:44 INFO mapred.JobClient:     FILE_BYTES_READ=13625198
+19/05/16 19:08:44 INFO mapred.JobClient:     HDFS_BYTES_READ=1007386065
+19/05/16 19:08:44 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=14101814
+19/05/16 19:08:44 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=11327
+19/05/16 19:08:44 INFO mapred.JobClient:   File Input Format Counters 
+19/05/16 19:08:44 INFO mapred.JobClient:     Bytes Read=1007384112
+19/05/16 19:08:44 INFO mapred.JobClient:   Map-Reduce Framework
+19/05/16 19:08:44 INFO mapred.JobClient:     Map output materialized bytes=152152
+19/05/16 19:08:44 INFO mapred.JobClient:     Map input records=17417680
+19/05/16 19:08:44 INFO mapred.JobClient:     Reduce shuffle bytes=141284
+19/05/16 19:08:44 INFO mapred.JobClient:     Spilled Records=1048670
+19/05/16 19:08:44 INFO mapred.JobClient:     Map output bytes=1667827714
+19/05/16 19:08:44 INFO mapred.JobClient:     Total committed heap usage (bytes)=3078094848
+19/05/16 19:08:44 INFO mapred.JobClient:     CPU time spent (ms)=959730
+19/05/16 19:08:44 INFO mapred.JobClient:     Combine input records=169588090
+19/05/16 19:08:44 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1953
+19/05/16 19:08:44 INFO mapred.JobClient:     Reduce input records=11578
+19/05/16 19:08:44 INFO mapred.JobClient:     Reduce input groups=827
+19/05/16 19:08:44 INFO mapred.JobClient:     Combine output records=553168
+19/05/16 19:08:44 INFO mapred.JobClient:     Physical memory (bytes) snapshot=3519660032
+19/05/16 19:08:44 INFO mapred.JobClient:     Reduce output records=827
+19/05/16 19:08:44 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=15312744448
+19/05/16 19:08:44 INFO mapred.JobClient:     Map output records=169046500
+
+real	1m42.255s
+user	1m41.588s
+sys	0m1.737s
+

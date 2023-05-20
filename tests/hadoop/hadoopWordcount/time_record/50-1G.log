@@ -1,0 +1,145 @@
+1
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f4f9c7a227d, pid=18875, tid=139980244412160
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/hs_err_pid18875.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run50.sh: line 19: 18875 Aborted                 (core dumped) hadoop jar 50/ReplaceTestforHadoopWordCount.jar wc_input1G wc_output1G
+
+real	0m17.586s
+user	0m2.612s
+sys	0m9.778s
+2
+rmr: cannot remove wc_output1G: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f0c1b95e27d, pid=19007, tid=139690436605696
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/hs_err_pid19007.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run50.sh: line 19: 19007 Aborted                 (core dumped) hadoop jar 50/ReplaceTestforHadoopWordCount.jar wc_input1G wc_output1G
+
+real	0m12.793s
+user	0m2.764s
+sys	0m9.867s
+3
+rmr: cannot remove wc_output1G: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fc49477627d, pid=19143, tid=140482739656448
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/hs_err_pid19143.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run50.sh: line 19: 19143 Aborted                 (core dumped) hadoop jar 50/ReplaceTestforHadoopWordCount.jar wc_input1G wc_output1G
+
+real	0m12.626s
+user	0m2.604s
+sys	0m9.923s
+4
+rmr: cannot remove wc_output1G: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fa13498727d, pid=19264, tid=140330806540032
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/hs_err_pid19264.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run50.sh: line 19: 19264 Aborted                 (core dumped) hadoop jar 50/ReplaceTestforHadoopWordCount.jar wc_input1G wc_output1G
+
+real	0m12.397s
+user	0m2.556s
+sys	0m9.850s
+5
+rmr: cannot remove wc_output1G: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007ffa7851f27d, pid=19376, tid=140714194650880
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/hs_err_pid19376.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run50.sh: line 19: 19376 Aborted                 (core dumped) hadoop jar 50/ReplaceTestforHadoopWordCount.jar wc_input1G wc_output1G
+
+real	0m12.411s
+user	0m2.545s
+sys	0m9.856s

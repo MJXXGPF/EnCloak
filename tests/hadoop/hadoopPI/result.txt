@@ -1,0 +1,23 @@
+1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+Job Finished in 295.491 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclave by zystble cfhidernew N1
+sgx_create_enclave in setting
+end_sgx_create_enclave:ret==0
+initialize_enclave()_time:23.988445s
+splitting
+1284
+load matrix ok

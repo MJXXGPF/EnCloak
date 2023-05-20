@@ -1,0 +1,147 @@
+Deleted hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654
+start initialize_enclave by zystble cfhidernew
+sgx_create_enclave in setting
+end_sgx_create_enclave:ret==0
+initialize_enclave()_time:64.993322s
+load ok
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/06/12 18:05:51 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/06/12 18:05:52 INFO mapred.JobClient: Running job: job_201906121802_0001
+19/06/12 18:05:53 INFO mapred.JobClient:  map 0% reduce 0%
+19/06/12 18:07:28 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000002_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:08:04 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000000_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:08:39 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000004_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:08:46 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000008_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:09:19 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000002_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:09:22 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000001_0, Status : FAILED
+19/06/12 18:09:45 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000004_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:09:59 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000006_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:10:03 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000007_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:10:09 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000009_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:10:41 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000008_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:10:44 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000001_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:11:20 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000006_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:12:17 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000007_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:12:33 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000000_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:13:13 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000002_2, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:13:23 INFO mapred.JobClient: Task Id : attempt_201906121802_0001_m_000001_2, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 137.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+19/06/12 18:14:20 INFO mapred.JobClient: Job complete: job_201906121802_0001
+19/06/12 18:14:20 INFO mapred.JobClient: Counters: 8
+19/06/12 18:14:20 INFO mapred.JobClient:   Job Counters 
+19/06/12 18:14:20 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=842560
+19/06/12 18:14:20 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/06/12 18:14:20 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/06/12 18:14:20 INFO mapred.JobClient:     Rack-local map tasks=16
+19/06/12 18:14:20 INFO mapred.JobClient:     Launched map tasks=23
+19/06/12 18:14:20 INFO mapred.JobClient:     Data-local map tasks=7
+19/06/12 18:14:20 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=0
+19/06/12 18:14:20 INFO mapred.JobClient:     Failed map tasks=1
+19/06/12 18:14:20 INFO mapred.JobClient: Job Failed: # of failed Map Tasks exceeded allowed limit. FailedCount: 1. LastFailedTask: task_201906121802_0001_m_000002
+Exception in thread "main" java.io.IOException: Job failed!
+	at org.apache.hadoop.mapred.JobClient.runJob(JobClient.java:1265)
+	at cfhider.PiEstimator.estimate(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopPI/bin/cfhider/PiEstimator.class)
+	at cfhider.PiEstimator.run(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopPI/bin/cfhider/PiEstimator.class)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopPI/bin/cfhider/PiEstimator.class)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	9m46.593s
+user	7m49.461s
+sys	1m16.073s
+

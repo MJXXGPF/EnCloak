@@ -1,0 +1,279 @@
+1
+Deleted hdfs://ThinkPad-1:9000/user/xidian/terasort_output01
+19/04/17 22:42:00 INFO cfhider.TeraSort: starting
+19/04/17 22:42:00 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/17 22:42:00 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/17 22:42:00 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/17 22:42:02 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+19/04/17 22:42:02 INFO compress.CodecPool: Got brand-new compressor
+Making 1 from 100000 records
+Step size is 100000.0
+19/04/17 22:42:03 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/17 22:42:03 INFO mapred.JobClient: Running job: job_201904172237_0007
+19/04/17 22:42:04 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/17 22:42:18 INFO mapred.JobClient:  map 12% reduce 0%
+19/04/17 22:42:21 INFO mapred.JobClient:  map 29% reduce 0%
+19/04/17 22:42:22 INFO mapred.JobClient:  map 31% reduce 0%
+19/04/17 22:42:24 INFO mapred.JobClient:  map 39% reduce 0%
+19/04/17 22:42:25 INFO mapred.JobClient:  map 41% reduce 0%
+19/04/17 22:42:27 INFO mapred.JobClient:  map 55% reduce 4%
+19/04/17 22:42:28 INFO mapred.JobClient:  map 56% reduce 4%
+19/04/17 22:42:30 INFO mapred.JobClient:  map 64% reduce 6%
+19/04/17 22:42:31 INFO mapred.JobClient:  map 66% reduce 6%
+19/04/17 22:42:33 INFO mapred.JobClient:  map 75% reduce 8%
+19/04/17 22:42:34 INFO mapred.JobClient:  map 76% reduce 8%
+19/04/17 22:42:36 INFO mapred.JobClient:  map 84% reduce 8%
+19/04/17 22:42:37 INFO mapred.JobClient:  map 87% reduce 8%
+19/04/17 22:42:39 INFO mapred.JobClient:  map 88% reduce 8%
+19/04/17 22:42:40 INFO mapred.JobClient:  map 90% reduce 8%
+19/04/17 22:42:51 INFO mapred.JobClient:  map 90% reduce 10%
+19/04/17 22:42:57 INFO mapred.JobClient:  map 90% reduce 12%
+19/04/17 22:43:03 INFO mapred.JobClient:  map 90% reduce 14%
+19/04/17 22:43:06 INFO mapred.JobClient:  map 91% reduce 16%
+19/04/17 22:43:09 INFO mapred.JobClient:  map 92% reduce 16%
+19/04/17 22:43:12 INFO mapred.JobClient:  map 96% reduce 16%
+19/04/17 22:43:21 INFO mapred.JobClient:  map 97% reduce 16%
+19/04/17 22:43:30 INFO mapred.JobClient:  map 98% reduce 16%
+19/04/17 22:43:33 INFO mapred.JobClient:  map 98% reduce 18%
+19/04/17 22:43:36 INFO mapred.JobClient:  map 99% reduce 18%
+19/04/17 22:43:45 INFO mapred.JobClient:  map 100% reduce 18%
+19/04/17 22:43:51 INFO mapred.JobClient:  map 100% reduce 20%
+19/04/17 22:44:00 INFO mapred.JobClient:  map 100% reduce 22%
+19/04/17 22:44:19 INFO mapred.JobClient:  map 100% reduce 25%
+19/04/17 22:44:34 INFO mapred.JobClient:  map 100% reduce 27%
+19/04/17 22:44:52 INFO mapred.JobClient:  map 100% reduce 29%
+19/04/17 22:45:07 INFO mapred.JobClient:  map 100% reduce 31%
+19/04/17 22:45:25 INFO mapred.JobClient:  map 100% reduce 33%
+19/04/17 22:45:28 INFO mapred.JobClient:  map 100% reduce 72%
+19/04/17 22:45:31 INFO mapred.JobClient:  map 100% reduce 83%
+19/04/17 22:45:34 INFO mapred.JobClient:  map 100% reduce 93%
+19/04/17 22:45:40 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/17 22:45:45 INFO mapred.JobClient: Job complete: job_201904172237_0007
+19/04/17 22:45:45 INFO mapred.JobClient: Counters: 31
+19/04/17 22:45:45 INFO mapred.JobClient:   Job Counters 
+19/04/17 22:45:45 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/17 22:45:45 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=241683
+19/04/17 22:45:45 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/17 22:45:45 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/17 22:45:45 INFO mapred.JobClient:     Rack-local map tasks=7
+19/04/17 22:45:45 INFO mapred.JobClient:     Launched map tasks=18
+19/04/17 22:45:45 INFO mapred.JobClient:     Data-local map tasks=11
+19/04/17 22:45:45 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=199974
+19/04/17 22:45:45 INFO mapred.JobClient:   File Input Format Counters 
+19/04/17 22:45:45 INFO mapred.JobClient:     Bytes Read=1073799158
+19/04/17 22:45:45 INFO mapred.JobClient:   File Output Format Counters 
+19/04/17 22:45:45 INFO mapred.JobClient:     Bytes Written=1073741800
+19/04/17 22:45:45 INFO mapred.JobClient:   FileSystemCounters
+19/04/17 22:45:45 INFO mapred.JobClient:     FILE_BYTES_READ=2669592660
+19/04/17 22:45:45 INFO mapred.JobClient:     HDFS_BYTES_READ=1073800998
+19/04/17 22:45:45 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=3765186736
+19/04/17 22:45:45 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=1073741800
+19/04/17 22:45:45 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/17 22:45:45 INFO mapred.JobClient:     Map output materialized bytes=1095216732
+19/04/17 22:45:45 INFO mapred.JobClient:     Map input records=10737418
+19/04/17 22:45:45 INFO mapred.JobClient:     Reduce shuffle bytes=1026765648
+19/04/17 22:45:45 INFO mapred.JobClient:     Spilled Records=36909871
+19/04/17 22:45:45 INFO mapred.JobClient:     Map output bytes=1073741800
+19/04/17 22:45:45 INFO mapred.JobClient:     Total committed heap usage (bytes)=2971140096
+19/04/17 22:45:45 INFO mapred.JobClient:     CPU time spent (ms)=495680
+19/04/17 22:45:45 INFO mapred.JobClient:     Map input bytes=1073741800
+19/04/17 22:45:45 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1840
+19/04/17 22:45:45 INFO mapred.JobClient:     Combine input records=0
+19/04/17 22:45:45 INFO mapred.JobClient:     Reduce input records=10737418
+19/04/17 22:45:45 INFO mapred.JobClient:     Reduce input groups=10737418
+19/04/17 22:45:45 INFO mapred.JobClient:     Combine output records=0
+19/04/17 22:45:45 INFO mapred.JobClient:     Physical memory (bytes) snapshot=3330097152
+19/04/17 22:45:45 INFO mapred.JobClient:     Reduce output records=10737418
+19/04/17 22:45:45 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=12551520256
+19/04/17 22:45:45 INFO mapred.JobClient:     Map output records=10737418
+19/04/17 22:45:45 INFO cfhider.TeraSort: done
+
+real	3m45.587s
+user	0m2.814s
+sys	0m0.198s
+2
+Deleted hdfs://ThinkPad-1:9000/user/xidian/terasort_output01
+19/04/17 22:45:46 INFO cfhider.TeraSort: starting
+19/04/17 22:45:46 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/17 22:45:46 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/17 22:45:46 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/17 22:45:47 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+19/04/17 22:45:47 INFO compress.CodecPool: Got brand-new compressor
+Making 1 from 100000 records
+Step size is 100000.0
+19/04/17 22:45:47 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/17 22:45:48 INFO mapred.JobClient: Running job: job_201904172237_0008
+19/04/17 22:45:49 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/17 22:46:04 INFO mapred.JobClient:  map 25% reduce 0%
+19/04/17 22:46:06 INFO mapred.JobClient:  map 28% reduce 0%
+19/04/17 22:46:07 INFO mapred.JobClient:  map 32% reduce 0%
+19/04/17 22:46:09 INFO mapred.JobClient:  map 33% reduce 0%
+19/04/17 22:46:10 INFO mapred.JobClient:  map 60% reduce 0%
+19/04/17 22:46:12 INFO mapred.JobClient:  map 61% reduce 0%
+19/04/17 22:46:13 INFO mapred.JobClient:  map 63% reduce 4%
+19/04/17 22:46:15 INFO mapred.JobClient:  map 64% reduce 4%
+19/04/17 22:46:16 INFO mapred.JobClient:  map 79% reduce 8%
+19/04/17 22:46:18 INFO mapred.JobClient:  map 80% reduce 8%
+19/04/17 22:46:19 INFO mapred.JobClient:  map 83% reduce 8%
+19/04/17 22:46:21 INFO mapred.JobClient:  map 85% reduce 8%
+19/04/17 22:46:22 INFO mapred.JobClient:  map 87% reduce 8%
+19/04/17 22:46:24 INFO mapred.JobClient:  map 89% reduce 8%
+19/04/17 22:46:25 INFO mapred.JobClient:  map 90% reduce 8%
+19/04/17 22:46:37 INFO mapred.JobClient:  map 90% reduce 10%
+19/04/17 22:46:40 INFO mapred.JobClient:  map 90% reduce 12%
+19/04/17 22:46:49 INFO mapred.JobClient:  map 90% reduce 16%
+19/04/17 22:46:52 INFO mapred.JobClient:  map 91% reduce 16%
+19/04/17 22:46:55 INFO mapred.JobClient:  map 92% reduce 16%
+19/04/17 22:46:58 INFO mapred.JobClient:  map 97% reduce 16%
+19/04/17 22:47:07 INFO mapred.JobClient:  map 98% reduce 16%
+19/04/17 22:47:13 INFO mapred.JobClient:  map 99% reduce 16%
+19/04/17 22:47:19 INFO mapred.JobClient:  map 99% reduce 18%
+19/04/17 22:47:22 INFO mapred.JobClient:  map 100% reduce 18%
+19/04/17 22:47:28 INFO mapred.JobClient:  map 100% reduce 20%
+19/04/17 22:47:40 INFO mapred.JobClient:  map 100% reduce 22%
+19/04/17 22:47:58 INFO mapred.JobClient:  map 100% reduce 25%
+19/04/17 22:48:13 INFO mapred.JobClient:  map 100% reduce 27%
+19/04/17 22:48:30 INFO mapred.JobClient:  map 100% reduce 29%
+19/04/17 22:48:45 INFO mapred.JobClient:  map 100% reduce 31%
+19/04/17 22:49:03 INFO mapred.JobClient:  map 100% reduce 33%
+19/04/17 22:49:06 INFO mapred.JobClient:  map 100% reduce 72%
+19/04/17 22:49:09 INFO mapred.JobClient:  map 100% reduce 83%
+19/04/17 22:49:12 INFO mapred.JobClient:  map 100% reduce 94%
+19/04/17 22:49:18 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/17 22:49:24 INFO mapred.JobClient: Job complete: job_201904172237_0008
+19/04/17 22:49:24 INFO mapred.JobClient: Counters: 31
+19/04/17 22:49:24 INFO mapred.JobClient:   Job Counters 
+19/04/17 22:49:24 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/17 22:49:24 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=217646
+19/04/17 22:49:24 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/17 22:49:24 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/17 22:49:24 INFO mapred.JobClient:     Rack-local map tasks=7
+19/04/17 22:49:24 INFO mapred.JobClient:     Launched map tasks=18
+19/04/17 22:49:24 INFO mapred.JobClient:     Data-local map tasks=11
+19/04/17 22:49:24 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=194020
+19/04/17 22:49:24 INFO mapred.JobClient:   File Input Format Counters 
+19/04/17 22:49:24 INFO mapred.JobClient:     Bytes Read=1073799158
+19/04/17 22:49:24 INFO mapred.JobClient:   File Output Format Counters 
+19/04/17 22:49:24 INFO mapred.JobClient:     Bytes Written=1073741800
+19/04/17 22:49:24 INFO mapred.JobClient:   FileSystemCounters
+19/04/17 22:49:24 INFO mapred.JobClient:     FILE_BYTES_READ=2669592660
+19/04/17 22:49:24 INFO mapred.JobClient:     HDFS_BYTES_READ=1073800998
+19/04/17 22:49:24 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=3765186739
+19/04/17 22:49:24 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=1073741800
+19/04/17 22:49:24 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/17 22:49:24 INFO mapred.JobClient:     Map output materialized bytes=1095216732
+19/04/17 22:49:24 INFO mapred.JobClient:     Map input records=10737418
+19/04/17 22:49:24 INFO mapred.JobClient:     Reduce shuffle bytes=1026765750
+19/04/17 22:49:24 INFO mapred.JobClient:     Spilled Records=36909871
+19/04/17 22:49:24 INFO mapred.JobClient:     Map output bytes=1073741800
+19/04/17 22:49:24 INFO mapred.JobClient:     Total committed heap usage (bytes)=2969042944
+19/04/17 22:49:24 INFO mapred.JobClient:     CPU time spent (ms)=482930
+19/04/17 22:49:24 INFO mapred.JobClient:     Map input bytes=1073741800
+19/04/17 22:49:24 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1840
+19/04/17 22:49:24 INFO mapred.JobClient:     Combine input records=0
+19/04/17 22:49:24 INFO mapred.JobClient:     Reduce input records=10737418
+19/04/17 22:49:24 INFO mapred.JobClient:     Reduce input groups=10737418
+19/04/17 22:49:24 INFO mapred.JobClient:     Combine output records=0
+19/04/17 22:49:24 INFO mapred.JobClient:     Physical memory (bytes) snapshot=3337306112
+19/04/17 22:49:24 INFO mapred.JobClient:     Reduce output records=10737418
+19/04/17 22:49:24 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=12548198400
+19/04/17 22:49:24 INFO mapred.JobClient:     Map output records=10737418
+19/04/17 22:49:24 INFO cfhider.TeraSort: done
+
+real	3m38.006s
+user	0m2.596s
+sys	0m0.216s
+3
+Deleted hdfs://ThinkPad-1:9000/user/xidian/terasort_output01
+19/04/17 22:49:24 INFO cfhider.TeraSort: starting
+19/04/17 22:49:25 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/17 22:49:25 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/17 22:49:25 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/17 22:49:26 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+19/04/17 22:49:26 INFO compress.CodecPool: Got brand-new compressor
+Making 1 from 100000 records
+Step size is 100000.0
+19/04/17 22:49:26 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/17 22:49:26 INFO mapred.JobClient: Running job: job_201904172237_0009
+19/04/17 22:49:27 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/17 22:49:40 INFO mapred.JobClient:  map 12% reduce 0%
+19/04/17 22:49:42 INFO mapred.JobClient:  map 25% reduce 0%
+19/04/17 22:49:43 INFO mapred.JobClient:  map 29% reduce 0%
+19/04/17 22:49:45 INFO mapred.JobClient:  map 32% reduce 0%
+19/04/17 22:49:46 INFO mapred.JobClient:  map 46% reduce 0%
+19/04/17 22:49:49 INFO mapred.JobClient:  map 60% reduce 0%
+19/04/17 22:49:50 INFO mapred.JobClient:  map 62% reduce 4%
+19/04/17 22:49:52 INFO mapred.JobClient:  map 64% reduce 4%
+19/04/17 22:49:53 INFO mapred.JobClient:  map 65% reduce 8%
+19/04/17 22:49:55 INFO mapred.JobClient:  map 67% reduce 8%
+19/04/17 22:49:56 INFO mapred.JobClient:  map 80% reduce 8%
+19/04/17 22:49:58 INFO mapred.JobClient:  map 85% reduce 8%
+19/04/17 22:49:59 INFO mapred.JobClient:  map 86% reduce 8%
+19/04/17 22:50:01 INFO mapred.JobClient:  map 89% reduce 8%
+19/04/17 22:50:02 INFO mapred.JobClient:  map 90% reduce 12%
+19/04/17 22:50:04 INFO mapred.JobClient:  map 91% reduce 12%
+19/04/17 22:50:05 INFO mapred.JobClient:  map 92% reduce 12%
+19/04/17 22:50:07 INFO mapred.JobClient:  map 93% reduce 12%
+19/04/17 22:50:10 INFO mapred.JobClient:  map 94% reduce 12%
+19/04/17 22:50:13 INFO mapred.JobClient:  map 95% reduce 12%
+19/04/17 22:50:16 INFO mapred.JobClient:  map 96% reduce 12%
+19/04/17 22:50:19 INFO mapred.JobClient:  map 97% reduce 12%
+19/04/17 22:50:22 INFO mapred.JobClient:  map 98% reduce 12%
+19/04/17 22:50:25 INFO mapred.JobClient:  map 99% reduce 12%
+19/04/17 22:50:28 INFO mapred.JobClient:  map 100% reduce 12%
+19/04/17 22:50:45 INFO mapred.JobClient:  map 100% reduce 14%
+19/04/17 22:50:51 INFO mapred.JobClient:  map 100% reduce 18%
+19/04/17 22:51:21 INFO mapred.JobClient:  map 100% reduce 20%
+19/04/17 22:51:36 INFO mapred.JobClient:  map 100% reduce 22%
+19/04/17 22:51:39 INFO mapred.JobClient:  map 100% reduce 25%
+19/04/17 22:51:54 INFO mapred.JobClient:  map 100% reduce 27%
+19/04/17 22:52:12 INFO mapred.JobClient:  map 100% reduce 29%
+19/04/17 22:52:27 INFO mapred.JobClient:  map 100% reduce 31%
+19/04/17 22:52:45 INFO mapred.JobClient:  map 100% reduce 33%
+19/04/17 22:52:48 INFO mapred.JobClient:  map 100% reduce 71%
+19/04/17 22:52:51 INFO mapred.JobClient:  map 100% reduce 81%
+19/04/17 22:52:54 INFO mapred.JobClient:  map 100% reduce 92%
+19/04/17 22:53:00 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/17 22:53:05 INFO mapred.JobClient: Job complete: job_201904172237_0009
+19/04/17 22:53:05 INFO mapred.JobClient: Counters: 31
+19/04/17 22:53:05 INFO mapred.JobClient:   Job Counters 
+19/04/17 22:53:05 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/17 22:53:05 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=218352
+19/04/17 22:53:05 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/17 22:53:05 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/17 22:53:05 INFO mapred.JobClient:     Rack-local map tasks=6
+19/04/17 22:53:05 INFO mapred.JobClient:     Launched map tasks=16
+19/04/17 22:53:05 INFO mapred.JobClient:     Data-local map tasks=10
+19/04/17 22:53:05 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=197452
+19/04/17 22:53:05 INFO mapred.JobClient:   File Input Format Counters 
+19/04/17 22:53:05 INFO mapred.JobClient:     Bytes Read=1073799158
+19/04/17 22:53:05 INFO mapred.JobClient:   File Output Format Counters 
+19/04/17 22:53:05 INFO mapred.JobClient:     Bytes Written=1073741800
+19/04/17 22:53:05 INFO mapred.JobClient:   FileSystemCounters
+19/04/17 22:53:05 INFO mapred.JobClient:     FILE_BYTES_READ=2669592660
+19/04/17 22:53:05 INFO mapred.JobClient:     HDFS_BYTES_READ=1073800998
+19/04/17 22:53:05 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=3765186728
+19/04/17 22:53:05 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=1073741800
+19/04/17 22:53:05 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/17 22:53:05 INFO mapred.JobClient:     Map output materialized bytes=1095216732
+19/04/17 22:53:05 INFO mapred.JobClient:     Map input records=10737418
+19/04/17 22:53:05 INFO mapred.JobClient:     Reduce shuffle bytes=1026765750
+19/04/17 22:53:05 INFO mapred.JobClient:     Spilled Records=36909871
+19/04/17 22:53:05 INFO mapred.JobClient:     Map output bytes=1073741800
+19/04/17 22:53:05 INFO mapred.JobClient:     Total committed heap usage (bytes)=2941779968
+19/04/17 22:53:05 INFO mapred.JobClient:     CPU time spent (ms)=497410
+19/04/17 22:53:05 INFO mapred.JobClient:     Map input bytes=1073741800
+19/04/17 22:53:05 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1840
+19/04/17 22:53:05 INFO mapred.JobClient:     Combine input records=0
+19/04/17 22:53:05 INFO mapred.JobClient:     Reduce input records=10737418
+19/04/17 22:53:05 INFO mapred.JobClient:     Reduce input groups=10737418
+19/04/17 22:53:05 INFO mapred.JobClient:     Combine output records=0
+19/04/17 22:53:05 INFO mapred.JobClient:     Physical memory (bytes) snapshot=3354886144
+19/04/17 22:53:05 INFO mapred.JobClient:     Reduce output records=10737418
+19/04/17 22:53:05 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=12565168128
+19/04/17 22:53:05 INFO mapred.JobClient:     Map output records=10737418
+19/04/17 22:53:05 INFO cfhider.TeraSort: done
+
+real	3m41.152s
+user	0m2.734s
+sys	0m0.192s

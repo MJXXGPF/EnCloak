@@ -1,0 +1,186 @@
+1
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64
+init enclave running time= 1251 Millis
+In this project, we test wordcount with SGX!
+
+19/04/21 14:08:09 INFO input.FileInputFormat: Total input paths to process : 18
+19/04/21 14:08:09 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/21 14:08:09 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/21 14:08:10 INFO mapred.JobClient: Running job: job_201904181557_0264
+19/04/21 14:08:11 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/21 14:08:26 INFO mapred.JobClient: Task Id : attempt_201904181557_0264_m_000000_0, Status : FAILED
+java.io.IOException: Spill failed
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1029)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:691)
+	at org.apache.hadoop.mapreduce.TaskInputOutputContext.write(TaskInputOutputContext.java:80)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:370)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+Caused by: java.util.NoSuchElementException: iterate past last value
+	at org.apache.hadoop.mapreduce.ReduceContext$ValueIterator.next(ReduceContext.java:159)
+	at cfhider.WordCount$IntSumReducer.reduce(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$IntSumReducer.class)
+	at cfhider.WordCount$IntSumReducer.reduce(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$IntSumReducer.class)
+	at org.apache.hadoop.mapreduce.Reducer.run(Reducer.java:176)
+	at org.apache.hadoop.mapred.Task$NewCombinerRunner.combine(Task.java:1502)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.sortAndSpill(MapTask.java:1436)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.access$1800(MapTask.java:853)
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer$SpillThread.run(MapTask.java:1344)
+
+attempt_201904181557_0264_m_000000_0: invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64:/tmp/hadoop-xidian/mapred/local/taskTracker/xidian/jobcache/job_201904181557_0264/attempt_201904181557_0264_m_000000_0/work
+attempt_201904181557_0264_m_000000_0: init enclave running time= 1418 Millis
+attempt_201904181557_0264_m_000000_0: start initialize_enclave -------sgx_create_enclave----zystble
+attempt_201904181557_0264_m_000000_0: end_sgx_create_enclave is ok.
+attempt_201904181557_0264_m_000000_0:  ret==0------zystble---------------------initialize_enclave()_time:0.906161s
+attempt_201904181557_0264_m_000000_0: read crypt file ok
+attempt_201904181557_0264_m_000000_0: splitting
+attempt_201904181557_0264_m_000000_0: line_num: 56
+attempt_201904181557_0264_m_000000_0: load ok
+19/04/21 14:08:26 INFO mapred.JobClient: Task Id : attempt_201904181557_0264_m_000001_0, Status : FAILED
+java.util.NoSuchElementException
+	at java.util.StringTokenizer.nextToken(StringTokenizer.java:349)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:370)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+
+attempt_201904181557_0264_m_000001_0: invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64:/tmp/hadoop-xidian/mapred/local/taskTracker/xidian/jobcache/job_201904181557_0264/attempt_201904181557_0264_m_000001_0/work
+attempt_201904181557_0264_m_000001_0: init enclave running time= 2858 Millis
+attempt_201904181557_0264_m_000001_0: start initialize_enclave -------sgx_create_enclave----zystble
+attempt_201904181557_0264_m_000001_0: end_sgx_create_enclave is ok.
+attempt_201904181557_0264_m_000001_0:  ret==0------zystble---------------------initialize_enclave()_time:0.090909s
+attempt_201904181557_0264_m_000001_0: read crypt file ok
+attempt_201904181557_0264_m_000001_0: splitting
+attempt_201904181557_0264_m_000001_0: line_num: 56
+attempt_201904181557_0264_m_000001_0: load ok
+19/04/21 14:08:30 INFO mapred.JobClient: Task Id : attempt_201904181557_0264_m_000002_0, Status : FAILED
+java.util.NoSuchElementException
+	at java.util.StringTokenizer.nextToken(StringTokenizer.java:349)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:370)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+
+attempt_201904181557_0264_m_000002_0: invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64:/home/xidian/hadoop/tmp/mapred/local/taskTracker/xidian/jobcache/job_201904181557_0264/attempt_201904181557_0264_m_000002_0/work
+attempt_201904181557_0264_m_000002_0: init enclave running time= 1308 Millis
+attempt_201904181557_0264_m_000002_0: start initialize_enclave -------sgx_create_enclave----zystble
+attempt_201904181557_0264_m_000002_0: end_sgx_create_enclave is ok.
+attempt_201904181557_0264_m_000002_0:  ret==0------zystble---------------------initialize_enclave()_time:1.290225s
+attempt_201904181557_0264_m_000002_0: read crypt file ok
+attempt_201904181557_0264_m_000002_0: splitting
+attempt_201904181557_0264_m_000002_0: line_num: 56
+attempt_201904181557_0264_m_000002_0: load ok
+19/04/21 14:08:31 INFO mapred.JobClient: Task Id : attempt_201904181557_0264_m_000006_0, Status : FAILED
+java.util.NoSuchElementException
+	at java.util.StringTokenizer.nextToken(StringTokenizer.java:349)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:370)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+
+attempt_201904181557_0264_m_000006_0: invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64:/tmp/hadoop-xidian/mapred/local/taskTracker/xidian/jobcache/job_201904181557_0264/attempt_201904181557_0264_m_000006_0/work
+attempt_201904181557_0264_m_000006_0: init enclave running time= 3414 Millis
+attempt_201904181557_0264_m_000006_0: start initialize_enclave -------sgx_create_enclave----zystble
+attempt_201904181557_0264_m_000006_0: end_sgx_create_enclave is ok.
+attempt_201904181557_0264_m_000006_0:  ret==0------zystble---------------------initialize_enclave()_time:0.070173s
+attempt_201904181557_0264_m_000006_0: read crypt file ok
+attempt_201904181557_0264_m_000006_0: splitting
+attempt_201904181557_0264_m_000006_0: line_num: 56
+attempt_201904181557_0264_m_000006_0: load ok
+19/04/21 14:08:34 INFO mapred.JobClient: Task Id : attempt_201904181557_0264_m_000007_0, Status : FAILED
+java.util.NoSuchElementException
+	at java.util.StringTokenizer.nextToken(StringTokenizer.java:349)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at cfhider.WordCount$TokenizerMapper.map(/home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopWordcount/bin/cfhider/WordCount$TokenizerMapper.class)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:370)
+	at org.apache.hadoop.mapred.Child$4.run(Child.java:255)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.mapred.Child.main(Child.java:249)
+
+attempt_201904181557_0264_m_000007_0: invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64:/tmp/hadoop-xidian/mapred/local/taskTracker/xidian/jobcache/job_201904181557_0264/attempt_201904181557_0264_m_000007_0/work
+attempt_201904181557_0264_m_000007_0: init enclave running time= 1731 Millis
+attempt_201904181557_0264_m_000007_0: start initialize_enclave -------sgx_create_enclave----zystble
+attempt_201904181557_0264_m_000007_0: end_sgx_create_enclave is ok.
+attempt_201904181557_0264_m_000007_0:  ret==0------zystble---------------------initialize_enclave()_time:1.692708s
+attempt_201904181557_0264_m_000007_0: read crypt file ok
+attempt_201904181557_0264_m_000007_0: splitting
+attempt_201904181557_0264_m_000007_0: line_num: 56
+attempt_201904181557_0264_m_000007_0: load ok
+19/04/21 14:08:39 INFO mapred.JobClient:  map 1% reduce 0%
+start initialize_enclave -------sgx_create_enclave----zystble
+end_sgx_create_enclave is ok.
+ ret==0------zystble---------------------initialize_enclave()_time:1.250543s
+read crypt file ok
+splitting
+line_num: 56
+load ok
+
+real	1m43.625s
+user	1m43.216s
+sys	0m1.578s
+2
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64
+init enclave running time= 1453 Millis
+In this project, we test wordcount with SGX!
+
+19/04/21 14:09:54 INFO input.FileInputFormat: Total input paths to process : 18
+19/04/21 14:09:54 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/21 14:09:54 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/21 14:09:54 INFO mapred.JobClient: Running job: job_201904181557_0265
+start initialize_enclave -------sgx_create_enclave----zystble
+end_sgx_create_enclave is ok.
+ ret==0------zystble---------------------initialize_enclave()_time:1.300452s
+read crypt file ok
+splitting
+line_num: 56
+load ok
+
+real	0m2.783s
+user	0m2.514s
+sys	0m1.372s
+3
+invoker:/home/xidian/hadoop/libexec/../lib/native/Linux-amd64-64
+init enclave running time= 1382 Millis
+In this project, we test wordcount with SGX!
+
+start initialize_enclave -------sgx_create_enclave----zystble
+end_sgx_create_enclave is ok.
+ ret==0------zystble---------------------initialize_enclave()_time:1.373413s
+read crypt file ok
+splitting
+line_num: 56
+load ok
+
+real	0m2.184s
+user	0m1.786s
+sys	0m1.462s

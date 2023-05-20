@@ -1,0 +1,204 @@
+class cfhider.TeraSort$TotalOrderPartitioner extends java.lang.Object implements org.apache.hadoop.mapred.Partitioner
+{
+    private cfhider.TeraSort$TotalOrderPartitioner$TrieNode trie;
+    private org.apache.hadoop.io.Text[] splitPoints;
+    public java.lang.String Cuuid;
+
+    private static org.apache.hadoop.io.Text[] readPartitions(org.apache.hadoop.fs.FileSystem, org.apache.hadoop.fs.Path, org.apache.hadoop.mapred.JobConf) throws java.io.IOException
+    {
+        org.apache.hadoop.fs.FileSystem r0;
+        org.apache.hadoop.fs.Path r1;
+        org.apache.hadoop.mapred.JobConf r2;
+        org.apache.hadoop.io.SequenceFile$Reader $r3, r4;
+        java.util.ArrayList r5, $r8;
+        org.apache.hadoop.io.Text r6, $r9, $r10;
+        org.apache.hadoop.io.NullWritable r7;
+        boolean $z0;
+        int $i0;
+        org.apache.hadoop.io.Text[] $r11, $r13;
+        java.lang.Object[] $r12;
+
+        r0 := @parameter0: org.apache.hadoop.fs.FileSystem;
+        r1 := @parameter1: org.apache.hadoop.fs.Path;
+        r2 := @parameter2: org.apache.hadoop.mapred.JobConf;
+        $r3 = new org.apache.hadoop.io.SequenceFile$Reader;
+        specialinvoke $r3.<org.apache.hadoop.io.SequenceFile$Reader: void <init>(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.conf.Configuration)>(r0, r1, r2);
+        r4 = $r3;
+        $r8 = new java.util.ArrayList;
+        specialinvoke $r8.<java.util.ArrayList: void <init>()>();
+        r5 = $r8;
+        $r9 = new org.apache.hadoop.io.Text;
+        specialinvoke $r9.<org.apache.hadoop.io.Text: void <init>()>();
+        r6 = $r9;
+        r7 = staticinvoke <org.apache.hadoop.io.NullWritable: org.apache.hadoop.io.NullWritable get()>();
+
+     label0:
+        $z0 = virtualinvoke r4.<org.apache.hadoop.io.SequenceFile$Reader: boolean next(org.apache.hadoop.io.Writable,org.apache.hadoop.io.Writable)>(r6, r7);
+        if $z0 == 0 goto label1;
+
+        interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r6);
+        $r10 = new org.apache.hadoop.io.Text;
+        specialinvoke $r10.<org.apache.hadoop.io.Text: void <init>()>();
+        r6 = $r10;
+        goto label0;
+
+     label1:
+        virtualinvoke r4.<org.apache.hadoop.io.SequenceFile$Reader: void close()>();
+        $i0 = interfaceinvoke r5.<java.util.List: int size()>();
+        $r11 = newarray (org.apache.hadoop.io.Text)[$i0];
+        $r12 = interfaceinvoke r5.<java.util.List: java.lang.Object[] toArray(java.lang.Object[])>($r11);
+        $r13 = (org.apache.hadoop.io.Text[]) $r12;
+        return $r13;
+    }
+
+    private static cfhider.TeraSort$TotalOrderPartitioner$TrieNode buildTrie(org.apache.hadoop.io.Text[], int, int, org.apache.hadoop.io.Text, int)
+    {
+        org.apache.hadoop.io.Text[] r0;
+        int i0, i1, i2, i3;
+        org.apache.hadoop.io.Text r1;
+        cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode r2, $r4;
+        cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode $r3;
+
+        r0 := @parameter0: org.apache.hadoop.io.Text[];
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        r1 := @parameter3: org.apache.hadoop.io.Text;
+        i2 := @parameter4: int;
+        i3 = virtualinvoke r1.<org.apache.hadoop.io.Text: int getLength()>();
+        if i0 != i1 goto label0;
+
+        $r3 = new cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode;
+        specialinvoke $r3.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: void <init>(int,org.apache.hadoop.io.Text[],int,int)>(i3, r0, i0, i1);
+        return $r3;
+
+     label0:
+        $r4 = new cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode;
+        specialinvoke $r4.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: void <init>(int)>(i3);
+        r2 = $r4;
+        return r2;
+    }
+
+    public void configure(org.apache.hadoop.mapred.JobConf)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner r0;
+        org.apache.hadoop.mapred.JobConf r1;
+        org.apache.hadoop.fs.LocalFileSystem r2;
+        org.apache.hadoop.fs.Path r3, $r5;
+        org.apache.hadoop.io.Text $r4;
+        org.apache.hadoop.io.Text[] $r6, $r7, $r8;
+        int $i0;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode $r9;
+        java.io.IOException $r10, r11;
+        java.lang.IllegalArgumentException $r12;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner;
+        r1 := @parameter0: org.apache.hadoop.mapred.JobConf;
+
+     label0:
+        r2 = staticinvoke <org.apache.hadoop.fs.FileSystem: org.apache.hadoop.fs.LocalFileSystem getLocal(org.apache.hadoop.conf.Configuration)>(r1);
+        $r5 = new org.apache.hadoop.fs.Path;
+        specialinvoke $r5.<org.apache.hadoop.fs.Path: void <init>(java.lang.String)>("_partition.lst");
+        r3 = $r5;
+        $r6 = staticinvoke <cfhider.TeraSort$TotalOrderPartitioner: org.apache.hadoop.io.Text[] readPartitions(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.mapred.JobConf)>(r2, r3, r1);
+        r0.<cfhider.TeraSort$TotalOrderPartitioner: org.apache.hadoop.io.Text[] splitPoints> = $r6;
+        $r7 = r0.<cfhider.TeraSort$TotalOrderPartitioner: org.apache.hadoop.io.Text[] splitPoints>;
+        $r8 = r0.<cfhider.TeraSort$TotalOrderPartitioner: org.apache.hadoop.io.Text[] splitPoints>;
+        $i0 = lengthof $r8;
+        $r4 = new org.apache.hadoop.io.Text;
+        specialinvoke $r4.<org.apache.hadoop.io.Text: void <init>()>();
+        $r9 = staticinvoke <cfhider.TeraSort$TotalOrderPartitioner: cfhider.TeraSort$TotalOrderPartitioner$TrieNode buildTrie(org.apache.hadoop.io.Text[],int,int,org.apache.hadoop.io.Text,int)>($r7, 0, $i0, $r4, 2);
+        r0.<cfhider.TeraSort$TotalOrderPartitioner: cfhider.TeraSort$TotalOrderPartitioner$TrieNode trie> = $r9;
+
+     label1:
+        goto label3;
+
+     label2:
+        $r10 := @caughtexception;
+        r11 = $r10;
+        $r12 = new java.lang.IllegalArgumentException;
+        specialinvoke $r12.<java.lang.IllegalArgumentException: void <init>(java.lang.String,java.lang.Throwable)>("can\'t read paritions file", r11);
+        throw $r12;
+
+     label3:
+        return;
+
+        catch java.io.IOException from label0 to label1 with label2;
+    }
+
+    public void <init>()
+    {
+        cfhider.TeraSort$TotalOrderPartitioner r0;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public int getPartition(org.apache.hadoop.io.Text, org.apache.hadoop.io.Text, int)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner r0;
+        org.apache.hadoop.io.Text r1, r2;
+        int i0, $i1;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode $r3;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner;
+        r1 := @parameter0: org.apache.hadoop.io.Text;
+        r2 := @parameter1: org.apache.hadoop.io.Text;
+        i0 := @parameter2: int;
+        $r3 = null;
+        $i1 = 0;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        $r3 = r0.<cfhider.TeraSort$TotalOrderPartitioner: cfhider.TeraSort$TotalOrderPartitioner$TrieNode trie>;
+        $i1 = virtualinvoke $r3.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: int findPartition(org.apache.hadoop.io.Text)>(r1);
+        return $i1;
+    }
+
+    public volatile int getPartition(java.lang.Object, java.lang.Object, int)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner r0;
+        java.lang.Object r1, r2;
+        int i0, $i1, tmpResult11;
+        org.apache.hadoop.io.Text $r3, $r4;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.lang.Object;
+        i0 := @parameter2: int;
+        tmpResult11 = 0;
+        $r3 = null;
+        $r4 = null;
+        $i1 = 0;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        $r3 = (org.apache.hadoop.io.Text) r1;
+        $r4 = (org.apache.hadoop.io.Text) r2;
+        tmpResult11 = virtualinvoke r0.<cfhider.TeraSort$TotalOrderPartitioner: int getPartition(org.apache.hadoop.io.Text,org.apache.hadoop.io.Text,int)>($r3, $r4, i0);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult11);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 11L);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return $i1;
+    }
+}

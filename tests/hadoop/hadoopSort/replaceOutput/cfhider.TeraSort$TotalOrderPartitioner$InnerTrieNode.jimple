@@ -1,0 +1,142 @@
+class cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode extends cfhider.TeraSort$TotalOrderPartitioner$TrieNode
+{
+    private cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] child;
+    public java.lang.String Cuuid;
+
+    void <init>(int)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode r0;
+        int i0;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] $r1;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode;
+        i0 := @parameter0: int;
+        specialinvoke r0.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: void <init>(int)>(i0);
+        $r1 = newarray (cfhider.TeraSort$TotalOrderPartitioner$TrieNode)[256];
+        r0.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] child> = $r1;
+        return;
+    }
+
+    int findPartition(org.apache.hadoop.io.Text)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode r0;
+        org.apache.hadoop.io.Text r1;
+        int i0, $i1, $i2, $i4, tmpResult2, tmpResult3;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] $r2, $r4;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode $r3, $r6;
+        byte[] $r5, tmpResult5, tmpUpdateArray5;
+        byte $b3;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode;
+        r1 := @parameter0: org.apache.hadoop.io.Text;
+        tmpUpdateArray5 = null;
+        tmpResult5 = null;
+        tmpResult3 = 0;
+        tmpResult2 = 0;
+        i0 = 0;
+        $i1 = 0;
+        $r2 = null;
+        $r3 = null;
+        $i2 = 0;
+        $r4 = null;
+        $r5 = null;
+        $b3 = 0;
+        $r6 = null;
+        $i4 = 0;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        tmpResult2 = virtualinvoke r0.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: int getLevel()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult2);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 2L);
+        tmpResult3 = virtualinvoke r1.<org.apache.hadoop.io.Text: int getLength()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult3);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>($i2);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 3L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 4L);
+        if branchInvokeResult == 1 goto label0;
+
+        $r2 = r0.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] child>;
+        $r3 = $r2[0];
+        $i2 = virtualinvoke $r3.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: int findPartition(org.apache.hadoop.io.Text)>(r1);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return $i2;
+
+     label0:
+        $r4 = r0.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] child>;
+        tmpResult5 = virtualinvoke r1.<org.apache.hadoop.io.Text: byte[] getBytes()>();
+        tmpUpdateArray5 = tmpResult5;
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(byte[])>(tmpUpdateArray5);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 1, 5L);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 6L);
+        $r6 = $r4[$b3];
+        $i4 = virtualinvoke $r6.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: int findPartition(org.apache.hadoop.io.Text)>(r1);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return $i4;
+    }
+
+    void setChild(int, cfhider.TeraSort$TotalOrderPartitioner$TrieNode)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode r0;
+        int i0;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode r1;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] $r2;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode;
+        i0 := @parameter0: int;
+        r1 := @parameter1: cfhider.TeraSort$TotalOrderPartitioner$TrieNode;
+        $r2 = r0.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] child>;
+        $r2[i0] = r1;
+        return;
+    }
+
+    void print(java.io.PrintStream) throws java.io.IOException
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode r0;
+        java.io.PrintStream r1;
+        int i0, i1, $i2, $i3;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] $r2;
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode $r3;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode;
+        r1 := @parameter0: java.io.PrintStream;
+        i0 = 0;
+
+     label0:
+        if i0 >= 255 goto label3;
+
+        i1 = 0;
+
+     label1:
+        $i2 = virtualinvoke r0.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: int getLevel()>();
+        $i3 = 2 * $i2;
+        if i1 >= $i3 goto label2;
+
+        virtualinvoke r1.<java.io.PrintStream: void print(char)>(32);
+        i1 = i1 + 1;
+        goto label1;
+
+     label2:
+        virtualinvoke r1.<java.io.PrintStream: void print(int)>(i0);
+        virtualinvoke r1.<java.io.PrintStream: void println(java.lang.String)>(" ->");
+        $r2 = r0.<cfhider.TeraSort$TotalOrderPartitioner$InnerTrieNode: cfhider.TeraSort$TotalOrderPartitioner$TrieNode[] child>;
+        $r3 = $r2[i0];
+        virtualinvoke $r3.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: void print(java.io.PrintStream)>(r1);
+        i0 = i0 + 1;
+        goto label0;
+
+     label3:
+        return;
+    }
+}

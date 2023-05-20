@@ -1,0 +1,1283 @@
+1
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+In this project, we test wordcount with SGX!
+
+############################ Cache Hit ##########################
+
+0||1
+19/01/16 09:59:55 INFO input.FileInputFormat: Total input paths to process : 14
+19/01/16 09:59:55 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/01/16 09:59:55 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/01/16 09:59:55 INFO mapred.JobClient: Running job: job_201901141944_0264
+19/01/16 09:59:56 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/16 10:00:25 INFO mapred.JobClient:  map 1% reduce 0%
+19/01/16 10:00:28 INFO mapred.JobClient:  map 3% reduce 0%
+19/01/16 10:00:30 INFO mapred.JobClient: Task Id : attempt_201901141944_0264_m_000003_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0264_m_000003_0: ############################ Cache Hit ##########################
+attempt_201901141944_0264_m_000003_0: 0||1
+attempt_201901141944_0264_m_000003_0: ret:-1
+attempt_201901141944_0264_m_000003_0: error
+attempt_201901141944_0264_m_000003_0: ret
+attempt_201901141944_0264_m_000003_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0264_m_000003_0: enclave path:enclave.signed.so
+attempt_201901141944_0264_m_000003_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0264_m_000003_0: ==in ocall_print:splitting
+attempt_201901141944_0264_m_000003_0: -in ocall_long:37
+attempt_201901141944_0264_m_000003_0: -in ocall_long:12
+attempt_201901141944_0264_m_000003_0: -in ocall_long:12
+attempt_201901141944_0264_m_000003_0: -in ocall_long:12
+19/01/16 10:00:32 INFO mapred.JobClient:  map 4% reduce 0%
+19/01/16 10:00:34 INFO mapred.JobClient:  map 6% reduce 0%
+19/01/16 10:00:36 INFO mapred.JobClient: Task Id : attempt_201901141944_0264_m_000002_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0264_m_000002_0: ############################ Cache Hit ##########################
+attempt_201901141944_0264_m_000002_0: 0||1
+attempt_201901141944_0264_m_000002_0: ret:-1
+attempt_201901141944_0264_m_000002_0: error
+attempt_201901141944_0264_m_000002_0: ret
+attempt_201901141944_0264_m_000002_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0264_m_000002_0: enclave path:enclave.signed.so
+attempt_201901141944_0264_m_000002_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0264_m_000002_0: ==in ocall_print:splitting
+attempt_201901141944_0264_m_000002_0: -in ocall_long:37
+attempt_201901141944_0264_m_000002_0: -in ocall_long:12
+attempt_201901141944_0264_m_000002_0: -in ocall_long:12
+attempt_201901141944_0264_m_000002_0: -in ocall_long:12
+19/01/16 10:00:37 INFO mapred.JobClient:  map 9% reduce 0%
+19/01/16 10:00:40 INFO mapred.JobClient:  map 13% reduce 0%
+19/01/16 10:00:43 INFO mapred.JobClient:  map 15% reduce 0%
+19/01/16 10:00:46 INFO mapred.JobClient:  map 19% reduce 0%
+19/01/16 10:00:49 INFO mapred.JobClient:  map 23% reduce 0%
+19/01/16 10:00:52 INFO mapred.JobClient:  map 26% reduce 2%
+19/01/16 10:00:55 INFO mapred.JobClient:  map 28% reduce 2%
+19/01/16 10:00:58 INFO mapred.JobClient:  map 30% reduce 2%
+19/01/16 10:01:00 INFO mapred.JobClient: Task Id : attempt_201901141944_0264_m_000008_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0264_m_000008_0: ############################ Cache Hit ##########################
+attempt_201901141944_0264_m_000008_0: 0||1
+attempt_201901141944_0264_m_000008_0: ret:-1
+attempt_201901141944_0264_m_000008_0: error
+attempt_201901141944_0264_m_000008_0: ret
+attempt_201901141944_0264_m_000008_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0264_m_000008_0: enclave path:enclave.signed.so
+attempt_201901141944_0264_m_000008_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0264_m_000008_0: ==in ocall_print:splitting
+attempt_201901141944_0264_m_000008_0: -in ocall_long:37
+attempt_201901141944_0264_m_000008_0: -in ocall_long:12
+attempt_201901141944_0264_m_000008_0: -in ocall_long:12
+attempt_201901141944_0264_m_000008_0: -in ocall_long:12
+19/01/16 10:01:01 INFO mapred.JobClient:  map 33% reduce 6%
+19/01/16 10:01:04 INFO mapred.JobClient:  map 35% reduce 6%
+19/01/16 10:01:06 INFO mapred.JobClient: Task Id : attempt_201901141944_0264_m_000009_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0264_m_000009_0: ############################ Cache Hit ##########################
+attempt_201901141944_0264_m_000009_0: 0||1
+attempt_201901141944_0264_m_000009_0: ret:-1
+attempt_201901141944_0264_m_000009_0: error
+attempt_201901141944_0264_m_000009_0: ret
+attempt_201901141944_0264_m_000009_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0264_m_000009_0: enclave path:enclave.signed.so
+attempt_201901141944_0264_m_000009_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0264_m_000009_0: ==in ocall_print:splitting
+attempt_201901141944_0264_m_000009_0: -in ocall_long:37
+attempt_201901141944_0264_m_000009_0: -in ocall_long:12
+attempt_201901141944_0264_m_000009_0: -in ocall_long:12
+attempt_201901141944_0264_m_000009_0: -in ocall_long:12
+19/01/16 10:01:07 INFO mapred.JobClient:  map 37% reduce 6%
+19/01/16 10:01:10 INFO mapred.JobClient:  map 38% reduce 6%
+19/01/16 10:01:13 INFO mapred.JobClient:  map 40% reduce 6%
+19/01/16 10:01:16 INFO mapred.JobClient:  map 42% reduce 11%
+19/01/16 10:01:19 INFO mapred.JobClient:  map 44% reduce 11%
+19/01/16 10:01:22 INFO mapred.JobClient:  map 46% reduce 13%
+19/01/16 10:01:25 INFO mapred.JobClient:  map 48% reduce 13%
+19/01/16 10:01:28 INFO mapred.JobClient:  map 50% reduce 13%
+19/01/16 10:01:30 INFO mapred.JobClient: Task Id : attempt_201901141944_0264_m_000012_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0264_m_000012_0: ############################ Cache Hit ##########################
+attempt_201901141944_0264_m_000012_0: 0||1
+attempt_201901141944_0264_m_000012_0: ret:-1
+attempt_201901141944_0264_m_000012_0: error
+attempt_201901141944_0264_m_000012_0: ret
+attempt_201901141944_0264_m_000012_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0264_m_000012_0: enclave path:enclave.signed.so
+attempt_201901141944_0264_m_000012_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0264_m_000012_0: ==in ocall_print:splitting
+attempt_201901141944_0264_m_000012_0: -in ocall_long:37
+attempt_201901141944_0264_m_000012_0: -in ocall_long:12
+attempt_201901141944_0264_m_000012_0: -in ocall_long:12
+attempt_201901141944_0264_m_000012_0: -in ocall_long:12
+19/01/16 10:01:31 INFO mapred.JobClient:  map 53% reduce 13%
+19/01/16 10:01:34 INFO mapred.JobClient:  map 58% reduce 13%
+19/01/16 10:01:36 INFO mapred.JobClient: Task Id : attempt_201901141944_0264_m_000013_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0264_m_000013_0: ############################ Cache Hit ##########################
+attempt_201901141944_0264_m_000013_0: 0||1
+attempt_201901141944_0264_m_000013_0: ret:-1
+attempt_201901141944_0264_m_000013_0: error
+attempt_201901141944_0264_m_000013_0: ret
+attempt_201901141944_0264_m_000013_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0264_m_000013_0: enclave path:enclave.signed.so
+attempt_201901141944_0264_m_000013_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0264_m_000013_0: ==in ocall_print:splitting
+attempt_201901141944_0264_m_000013_0: -in ocall_long:37
+attempt_201901141944_0264_m_000013_0: -in ocall_long:12
+attempt_201901141944_0264_m_000013_0: -in ocall_long:12
+attempt_201901141944_0264_m_000013_0: -in ocall_long:12
+19/01/16 10:01:38 INFO mapred.JobClient:  map 61% reduce 15%
+19/01/16 10:01:40 INFO mapred.JobClient:  map 63% reduce 15%
+19/01/16 10:01:41 INFO mapred.JobClient:  map 64% reduce 15%
+19/01/16 10:01:43 INFO mapred.JobClient:  map 66% reduce 15%
+19/01/16 10:01:44 INFO mapred.JobClient:  map 67% reduce 15%
+19/01/16 10:01:46 INFO mapred.JobClient:  map 69% reduce 15%
+19/01/16 10:01:47 INFO mapred.JobClient:  map 70% reduce 17%
+19/01/16 10:01:49 INFO mapred.JobClient:  map 72% reduce 17%
+19/01/16 10:01:50 INFO mapred.JobClient:  map 73% reduce 17%
+19/01/16 10:01:56 INFO mapred.JobClient:  map 80% reduce 17%
+19/01/16 10:02:01 INFO mapred.JobClient: Task Id : attempt_201901141944_0264_m_000007_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0264_m_000007_1: ############################ Cache Hit ##########################
+attempt_201901141944_0264_m_000007_1: 0||1
+attempt_201901141944_0264_m_000007_1: ret:-1
+attempt_201901141944_0264_m_000007_1: error
+attempt_201901141944_0264_m_000007_1: ret
+attempt_201901141944_0264_m_000007_1: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0264_m_000007_1: enclave path:enclave.signed.so
+attempt_201901141944_0264_m_000007_1: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0264_m_000007_1: ==in ocall_print:splitting
+attempt_201901141944_0264_m_000007_1: -in ocall_long:37
+attempt_201901141944_0264_m_000007_1: -in ocall_long:12
+attempt_201901141944_0264_m_000007_1: -in ocall_long:12
+attempt_201901141944_0264_m_000007_1: -in ocall_long:12
+19/01/16 10:02:02 INFO mapred.JobClient:  map 82% reduce 24%
+19/01/16 10:02:04 INFO mapred.JobClient:  map 83% reduce 24%
+19/01/16 10:02:05 INFO mapred.JobClient:  map 83% reduce 26%
+19/01/16 10:02:07 INFO mapred.JobClient:  map 84% reduce 26%
+19/01/16 10:02:10 INFO mapred.JobClient:  map 86% reduce 26%
+19/01/16 10:02:13 INFO mapred.JobClient:  map 89% reduce 26%
+19/01/16 10:02:16 INFO mapred.JobClient:  map 90% reduce 26%
+19/01/16 10:02:19 INFO mapred.JobClient:  map 91% reduce 26%
+19/01/16 10:02:22 INFO mapred.JobClient:  map 93% reduce 26%
+19/01/16 10:02:26 INFO mapred.JobClient:  map 93% reduce 28%
+19/01/16 10:02:32 INFO mapred.JobClient:  map 93% reduce 31%
+19/01/16 10:02:37 INFO mapred.JobClient:  map 95% reduce 31%
+19/01/16 10:02:40 INFO mapred.JobClient:  map 96% reduce 31%
+19/01/16 10:02:43 INFO mapred.JobClient:  map 97% reduce 31%
+19/01/16 10:02:46 INFO mapred.JobClient:  map 99% reduce 31%
+19/01/16 10:02:49 INFO mapred.JobClient:  map 100% reduce 31%
+19/01/16 10:03:02 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/16 10:03:11 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/16 10:03:16 INFO mapred.JobClient: Job complete: job_201901141944_0264
+19/01/16 10:03:16 INFO mapred.JobClient: Counters: 30
+19/01/16 10:03:16 INFO mapred.JobClient:   Job Counters 
+19/01/16 10:03:16 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/16 10:03:16 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=645340
+19/01/16 10:03:16 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/16 10:03:16 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/16 10:03:16 INFO mapred.JobClient:     Rack-local map tasks=20
+19/01/16 10:03:16 INFO mapred.JobClient:     Launched map tasks=25
+19/01/16 10:03:16 INFO mapred.JobClient:     Data-local map tasks=5
+19/01/16 10:03:16 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=145296
+19/01/16 10:03:16 INFO mapred.JobClient:   File Output Format Counters 
+19/01/16 10:03:16 INFO mapred.JobClient:     Bytes Written=11480
+19/01/16 10:03:16 INFO mapred.JobClient:   FileSystemCounters
+19/01/16 10:03:16 INFO mapred.JobClient:     FILE_BYTES_READ=13396112
+19/01/16 10:03:16 INFO mapred.JobClient:     HDFS_BYTES_READ=1000190022
+19/01/16 10:03:16 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=13898203
+19/01/16 10:03:16 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=11480
+19/01/16 10:03:16 INFO mapred.JobClient:   File Input Format Counters 
+19/01/16 10:03:16 INFO mapred.JobClient:     Bytes Read=1000187905
+19/01/16 10:03:16 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/16 10:03:16 INFO mapred.JobClient:     Map output materialized bytes=155797
+19/01/16 10:03:16 INFO mapred.JobClient:     Map input records=17253836
+19/01/16 10:03:16 INFO mapred.JobClient:     Reduce shuffle bytes=144929
+19/01/16 10:03:16 INFO mapred.JobClient:     Spilled Records=1031498
+19/01/16 10:03:16 INFO mapred.JobClient:     Map output bytes=1656048707
+19/01/16 10:03:16 INFO mapred.JobClient:     Total committed heap usage (bytes)=3271032832
+19/01/16 10:03:16 INFO mapred.JobClient:     CPU time spent (ms)=573820
+19/01/16 10:03:16 INFO mapred.JobClient:     Combine input records=168388670
+19/01/16 10:03:16 INFO mapred.JobClient:     SPLIT_RAW_BYTES=2117
+19/01/16 10:03:16 INFO mapred.JobClient:     Reduce input records=11862
+19/01/16 10:03:16 INFO mapred.JobClient:     Reduce input groups=840
+19/01/16 10:03:16 INFO mapred.JobClient:     Combine output records=546099
+19/01/16 10:03:16 INFO mapred.JobClient:     Physical memory (bytes) snapshot=4035878912
+19/01/16 10:03:16 INFO mapred.JobClient:     Reduce output records=840
+19/01/16 10:03:16 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=80598429696
+19/01/16 10:03:16 INFO mapred.JobClient:     Map output records=167854433
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:145
+-in ocall_long:60
+
+real	3m34.033s
+user	0m4.220s
+sys	0m9.982s
+2
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+In this project, we test wordcount with SGX!
+
+############################ Cache Hit ##########################
+
+0||1
+19/01/16 10:03:30 INFO input.FileInputFormat: Total input paths to process : 14
+19/01/16 10:03:30 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/01/16 10:03:30 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/01/16 10:03:30 INFO mapred.JobClient: Running job: job_201901141944_0265
+19/01/16 10:03:31 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/16 10:04:01 INFO mapred.JobClient:  map 2% reduce 0%
+19/01/16 10:04:04 INFO mapred.JobClient:  map 4% reduce 0%
+19/01/16 10:04:07 INFO mapred.JobClient:  map 6% reduce 0%
+19/01/16 10:04:09 INFO mapred.JobClient: Task Id : attempt_201901141944_0265_m_000004_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0265_m_000004_0: ############################ Cache Hit ##########################
+attempt_201901141944_0265_m_000004_0: 0||1
+attempt_201901141944_0265_m_000004_0: ret:-1
+attempt_201901141944_0265_m_000004_0: error
+attempt_201901141944_0265_m_000004_0: ret
+attempt_201901141944_0265_m_000004_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0265_m_000004_0: enclave path:enclave.signed.so
+attempt_201901141944_0265_m_000004_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0265_m_000004_0: ==in ocall_print:splitting
+attempt_201901141944_0265_m_000004_0: -in ocall_long:37
+attempt_201901141944_0265_m_000004_0: -in ocall_long:12
+attempt_201901141944_0265_m_000004_0: -in ocall_long:12
+attempt_201901141944_0265_m_000004_0: -in ocall_long:12
+19/01/16 10:04:11 INFO mapred.JobClient:  map 9% reduce 0%
+19/01/16 10:04:13 INFO mapred.JobClient: Task Id : attempt_201901141944_0265_m_000005_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0265_m_000005_0: ############################ Cache Hit ##########################
+attempt_201901141944_0265_m_000005_0: 0||1
+attempt_201901141944_0265_m_000005_0: ret:-1
+attempt_201901141944_0265_m_000005_0: error
+attempt_201901141944_0265_m_000005_0: ret
+attempt_201901141944_0265_m_000005_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0265_m_000005_0: enclave path:enclave.signed.so
+attempt_201901141944_0265_m_000005_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0265_m_000005_0: ==in ocall_print:splitting
+attempt_201901141944_0265_m_000005_0: -in ocall_long:37
+attempt_201901141944_0265_m_000005_0: -in ocall_long:12
+attempt_201901141944_0265_m_000005_0: -in ocall_long:12
+attempt_201901141944_0265_m_000005_0: -in ocall_long:12
+19/01/16 10:04:14 INFO mapred.JobClient:  map 13% reduce 0%
+19/01/16 10:04:17 INFO mapred.JobClient:  map 16% reduce 0%
+19/01/16 10:04:19 INFO mapred.JobClient:  map 17% reduce 0%
+19/01/16 10:04:20 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/16 10:04:22 INFO mapred.JobClient:  map 22% reduce 0%
+19/01/16 10:04:23 INFO mapred.JobClient:  map 25% reduce 0%
+19/01/16 10:04:25 INFO mapred.JobClient:  map 27% reduce 0%
+19/01/16 10:04:26 INFO mapred.JobClient:  map 29% reduce 0%
+19/01/16 10:04:28 INFO mapred.JobClient:  map 31% reduce 0%
+19/01/16 10:04:29 INFO mapred.JobClient:  map 32% reduce 2%
+19/01/16 10:04:31 INFO mapred.JobClient:  map 34% reduce 2%
+19/01/16 10:04:32 INFO mapred.JobClient:  map 35% reduce 2%
+19/01/16 10:04:34 INFO mapred.JobClient:  map 37% reduce 2%
+19/01/16 10:04:37 INFO mapred.JobClient:  map 39% reduce 2%
+19/01/16 10:04:37 INFO mapred.JobClient: Task Id : attempt_201901141944_0265_m_000008_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0265_m_000008_0: ############################ Cache Hit ##########################
+attempt_201901141944_0265_m_000008_0: 0||1
+attempt_201901141944_0265_m_000008_0: ret:-1
+attempt_201901141944_0265_m_000008_0: error
+attempt_201901141944_0265_m_000008_0: ret
+attempt_201901141944_0265_m_000008_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0265_m_000008_0: enclave path:enclave.signed.so
+attempt_201901141944_0265_m_000008_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0265_m_000008_0: ==in ocall_print:splitting
+attempt_201901141944_0265_m_000008_0: -in ocall_long:37
+attempt_201901141944_0265_m_000008_0: -in ocall_long:12
+attempt_201901141944_0265_m_000008_0: -in ocall_long:12
+attempt_201901141944_0265_m_000008_0: -in ocall_long:12
+19/01/16 10:04:38 INFO mapred.JobClient:  map 40% reduce 6%
+19/01/16 10:04:41 INFO mapred.JobClient:  map 41% reduce 6%
+19/01/16 10:04:43 INFO mapred.JobClient: Task Id : attempt_201901141944_0265_m_000009_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0265_m_000009_0: ############################ Cache Hit ##########################
+attempt_201901141944_0265_m_000009_0: 0||1
+attempt_201901141944_0265_m_000009_0: ret:-1
+attempt_201901141944_0265_m_000009_0: error
+attempt_201901141944_0265_m_000009_0: ret
+attempt_201901141944_0265_m_000009_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0265_m_000009_0: enclave path:enclave.signed.so
+attempt_201901141944_0265_m_000009_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0265_m_000009_0: ==in ocall_print:splitting
+attempt_201901141944_0265_m_000009_0: -in ocall_long:37
+attempt_201901141944_0265_m_000009_0: -in ocall_long:12
+attempt_201901141944_0265_m_000009_0: -in ocall_long:12
+attempt_201901141944_0265_m_000009_0: -in ocall_long:12
+19/01/16 10:04:44 INFO mapred.JobClient:  map 44% reduce 11%
+19/01/16 10:04:47 INFO mapred.JobClient:  map 46% reduce 11%
+19/01/16 10:04:50 INFO mapred.JobClient:  map 49% reduce 11%
+19/01/16 10:04:53 INFO mapred.JobClient:  map 52% reduce 13%
+19/01/16 10:04:56 INFO mapred.JobClient:  map 55% reduce 13%
+19/01/16 10:04:59 INFO mapred.JobClient:  map 58% reduce 13%
+19/01/16 10:05:01 INFO mapred.JobClient:  map 59% reduce 13%
+19/01/16 10:05:02 INFO mapred.JobClient:  map 62% reduce 13%
+19/01/16 10:05:04 INFO mapred.JobClient:  map 64% reduce 13%
+19/01/16 10:05:05 INFO mapred.JobClient:  map 66% reduce 13%
+19/01/16 10:05:07 INFO mapred.JobClient:  map 68% reduce 13%
+19/01/16 10:05:07 INFO mapred.JobClient: Task Id : attempt_201901141944_0265_m_000013_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0265_m_000013_0: ############################ Cache Hit ##########################
+attempt_201901141944_0265_m_000013_0: 0||1
+attempt_201901141944_0265_m_000013_0: ret:-1
+attempt_201901141944_0265_m_000013_0: error
+attempt_201901141944_0265_m_000013_0: ret
+attempt_201901141944_0265_m_000013_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0265_m_000013_0: enclave path:enclave.signed.so
+attempt_201901141944_0265_m_000013_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0265_m_000013_0: ==in ocall_print:splitting
+attempt_201901141944_0265_m_000013_0: -in ocall_long:37
+attempt_201901141944_0265_m_000013_0: -in ocall_long:12
+attempt_201901141944_0265_m_000013_0: -in ocall_long:12
+attempt_201901141944_0265_m_000013_0: -in ocall_long:12
+19/01/16 10:05:08 INFO mapred.JobClient:  map 70% reduce 15%
+19/01/16 10:05:10 INFO mapred.JobClient:  map 73% reduce 15%
+19/01/16 10:05:13 INFO mapred.JobClient:  map 76% reduce 15%
+19/01/16 10:05:13 INFO mapred.JobClient: Task Id : attempt_201901141944_0265_m_000014_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0265_m_000014_0: ############################ Cache Hit ##########################
+attempt_201901141944_0265_m_000014_0: 0||1
+attempt_201901141944_0265_m_000014_0: ret:-1
+attempt_201901141944_0265_m_000014_0: error
+attempt_201901141944_0265_m_000014_0: ret
+attempt_201901141944_0265_m_000014_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0265_m_000014_0: enclave path:enclave.signed.so
+attempt_201901141944_0265_m_000014_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0265_m_000014_0: ==in ocall_print:splitting
+attempt_201901141944_0265_m_000014_0: -in ocall_long:37
+attempt_201901141944_0265_m_000014_0: -in ocall_long:12
+attempt_201901141944_0265_m_000014_0: -in ocall_long:12
+attempt_201901141944_0265_m_000014_0: -in ocall_long:12
+19/01/16 10:05:14 INFO mapred.JobClient:  map 76% reduce 20%
+19/01/16 10:05:17 INFO mapred.JobClient:  map 77% reduce 20%
+19/01/16 10:05:19 INFO mapred.JobClient:  map 79% reduce 20%
+19/01/16 10:05:20 INFO mapred.JobClient:  map 80% reduce 20%
+19/01/16 10:05:22 INFO mapred.JobClient:  map 81% reduce 20%
+19/01/16 10:05:23 INFO mapred.JobClient:  map 83% reduce 20%
+19/01/16 10:05:26 INFO mapred.JobClient:  map 84% reduce 20%
+19/01/16 10:05:29 INFO mapred.JobClient:  map 85% reduce 26%
+19/01/16 10:05:32 INFO mapred.JobClient:  map 86% reduce 26%
+19/01/16 10:05:40 INFO mapred.JobClient:  map 95% reduce 26%
+19/01/16 10:05:43 INFO mapred.JobClient:  map 97% reduce 26%
+19/01/16 10:05:46 INFO mapred.JobClient:  map 98% reduce 26%
+19/01/16 10:05:47 INFO mapred.JobClient:  map 98% reduce 28%
+19/01/16 10:05:49 INFO mapred.JobClient:  map 99% reduce 28%
+19/01/16 10:05:52 INFO mapred.JobClient:  map 100% reduce 28%
+19/01/16 10:05:53 INFO mapred.JobClient:  map 100% reduce 31%
+19/01/16 10:06:02 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/16 10:06:14 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/16 10:06:19 INFO mapred.JobClient: Job complete: job_201901141944_0265
+19/01/16 10:06:19 INFO mapred.JobClient: Counters: 30
+19/01/16 10:06:19 INFO mapred.JobClient:   Job Counters 
+19/01/16 10:06:19 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/16 10:06:19 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=643168
+19/01/16 10:06:19 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/16 10:06:19 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/16 10:06:19 INFO mapred.JobClient:     Rack-local map tasks=19
+19/01/16 10:06:19 INFO mapred.JobClient:     Launched map tasks=24
+19/01/16 10:06:19 INFO mapred.JobClient:     Data-local map tasks=5
+19/01/16 10:06:19 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=112294
+19/01/16 10:06:19 INFO mapred.JobClient:   File Output Format Counters 
+19/01/16 10:06:19 INFO mapred.JobClient:     Bytes Written=11480
+19/01/16 10:06:19 INFO mapred.JobClient:   FileSystemCounters
+19/01/16 10:06:19 INFO mapred.JobClient:     FILE_BYTES_READ=13396112
+19/01/16 10:06:19 INFO mapred.JobClient:     HDFS_BYTES_READ=1000190022
+19/01/16 10:06:19 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=13898203
+19/01/16 10:06:19 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=11480
+19/01/16 10:06:19 INFO mapred.JobClient:   File Input Format Counters 
+19/01/16 10:06:19 INFO mapred.JobClient:     Bytes Read=1000187905
+19/01/16 10:06:19 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/16 10:06:19 INFO mapred.JobClient:     Map output materialized bytes=155797
+19/01/16 10:06:19 INFO mapred.JobClient:     Map input records=17253836
+19/01/16 10:06:19 INFO mapred.JobClient:     Reduce shuffle bytes=144945
+19/01/16 10:06:19 INFO mapred.JobClient:     Spilled Records=1031498
+19/01/16 10:06:19 INFO mapred.JobClient:     Map output bytes=1656048707
+19/01/16 10:06:19 INFO mapred.JobClient:     Total committed heap usage (bytes)=3245867008
+19/01/16 10:06:19 INFO mapred.JobClient:     CPU time spent (ms)=583150
+19/01/16 10:06:19 INFO mapred.JobClient:     Combine input records=168388670
+19/01/16 10:06:19 INFO mapred.JobClient:     SPLIT_RAW_BYTES=2117
+19/01/16 10:06:19 INFO mapred.JobClient:     Reduce input records=11862
+19/01/16 10:06:19 INFO mapred.JobClient:     Reduce input groups=840
+19/01/16 10:06:19 INFO mapred.JobClient:     Combine output records=546099
+19/01/16 10:06:19 INFO mapred.JobClient:     Physical memory (bytes) snapshot=4070469632
+19/01/16 10:06:19 INFO mapred.JobClient:     Reduce output records=840
+19/01/16 10:06:19 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=80582381568
+19/01/16 10:06:19 INFO mapred.JobClient:     Map output records=167854433
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:145
+-in ocall_long:60
+
+real	3m1.867s
+user	0m3.747s
+sys	0m10.018s
+3
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+In this project, we test wordcount with SGX!
+
+############################ Cache Hit ##########################
+
+0||1
+19/01/16 10:06:33 INFO input.FileInputFormat: Total input paths to process : 14
+19/01/16 10:06:33 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/01/16 10:06:33 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/01/16 10:06:34 INFO mapred.JobClient: Running job: job_201901141944_0266
+19/01/16 10:06:35 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/16 10:07:06 INFO mapred.JobClient:  map 1% reduce 0%
+19/01/16 10:07:09 INFO mapred.JobClient:  map 4% reduce 0%
+19/01/16 10:07:10 INFO mapred.JobClient:  map 5% reduce 0%
+19/01/16 10:07:11 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000004_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000004_0: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000004_0: 0||1
+attempt_201901141944_0266_m_000004_0: ret:-1
+attempt_201901141944_0266_m_000004_0: error
+attempt_201901141944_0266_m_000004_0: ret
+attempt_201901141944_0266_m_000004_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000004_0: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000004_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000004_0: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000004_0: -in ocall_long:37
+attempt_201901141944_0266_m_000004_0: -in ocall_long:12
+attempt_201901141944_0266_m_000004_0: -in ocall_long:12
+attempt_201901141944_0266_m_000004_0: -in ocall_long:12
+19/01/16 10:07:16 INFO mapred.JobClient:  map 10% reduce 0%
+19/01/16 10:07:18 INFO mapred.JobClient:  map 11% reduce 0%
+19/01/16 10:07:18 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000005_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000005_0: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000005_0: 0||1
+attempt_201901141944_0266_m_000005_0: ret:-1
+attempt_201901141944_0266_m_000005_0: error
+attempt_201901141944_0266_m_000005_0: ret
+attempt_201901141944_0266_m_000005_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000005_0: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000005_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000005_0: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000005_0: -in ocall_long:37
+attempt_201901141944_0266_m_000005_0: -in ocall_long:12
+attempt_201901141944_0266_m_000005_0: -in ocall_long:12
+attempt_201901141944_0266_m_000005_0: -in ocall_long:12
+19/01/16 10:07:19 INFO mapred.JobClient:  map 12% reduce 0%
+19/01/16 10:07:22 INFO mapred.JobClient:  map 13% reduce 0%
+19/01/16 10:07:24 INFO mapred.JobClient:  map 15% reduce 0%
+19/01/16 10:07:25 INFO mapred.JobClient:  map 16% reduce 0%
+19/01/16 10:07:29 INFO mapred.JobClient:  map 17% reduce 0%
+19/01/16 10:07:45 INFO mapred.JobClient:  map 21% reduce 0%
+19/01/16 10:07:48 INFO mapred.JobClient:  map 22% reduce 0%
+19/01/16 10:07:57 INFO mapred.JobClient:  map 24% reduce 0%
+19/01/16 10:08:00 INFO mapred.JobClient:  map 26% reduce 0%
+19/01/16 10:08:02 INFO mapred.JobClient:  map 28% reduce 0%
+19/01/16 10:08:03 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000008_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000008_0: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000008_0: 0||1
+attempt_201901141944_0266_m_000008_0: ret:-1
+attempt_201901141944_0266_m_000008_0: error
+attempt_201901141944_0266_m_000008_0: ret
+attempt_201901141944_0266_m_000008_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000008_0: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000008_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000008_0: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000008_0: -in ocall_long:37
+attempt_201901141944_0266_m_000008_0: -in ocall_long:12
+attempt_201901141944_0266_m_000008_0: -in ocall_long:12
+attempt_201901141944_0266_m_000008_0: -in ocall_long:12
+19/01/16 10:08:04 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/16 10:08:06 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000009_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000009_0: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000009_0: 0||1
+attempt_201901141944_0266_m_000009_0: ret:-1
+attempt_201901141944_0266_m_000009_0: error
+attempt_201901141944_0266_m_000009_0: ret
+attempt_201901141944_0266_m_000009_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000009_0: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000009_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000009_0: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000009_0: -in ocall_long:37
+attempt_201901141944_0266_m_000009_0: -in ocall_long:12
+attempt_201901141944_0266_m_000009_0: -in ocall_long:12
+attempt_201901141944_0266_m_000009_0: -in ocall_long:12
+19/01/16 10:08:07 INFO mapred.JobClient:  map 32% reduce 0%
+19/01/16 10:08:10 INFO mapred.JobClient:  map 34% reduce 6%
+19/01/16 10:08:13 INFO mapred.JobClient:  map 36% reduce 6%
+19/01/16 10:08:16 INFO mapred.JobClient:  map 40% reduce 8%
+19/01/16 10:08:19 INFO mapred.JobClient:  map 44% reduce 8%
+19/01/16 10:08:22 INFO mapred.JobClient:  map 46% reduce 8%
+19/01/16 10:08:25 INFO mapred.JobClient:  map 48% reduce 8%
+19/01/16 10:08:27 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000010_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000010_0: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000010_0: 0||1
+attempt_201901141944_0266_m_000010_0: ret:-1
+attempt_201901141944_0266_m_000010_0: error
+attempt_201901141944_0266_m_000010_0: ret
+attempt_201901141944_0266_m_000010_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000010_0: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000010_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000010_0: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000010_0: -in ocall_long:37
+attempt_201901141944_0266_m_000010_0: -in ocall_long:12
+attempt_201901141944_0266_m_000010_0: -in ocall_long:12
+attempt_201901141944_0266_m_000010_0: -in ocall_long:12
+19/01/16 10:08:28 INFO mapred.JobClient:  map 52% reduce 8%
+19/01/16 10:08:31 INFO mapred.JobClient:  map 55% reduce 13%
+19/01/16 10:08:33 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000011_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000011_0: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000011_0: 0||1
+attempt_201901141944_0266_m_000011_0: ret:-1
+attempt_201901141944_0266_m_000011_0: error
+attempt_201901141944_0266_m_000011_0: ret
+attempt_201901141944_0266_m_000011_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000011_0: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000011_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000011_0: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000011_0: -in ocall_long:37
+attempt_201901141944_0266_m_000011_0: -in ocall_long:12
+attempt_201901141944_0266_m_000011_0: -in ocall_long:12
+attempt_201901141944_0266_m_000011_0: -in ocall_long:12
+19/01/16 10:08:34 INFO mapred.JobClient:  map 58% reduce 13%
+19/01/16 10:08:37 INFO mapred.JobClient:  map 60% reduce 13%
+19/01/16 10:08:40 INFO mapred.JobClient:  map 62% reduce 13%
+19/01/16 10:08:43 INFO mapred.JobClient:  map 64% reduce 13%
+19/01/16 10:08:46 INFO mapred.JobClient:  map 65% reduce 17%
+19/01/16 10:08:49 INFO mapred.JobClient:  map 66% reduce 17%
+19/01/16 10:08:55 INFO mapred.JobClient:  map 68% reduce 20%
+19/01/16 10:08:57 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000014_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000014_0: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000014_0: 0||1
+attempt_201901141944_0266_m_000014_0: ret:-1
+attempt_201901141944_0266_m_000014_0: error
+attempt_201901141944_0266_m_000014_0: ret
+attempt_201901141944_0266_m_000014_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000014_0: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000014_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000014_0: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000014_0: -in ocall_long:37
+attempt_201901141944_0266_m_000014_0: -in ocall_long:12
+attempt_201901141944_0266_m_000014_0: -in ocall_long:12
+attempt_201901141944_0266_m_000014_0: -in ocall_long:12
+19/01/16 10:08:58 INFO mapred.JobClient:  map 71% reduce 20%
+19/01/16 10:09:01 INFO mapred.JobClient:  map 76% reduce 22%
+19/01/16 10:09:03 INFO mapred.JobClient: Task Id : attempt_201901141944_0266_m_000012_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0266_m_000012_1: ############################ Cache Hit ##########################
+attempt_201901141944_0266_m_000012_1: 0||1
+attempt_201901141944_0266_m_000012_1: ret:-1
+attempt_201901141944_0266_m_000012_1: error
+attempt_201901141944_0266_m_000012_1: ret
+attempt_201901141944_0266_m_000012_1: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0266_m_000012_1: enclave path:enclave.signed.so
+attempt_201901141944_0266_m_000012_1: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0266_m_000012_1: ==in ocall_print:splitting
+attempt_201901141944_0266_m_000012_1: -in ocall_long:37
+attempt_201901141944_0266_m_000012_1: -in ocall_long:12
+attempt_201901141944_0266_m_000012_1: -in ocall_long:12
+attempt_201901141944_0266_m_000012_1: -in ocall_long:12
+19/01/16 10:09:14 INFO mapred.JobClient:  map 81% reduce 22%
+19/01/16 10:09:15 INFO mapred.JobClient:  map 82% reduce 22%
+19/01/16 10:09:17 INFO mapred.JobClient:  map 85% reduce 22%
+19/01/16 10:09:18 INFO mapred.JobClient:  map 88% reduce 22%
+19/01/16 10:09:20 INFO mapred.JobClient:  map 89% reduce 22%
+19/01/16 10:09:22 INFO mapred.JobClient:  map 98% reduce 22%
+19/01/16 10:09:24 INFO mapred.JobClient:  map 98% reduce 24%
+19/01/16 10:09:25 INFO mapred.JobClient:  map 99% reduce 24%
+19/01/16 10:09:28 INFO mapred.JobClient:  map 100% reduce 24%
+19/01/16 10:09:33 INFO mapred.JobClient:  map 100% reduce 31%
+19/01/16 10:09:39 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/16 10:09:54 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/16 10:09:59 INFO mapred.JobClient: Job complete: job_201901141944_0266
+19/01/16 10:09:59 INFO mapred.JobClient: Counters: 30
+19/01/16 10:09:59 INFO mapred.JobClient:   Job Counters 
+19/01/16 10:09:59 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/16 10:09:59 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=901319
+19/01/16 10:09:59 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/16 10:09:59 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/16 10:09:59 INFO mapred.JobClient:     Rack-local map tasks=21
+19/01/16 10:09:59 INFO mapred.JobClient:     Launched map tasks=25
+19/01/16 10:09:59 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/16 10:09:59 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=121169
+19/01/16 10:09:59 INFO mapred.JobClient:   File Output Format Counters 
+19/01/16 10:09:59 INFO mapred.JobClient:     Bytes Written=11480
+19/01/16 10:09:59 INFO mapred.JobClient:   FileSystemCounters
+19/01/16 10:09:59 INFO mapred.JobClient:     FILE_BYTES_READ=13396112
+19/01/16 10:09:59 INFO mapred.JobClient:     HDFS_BYTES_READ=1000190022
+19/01/16 10:09:59 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=13898203
+19/01/16 10:09:59 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=11480
+19/01/16 10:09:59 INFO mapred.JobClient:   File Input Format Counters 
+19/01/16 10:09:59 INFO mapred.JobClient:     Bytes Read=1000187905
+19/01/16 10:09:59 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/16 10:09:59 INFO mapred.JobClient:     Map output materialized bytes=155797
+19/01/16 10:09:59 INFO mapred.JobClient:     Map input records=17253836
+19/01/16 10:09:59 INFO mapred.JobClient:     Reduce shuffle bytes=144772
+19/01/16 10:09:59 INFO mapred.JobClient:     Spilled Records=1031498
+19/01/16 10:09:59 INFO mapred.JobClient:     Map output bytes=1656048707
+19/01/16 10:09:59 INFO mapred.JobClient:     Total committed heap usage (bytes)=3241672704
+19/01/16 10:09:59 INFO mapred.JobClient:     CPU time spent (ms)=702480
+19/01/16 10:09:59 INFO mapred.JobClient:     Combine input records=168388670
+19/01/16 10:09:59 INFO mapred.JobClient:     SPLIT_RAW_BYTES=2117
+19/01/16 10:09:59 INFO mapred.JobClient:     Reduce input records=11862
+19/01/16 10:09:59 INFO mapred.JobClient:     Reduce input groups=840
+19/01/16 10:09:59 INFO mapred.JobClient:     Combine output records=546099
+19/01/16 10:09:59 INFO mapred.JobClient:     Physical memory (bytes) snapshot=4056301568
+19/01/16 10:09:59 INFO mapred.JobClient:     Reduce output records=840
+19/01/16 10:09:59 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=80729673728
+19/01/16 10:09:59 INFO mapred.JobClient:     Map output records=167854433
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:145
+-in ocall_long:60
+
+real	3m38.515s
+user	0m3.947s
+sys	0m9.980s
+4
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+In this project, we test wordcount with SGX!
+
+############################ Cache Hit ##########################
+
+0||1
+19/01/16 10:10:13 INFO input.FileInputFormat: Total input paths to process : 14
+19/01/16 10:10:13 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/01/16 10:10:13 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/01/16 10:10:13 INFO mapred.JobClient: Running job: job_201901141944_0267
+19/01/16 10:10:14 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/16 10:10:45 INFO mapred.JobClient:  map 1% reduce 0%
+19/01/16 10:10:48 INFO mapred.JobClient:  map 2% reduce 0%
+19/01/16 10:10:49 INFO mapred.JobClient:  map 3% reduce 0%
+19/01/16 10:10:50 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000005_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000005_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000005_0: 0||1
+attempt_201901141944_0267_m_000005_0: ret:-1
+attempt_201901141944_0267_m_000005_0: error
+attempt_201901141944_0267_m_000005_0: ret
+attempt_201901141944_0267_m_000005_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000005_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000005_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000005_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000005_0: -in ocall_long:37
+attempt_201901141944_0267_m_000005_0: -in ocall_long:12
+attempt_201901141944_0267_m_000005_0: -in ocall_long:12
+attempt_201901141944_0267_m_000005_0: -in ocall_long:12
+19/01/16 10:10:51 INFO mapred.JobClient:  map 6% reduce 0%
+19/01/16 10:10:54 INFO mapred.JobClient:  map 9% reduce 0%
+19/01/16 10:10:56 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000004_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000004_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000004_0: 0||1
+attempt_201901141944_0267_m_000004_0: ret:-1
+attempt_201901141944_0267_m_000004_0: error
+attempt_201901141944_0267_m_000004_0: ret
+attempt_201901141944_0267_m_000004_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000004_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000004_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000004_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000004_0: -in ocall_long:37
+attempt_201901141944_0267_m_000004_0: -in ocall_long:12
+attempt_201901141944_0267_m_000004_0: -in ocall_long:12
+attempt_201901141944_0267_m_000004_0: -in ocall_long:12
+19/01/16 10:10:57 INFO mapred.JobClient:  map 13% reduce 0%
+19/01/16 10:11:00 INFO mapred.JobClient:  map 16% reduce 0%
+19/01/16 10:11:03 INFO mapred.JobClient:  map 18% reduce 0%
+19/01/16 10:11:10 INFO mapred.JobClient:  map 19% reduce 0%
+19/01/16 10:11:13 INFO mapred.JobClient:  map 21% reduce 0%
+19/01/16 10:11:16 INFO mapred.JobClient:  map 23% reduce 0%
+19/01/16 10:11:20 INFO mapred.JobClient:  map 24% reduce 2%
+19/01/16 10:11:29 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000008_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000008_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000008_0: 0||1
+attempt_201901141944_0267_m_000008_0: ret:-1
+attempt_201901141944_0267_m_000008_0: error
+attempt_201901141944_0267_m_000008_0: ret
+attempt_201901141944_0267_m_000008_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000008_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000008_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000008_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000008_0: -in ocall_long:37
+attempt_201901141944_0267_m_000008_0: -in ocall_long:12
+attempt_201901141944_0267_m_000008_0: -in ocall_long:12
+attempt_201901141944_0267_m_000008_0: -in ocall_long:12
+19/01/16 10:11:37 INFO mapred.JobClient:  map 26% reduce 6%
+19/01/16 10:11:38 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000009_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000009_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000009_0: 0||1
+attempt_201901141944_0267_m_000009_0: ret:-1
+attempt_201901141944_0267_m_000009_0: error
+attempt_201901141944_0267_m_000009_0: ret
+attempt_201901141944_0267_m_000009_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000009_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000009_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000009_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000009_0: -in ocall_long:37
+attempt_201901141944_0267_m_000009_0: -in ocall_long:12
+attempt_201901141944_0267_m_000009_0: -in ocall_long:12
+attempt_201901141944_0267_m_000009_0: -in ocall_long:12
+19/01/16 10:11:46 INFO mapred.JobClient:  map 28% reduce 6%
+19/01/16 10:11:47 INFO mapred.JobClient:  map 30% reduce 6%
+19/01/16 10:12:00 INFO mapred.JobClient:  map 32% reduce 8%
+19/01/16 10:12:04 INFO mapred.JobClient:  map 37% reduce 8%
+19/01/16 10:12:15 INFO mapred.JobClient:  map 38% reduce 8%
+19/01/16 10:12:30 INFO mapred.JobClient:  map 43% reduce 8%
+19/01/16 10:12:32 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000011_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000011_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000011_0: 0||1
+attempt_201901141944_0267_m_000011_0: ret:-1
+attempt_201901141944_0267_m_000011_0: error
+attempt_201901141944_0267_m_000011_0: ret
+attempt_201901141944_0267_m_000011_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000011_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000011_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000011_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000011_0: -in ocall_long:37
+attempt_201901141944_0267_m_000011_0: -in ocall_long:12
+attempt_201901141944_0267_m_000011_0: -in ocall_long:12
+attempt_201901141944_0267_m_000011_0: -in ocall_long:12
+19/01/16 10:12:41 INFO mapred.JobClient:  map 48% reduce 8%
+19/01/16 10:12:41 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000012_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000012_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000012_0: 0||1
+attempt_201901141944_0267_m_000012_0: ret:-1
+attempt_201901141944_0267_m_000012_0: error
+attempt_201901141944_0267_m_000012_0: ret
+attempt_201901141944_0267_m_000012_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000012_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000012_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000012_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000012_0: -in ocall_long:37
+attempt_201901141944_0267_m_000012_0: -in ocall_long:12
+attempt_201901141944_0267_m_000012_0: -in ocall_long:12
+attempt_201901141944_0267_m_000012_0: -in ocall_long:12
+19/01/16 10:12:43 INFO mapred.JobClient:  map 50% reduce 8%
+19/01/16 10:12:50 INFO mapred.JobClient:  map 50% reduce 11%
+19/01/16 10:12:52 INFO mapred.JobClient:  map 52% reduce 11%
+19/01/16 10:13:08 INFO mapred.JobClient:  map 53% reduce 13%
+19/01/16 10:13:09 INFO mapred.JobClient:  map 53% reduce 15%
+19/01/16 10:13:15 INFO mapred.JobClient:  map 54% reduce 15%
+19/01/16 10:13:18 INFO mapred.JobClient:  map 55% reduce 15%
+19/01/16 10:14:03 INFO mapred.JobClient:  map 56% reduce 17%
+19/01/16 10:14:06 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000014_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000014_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000014_0: 0||1
+attempt_201901141944_0267_m_000014_0: ret:-1
+attempt_201901141944_0267_m_000014_0: error
+attempt_201901141944_0267_m_000014_0: ret
+attempt_201901141944_0267_m_000014_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000014_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000014_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000014_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000014_0: -in ocall_long:37
+attempt_201901141944_0267_m_000014_0: -in ocall_long:12
+attempt_201901141944_0267_m_000014_0: -in ocall_long:12
+attempt_201901141944_0267_m_000014_0: -in ocall_long:12
+19/01/16 10:14:12 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000013_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000013_0: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000013_0: 0||1
+attempt_201901141944_0267_m_000013_0: ret:-1
+attempt_201901141944_0267_m_000013_0: error
+attempt_201901141944_0267_m_000013_0: ret
+attempt_201901141944_0267_m_000013_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000013_0: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000013_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000013_0: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000013_0: -in ocall_long:37
+attempt_201901141944_0267_m_000013_0: -in ocall_long:12
+attempt_201901141944_0267_m_000013_0: -in ocall_long:12
+attempt_201901141944_0267_m_000013_0: -in ocall_long:12
+19/01/16 10:14:13 INFO mapred.JobClient:  map 60% reduce 17%
+19/01/16 10:14:15 INFO mapred.JobClient:  map 61% reduce 17%
+19/01/16 10:14:16 INFO mapred.JobClient:  map 62% reduce 17%
+19/01/16 10:14:18 INFO mapred.JobClient:  map 63% reduce 17%
+19/01/16 10:14:19 INFO mapred.JobClient: Task Id : attempt_201901141944_0267_m_000001_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0267_m_000001_1: ############################ Cache Hit ##########################
+attempt_201901141944_0267_m_000001_1: 0||1
+attempt_201901141944_0267_m_000001_1: ret:-1
+attempt_201901141944_0267_m_000001_1: error
+attempt_201901141944_0267_m_000001_1: ret
+attempt_201901141944_0267_m_000001_1: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0267_m_000001_1: enclave path:enclave.signed.so
+attempt_201901141944_0267_m_000001_1: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0267_m_000001_1: ==in ocall_print:splitting
+attempt_201901141944_0267_m_000001_1: -in ocall_long:37
+attempt_201901141944_0267_m_000001_1: -in ocall_long:12
+attempt_201901141944_0267_m_000001_1: -in ocall_long:12
+attempt_201901141944_0267_m_000001_1: -in ocall_long:12
+19/01/16 10:14:21 INFO mapred.JobClient:  map 65% reduce 17%
+19/01/16 10:14:22 INFO mapred.JobClient:  map 67% reduce 17%
+19/01/16 10:14:24 INFO mapred.JobClient:  map 68% reduce 17%
+19/01/16 10:14:25 INFO mapred.JobClient:  map 70% reduce 17%
+19/01/16 10:14:27 INFO mapred.JobClient:  map 71% reduce 17%
+19/01/16 10:14:29 INFO mapred.JobClient:  map 72% reduce 17%
+19/01/16 10:14:31 INFO mapred.JobClient:  map 73% reduce 17%
+19/01/16 10:14:32 INFO mapred.JobClient:  map 74% reduce 17%
+19/01/16 10:14:33 INFO mapred.JobClient:  map 75% reduce 17%
+19/01/16 10:14:35 INFO mapred.JobClient:  map 76% reduce 17%
+19/01/16 10:14:37 INFO mapred.JobClient:  map 77% reduce 17%
+19/01/16 10:14:38 INFO mapred.JobClient:  map 79% reduce 17%
+19/01/16 10:14:43 INFO mapred.JobClient:  map 79% reduce 22%
+19/01/16 10:14:44 INFO mapred.JobClient:  map 80% reduce 22%
+19/01/16 10:14:46 INFO mapred.JobClient:  map 81% reduce 22%
+19/01/16 10:14:51 INFO mapred.JobClient:  map 81% reduce 24%
+19/01/16 10:14:59 INFO mapred.JobClient:  map 83% reduce 26%
+19/01/16 10:15:02 INFO mapred.JobClient:  map 87% reduce 26%
+19/01/16 10:15:06 INFO mapred.JobClient:  map 92% reduce 26%
+19/01/16 10:15:22 INFO mapred.JobClient:  map 93% reduce 26%
+19/01/16 10:15:25 INFO mapred.JobClient:  map 94% reduce 28%
+19/01/16 10:15:28 INFO mapred.JobClient:  map 95% reduce 28%
+19/01/16 10:15:29 INFO mapred.JobClient:  map 97% reduce 28%
+19/01/16 10:15:31 INFO mapred.JobClient:  map 98% reduce 28%
+19/01/16 10:15:32 INFO mapred.JobClient:  map 100% reduce 28%
+19/01/16 10:15:43 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/16 10:15:58 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/16 10:16:03 INFO mapred.JobClient: Job complete: job_201901141944_0267
+19/01/16 10:16:03 INFO mapred.JobClient: Counters: 30
+19/01/16 10:16:03 INFO mapred.JobClient:   Job Counters 
+19/01/16 10:16:03 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/16 10:16:03 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=1427311
+19/01/16 10:16:03 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/16 10:16:03 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/16 10:16:03 INFO mapred.JobClient:     Rack-local map tasks=24
+19/01/16 10:16:03 INFO mapred.JobClient:     Launched map tasks=26
+19/01/16 10:16:03 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/16 10:16:03 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=286691
+19/01/16 10:16:03 INFO mapred.JobClient:   File Output Format Counters 
+19/01/16 10:16:03 INFO mapred.JobClient:     Bytes Written=11480
+19/01/16 10:16:03 INFO mapred.JobClient:   FileSystemCounters
+19/01/16 10:16:03 INFO mapred.JobClient:     FILE_BYTES_READ=13396112
+19/01/16 10:16:03 INFO mapred.JobClient:     HDFS_BYTES_READ=1000190022
+19/01/16 10:16:03 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=13898203
+19/01/16 10:16:03 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=11480
+19/01/16 10:16:03 INFO mapred.JobClient:   File Input Format Counters 
+19/01/16 10:16:03 INFO mapred.JobClient:     Bytes Read=1000187905
+19/01/16 10:16:03 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/16 10:16:03 INFO mapred.JobClient:     Map output materialized bytes=155797
+19/01/16 10:16:03 INFO mapred.JobClient:     Map input records=17253836
+19/01/16 10:16:03 INFO mapred.JobClient:     Reduce shuffle bytes=144929
+19/01/16 10:16:03 INFO mapred.JobClient:     Spilled Records=1031498
+19/01/16 10:16:03 INFO mapred.JobClient:     Map output bytes=1656048707
+19/01/16 10:16:03 INFO mapred.JobClient:     Total committed heap usage (bytes)=3237478400
+19/01/16 10:16:03 INFO mapred.JobClient:     CPU time spent (ms)=642610
+19/01/16 10:16:03 INFO mapred.JobClient:     Combine input records=168388670
+19/01/16 10:16:03 INFO mapred.JobClient:     SPLIT_RAW_BYTES=2117
+19/01/16 10:16:03 INFO mapred.JobClient:     Reduce input records=11862
+19/01/16 10:16:03 INFO mapred.JobClient:     Reduce input groups=840
+19/01/16 10:16:03 INFO mapred.JobClient:     Combine output records=546099
+19/01/16 10:16:03 INFO mapred.JobClient:     Physical memory (bytes) snapshot=4080418816
+19/01/16 10:16:03 INFO mapred.JobClient:     Reduce output records=840
+19/01/16 10:16:03 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=80830877696
+19/01/16 10:16:03 INFO mapred.JobClient:     Map output records=167854433
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:145
+-in ocall_long:60
+
+real	6m2.985s
+user	0m4.087s
+sys	0m10.083s
+5
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+In this project, we test wordcount with SGX!
+
+############################ Cache Hit ##########################
+
+0||1
+19/01/16 10:16:18 INFO input.FileInputFormat: Total input paths to process : 14
+19/01/16 10:16:18 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/01/16 10:16:18 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/01/16 10:16:18 INFO mapred.JobClient: Running job: job_201901141944_0268
+19/01/16 10:16:19 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/16 10:16:49 INFO mapred.JobClient:  map 1% reduce 0%
+19/01/16 10:16:52 INFO mapred.JobClient:  map 4% reduce 0%
+19/01/16 10:16:54 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000003_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0268_m_000003_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000003_0: 0||1
+attempt_201901141944_0268_m_000003_0: ret:-1
+attempt_201901141944_0268_m_000003_0: error
+attempt_201901141944_0268_m_000003_0: ret
+attempt_201901141944_0268_m_000003_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000003_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000003_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000003_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000003_0: -in ocall_long:37
+attempt_201901141944_0268_m_000003_0: -in ocall_long:12
+attempt_201901141944_0268_m_000003_0: -in ocall_long:12
+attempt_201901141944_0268_m_000003_0: -in ocall_long:12
+19/01/16 10:16:55 INFO mapred.JobClient:  map 7% reduce 0%
+19/01/16 10:16:58 INFO mapred.JobClient:  map 10% reduce 0%
+19/01/16 10:17:00 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000002_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0268_m_000002_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000002_0: 0||1
+attempt_201901141944_0268_m_000002_0: ret:-1
+attempt_201901141944_0268_m_000002_0: error
+attempt_201901141944_0268_m_000002_0: ret
+attempt_201901141944_0268_m_000002_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000002_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000002_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000002_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000002_0: -in ocall_long:37
+attempt_201901141944_0268_m_000002_0: -in ocall_long:12
+attempt_201901141944_0268_m_000002_0: -in ocall_long:12
+attempt_201901141944_0268_m_000002_0: -in ocall_long:12
+19/01/16 10:17:05 INFO mapred.JobClient:  map 16% reduce 0%
+19/01/16 10:17:20 INFO mapred.JobClient:  map 21% reduce 0%
+19/01/16 10:17:24 INFO mapred.JobClient:  map 23% reduce 0%
+19/01/16 10:17:27 INFO mapred.JobClient:  map 24% reduce 0%
+19/01/16 10:17:30 INFO mapred.JobClient:  map 25% reduce 0%
+19/01/16 10:17:33 INFO mapred.JobClient:  map 25% reduce 6%
+19/01/16 10:17:34 INFO mapred.JobClient:  map 26% reduce 6%
+19/01/16 10:17:37 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000008_0, Status : FAILED
+attempt_201901141944_0268_m_000008_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000008_0: 0||1
+attempt_201901141944_0268_m_000008_0: ret:-1
+attempt_201901141944_0268_m_000008_0: error
+attempt_201901141944_0268_m_000008_0: ret
+attempt_201901141944_0268_m_000008_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000008_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000008_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000008_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000008_0: -in ocall_long:37
+attempt_201901141944_0268_m_000008_0: -in ocall_long:12
+attempt_201901141944_0268_m_000008_0: -in ocall_long:12
+attempt_201901141944_0268_m_000008_0: -in ocall_long:12
+19/01/16 10:17:47 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000009_0, Status : FAILED
+attempt_201901141944_0268_m_000009_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000009_0: 0||1
+attempt_201901141944_0268_m_000009_0: ret:-1
+attempt_201901141944_0268_m_000009_0: error
+attempt_201901141944_0268_m_000009_0: ret
+attempt_201901141944_0268_m_000009_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000009_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000009_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000009_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000009_0: -in ocall_long:37
+attempt_201901141944_0268_m_000009_0: -in ocall_long:12
+attempt_201901141944_0268_m_000009_0: -in ocall_long:12
+attempt_201901141944_0268_m_000009_0: -in ocall_long:12
+19/01/16 10:17:49 INFO mapred.JobClient:  map 27% reduce 6%
+19/01/16 10:17:52 INFO mapred.JobClient:  map 29% reduce 6%
+19/01/16 10:17:55 INFO mapred.JobClient:  map 30% reduce 6%
+19/01/16 10:17:57 INFO mapred.JobClient:  map 30% reduce 8%
+19/01/16 10:17:59 INFO mapred.JobClient:  map 31% reduce 8%
+19/01/16 10:18:06 INFO mapred.JobClient:  map 32% reduce 8%
+19/01/16 10:18:11 INFO mapred.JobClient:  map 37% reduce 8%
+19/01/16 10:18:36 INFO mapred.JobClient:  map 38% reduce 8%
+19/01/16 10:18:36 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000011_0, Status : FAILED
+attempt_201901141944_0268_m_000011_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000011_0: 0||1
+attempt_201901141944_0268_m_000011_0: ret:-1
+attempt_201901141944_0268_m_000011_0: error
+attempt_201901141944_0268_m_000011_0: ret
+attempt_201901141944_0268_m_000011_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000011_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000011_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000011_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000011_0: -in ocall_long:37
+attempt_201901141944_0268_m_000011_0: -in ocall_long:12
+attempt_201901141944_0268_m_000011_0: -in ocall_long:12
+attempt_201901141944_0268_m_000011_0: -in ocall_long:12
+19/01/16 10:19:23 INFO mapred.JobClient:  map 42% reduce 8%
+19/01/16 10:19:51 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000012_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0268_m_000012_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000012_0: 0||1
+attempt_201901141944_0268_m_000012_0: ret:-1
+attempt_201901141944_0268_m_000012_0: error
+attempt_201901141944_0268_m_000012_0: ret
+attempt_201901141944_0268_m_000012_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000012_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000012_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000012_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000012_0: -in ocall_long:37
+attempt_201901141944_0268_m_000012_0: -in ocall_long:12
+attempt_201901141944_0268_m_000012_0: -in ocall_long:12
+attempt_201901141944_0268_m_000012_0: -in ocall_long:12
+19/01/16 10:22:56 INFO mapred.JobClient:  map 49% reduce 8%
+19/01/16 10:23:02 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000013_0, Status : FAILED
+attempt_201901141944_0268_m_000013_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000013_0: 0||1
+attempt_201901141944_0268_m_000013_0: ret:-1
+attempt_201901141944_0268_m_000013_0: error
+attempt_201901141944_0268_m_000013_0: ret
+attempt_201901141944_0268_m_000013_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000013_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000013_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000013_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000013_0: -in ocall_long:37
+attempt_201901141944_0268_m_000013_0: -in ocall_long:12
+attempt_201901141944_0268_m_000013_0: -in ocall_long:12
+attempt_201901141944_0268_m_000013_0: -in ocall_long:12
+19/01/16 10:24:44 INFO mapred.JobClient:  map 53% reduce 17%
+19/01/16 10:24:48 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000014_0, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0268_m_000014_0: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000014_0: 0||1
+attempt_201901141944_0268_m_000014_0: ret:-1
+attempt_201901141944_0268_m_000014_0: error
+attempt_201901141944_0268_m_000014_0: ret
+attempt_201901141944_0268_m_000014_0: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000014_0: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000014_0: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000014_0: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000014_0: -in ocall_long:37
+attempt_201901141944_0268_m_000014_0: -in ocall_long:12
+attempt_201901141944_0268_m_000014_0: -in ocall_long:12
+attempt_201901141944_0268_m_000014_0: -in ocall_long:12
+19/01/16 10:25:09 INFO mapred.JobClient:  map 61% reduce 17%
+19/01/16 10:25:14 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000000_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0268_m_000000_1: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000000_1: 0||1
+attempt_201901141944_0268_m_000000_1: ret:-1
+attempt_201901141944_0268_m_000000_1: error
+attempt_201901141944_0268_m_000000_1: ret
+attempt_201901141944_0268_m_000000_1: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000000_1: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000000_1: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000000_1: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000000_1: -in ocall_long:37
+attempt_201901141944_0268_m_000000_1: -in ocall_long:12
+attempt_201901141944_0268_m_000000_1: -in ocall_long:12
+attempt_201901141944_0268_m_000000_1: -in ocall_long:12
+19/01/16 10:25:16 INFO mapred.JobClient: Task Id : attempt_201901141944_0268_m_000001_1, Status : FAILED
+java.lang.Throwable: Child Error
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:271)
+Caused by: java.io.IOException: Task process exit with nonzero status of 1.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:258)
+
+attempt_201901141944_0268_m_000001_1: ############################ Cache Hit ##########################
+attempt_201901141944_0268_m_000001_1: 0||1
+attempt_201901141944_0268_m_000001_1: ret:-1
+attempt_201901141944_0268_m_000001_1: error
+attempt_201901141944_0268_m_000001_1: ret
+attempt_201901141944_0268_m_000001_1: start initialize_enclavesgx_create_enclave
+attempt_201901141944_0268_m_000001_1: enclave path:enclave.signed.so
+attempt_201901141944_0268_m_000001_1: end_sgx_create_enclave:ret==0==in ocall_print:read ok
+attempt_201901141944_0268_m_000001_1: ==in ocall_print:splitting
+attempt_201901141944_0268_m_000001_1: -in ocall_long:37
+attempt_201901141944_0268_m_000001_1: -in ocall_long:12
+attempt_201901141944_0268_m_000001_1: -in ocall_long:12
+attempt_201901141944_0268_m_000001_1: -in ocall_long:12
+19/01/16 10:25:17 INFO mapred.JobClient:  map 69% reduce 17%
+19/01/16 10:25:20 INFO mapred.JobClient:  map 72% reduce 17%
+19/01/16 10:25:29 INFO mapred.JobClient:  map 76% reduce 17%
+19/01/16 10:25:30 INFO mapred.JobClient:  map 77% reduce 17%
+19/01/16 10:25:33 INFO mapred.JobClient:  map 78% reduce 17%
+19/01/16 10:25:38 INFO mapred.JobClient:  map 79% reduce 17%
+19/01/16 10:25:42 INFO mapred.JobClient:  map 80% reduce 17%
+19/01/16 10:25:46 INFO mapred.JobClient:  map 80% reduce 22%
+19/01/16 10:25:54 INFO mapred.JobClient:  map 87% reduce 26%
+19/01/16 10:26:13 INFO mapred.JobClient:  map 88% reduce 28%
+19/01/16 10:26:23 INFO mapred.JobClient:  map 89% reduce 28%
+19/01/16 10:27:01 INFO mapred.JobClient:  map 94% reduce 28%
+19/01/16 10:27:02 INFO mapred.JobClient:  map 99% reduce 28%
+19/01/16 10:27:08 INFO mapred.JobClient:  map 100% reduce 28%
+19/01/16 10:27:17 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/16 10:27:26 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/16 10:27:31 INFO mapred.JobClient: Job complete: job_201901141944_0268
+19/01/16 10:27:31 INFO mapred.JobClient: Counters: 30
+19/01/16 10:27:31 INFO mapred.JobClient:   Job Counters 
+19/01/16 10:27:31 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/16 10:27:31 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=2204575
+19/01/16 10:27:31 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/16 10:27:31 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/16 10:27:31 INFO mapred.JobClient:     Rack-local map tasks=25
+19/01/16 10:27:31 INFO mapred.JobClient:     Launched map tasks=27
+19/01/16 10:27:31 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/16 10:27:31 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=602643
+19/01/16 10:27:31 INFO mapred.JobClient:   File Output Format Counters 
+19/01/16 10:27:31 INFO mapred.JobClient:     Bytes Written=11480
+19/01/16 10:27:31 INFO mapred.JobClient:   FileSystemCounters
+19/01/16 10:27:31 INFO mapred.JobClient:     FILE_BYTES_READ=13396112
+19/01/16 10:27:31 INFO mapred.JobClient:     HDFS_BYTES_READ=1000190022
+19/01/16 10:27:31 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=13898203
+19/01/16 10:27:31 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=11480
+19/01/16 10:27:31 INFO mapred.JobClient:   File Input Format Counters 
+19/01/16 10:27:31 INFO mapred.JobClient:     Bytes Read=1000187905
+19/01/16 10:27:31 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/16 10:27:31 INFO mapred.JobClient:     Map output materialized bytes=155797
+19/01/16 10:27:31 INFO mapred.JobClient:     Map input records=17253836
+19/01/16 10:27:31 INFO mapred.JobClient:     Reduce shuffle bytes=144929
+19/01/16 10:27:31 INFO mapred.JobClient:     Spilled Records=1031498
+19/01/16 10:27:31 INFO mapred.JobClient:     Map output bytes=1656048707
+19/01/16 10:27:31 INFO mapred.JobClient:     Total committed heap usage (bytes)=3235905536
+19/01/16 10:27:31 INFO mapred.JobClient:     CPU time spent (ms)=592570
+19/01/16 10:27:31 INFO mapred.JobClient:     Combine input records=168388670
+19/01/16 10:27:31 INFO mapred.JobClient:     SPLIT_RAW_BYTES=2117
+19/01/16 10:27:31 INFO mapred.JobClient:     Reduce input records=11862
+19/01/16 10:27:31 INFO mapred.JobClient:     Reduce input groups=840
+19/01/16 10:27:31 INFO mapred.JobClient:     Combine output records=546099
+19/01/16 10:27:31 INFO mapred.JobClient:     Physical memory (bytes) snapshot=4086222848
+19/01/16 10:27:31 INFO mapred.JobClient:     Reduce output records=840
+19/01/16 10:27:31 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=80894693376
+19/01/16 10:27:31 INFO mapred.JobClient:     Map output records=167854433
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:145
+-in ocall_long:60
+
+real	11m26.636s
+user	0m5.049s
+sys	0m10.981s

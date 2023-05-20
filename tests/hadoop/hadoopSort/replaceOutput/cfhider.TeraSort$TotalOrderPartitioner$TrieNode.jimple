@@ -1,0 +1,31 @@
+abstract class cfhider.TeraSort$TotalOrderPartitioner$TrieNode extends java.lang.Object
+{
+    private int level;
+    public java.lang.String Cuuid;
+
+    void <init>(int)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode r0;
+        int i0;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$TrieNode;
+        i0 := @parameter0: int;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        r0.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: int level> = i0;
+        return;
+    }
+
+    abstract int findPartition(org.apache.hadoop.io.Text);
+
+    abstract void print(java.io.PrintStream) throws java.io.IOException;
+
+    int getLevel()
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$TrieNode r0;
+        int $i0;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$TrieNode;
+        $i0 = r0.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: int level>;
+        return $i0;
+    }
+}

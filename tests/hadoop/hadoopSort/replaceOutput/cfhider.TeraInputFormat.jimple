@@ -1,0 +1,166 @@
+public class cfhider.TeraInputFormat extends org.apache.hadoop.mapred.FileInputFormat
+{
+    static final java.lang.String PARTITION_FILENAME;
+    static final java.lang.String SAMPLE_SIZE;
+    private static org.apache.hadoop.mapred.JobConf lastConf;
+    private static org.apache.hadoop.mapred.InputSplit[] lastResult;
+    public java.lang.String Cuuid;
+
+    public void <init>()
+    {
+        cfhider.TeraInputFormat r0;
+
+        r0 := @this: cfhider.TeraInputFormat;
+        specialinvoke r0.<org.apache.hadoop.mapred.FileInputFormat: void <init>()>();
+        return;
+    }
+
+    public static void writePartitionFile(org.apache.hadoop.mapred.JobConf, org.apache.hadoop.fs.Path) throws java.io.IOException
+    {
+        org.apache.hadoop.mapred.JobConf r0;
+        org.apache.hadoop.fs.Path r1;
+        cfhider.TeraInputFormat $r2, r3;
+        cfhider.TeraInputFormat$TextSampler r4, $r12;
+        org.apache.hadoop.io.Text r5, r6, r11, $r13, $r14;
+        int i0, i2, i4, i6, i7, i8, $i9, $i10, $i12, $i13, $i14;
+        long l1, l3, l5, $l11, $l15, $l16;
+        org.apache.hadoop.mapred.InputSplit[] r7;
+        org.apache.hadoop.mapred.RecordReader r8;
+        org.apache.hadoop.io.NullWritable r9;
+        org.apache.hadoop.io.Text[] r10;
+        org.apache.hadoop.mapred.InputSplit $r15;
+        boolean $z0, $z1;
+        byte $b17;
+        org.apache.hadoop.fs.FileSystem r16;
+        org.apache.hadoop.io.SequenceFile$Writer r17;
+
+        r0 := @parameter0: org.apache.hadoop.mapred.JobConf;
+        r1 := @parameter1: org.apache.hadoop.fs.Path;
+        $r2 = new cfhider.TeraInputFormat;
+        specialinvoke $r2.<cfhider.TeraInputFormat: void <init>()>();
+        r3 = $r2;
+        $r12 = new cfhider.TeraInputFormat$TextSampler;
+        specialinvoke $r12.<cfhider.TeraInputFormat$TextSampler: void <init>()>();
+        r4 = $r12;
+        $r13 = new org.apache.hadoop.io.Text;
+        specialinvoke $r13.<org.apache.hadoop.io.Text: void <init>()>();
+        r5 = $r13;
+        $r14 = new org.apache.hadoop.io.Text;
+        specialinvoke $r14.<org.apache.hadoop.io.Text: void <init>()>();
+        r6 = $r14;
+        i0 = virtualinvoke r0.<org.apache.hadoop.mapred.JobConf: int getNumReduceTasks()>();
+        l1 = virtualinvoke r0.<org.apache.hadoop.mapred.JobConf: long getLong(java.lang.String,long)>("terasort.partitions.sample", 100000L);
+        $i9 = virtualinvoke r0.<org.apache.hadoop.mapred.JobConf: int getNumMapTasks()>();
+        r7 = virtualinvoke r3.<cfhider.TeraInputFormat: org.apache.hadoop.mapred.InputSplit[] getSplits(org.apache.hadoop.mapred.JobConf,int)>(r0, $i9);
+        $i10 = lengthof r7;
+        i2 = staticinvoke <java.lang.Math: int min(int,int)>(10, $i10);
+        $l11 = (long) i2;
+        l3 = l1 / $l11;
+        $i12 = lengthof r7;
+        i4 = $i12 / i2;
+        l5 = 0L;
+        i6 = 0;
+
+     label0:
+        if i6 >= i2 goto label3;
+
+        $i13 = i4 * i6;
+        $r15 = r7[$i13];
+        r8 = virtualinvoke r3.<cfhider.TeraInputFormat: org.apache.hadoop.mapred.RecordReader getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)>($r15, r0, null);
+
+     label1:
+        $z0 = interfaceinvoke r8.<org.apache.hadoop.mapred.RecordReader: boolean next(java.lang.Object,java.lang.Object)>(r5, r6);
+        if $z0 == 0 goto label2;
+
+        virtualinvoke r4.<cfhider.TeraInputFormat$TextSampler: void addKey(org.apache.hadoop.io.Text)>(r5);
+        l5 = l5 + 1L;
+        $i14 = i6 + 1;
+        $l15 = (long) $i14;
+        $l16 = $l15 * l3;
+        $b17 = $l16 cmp l5;
+        if $b17 > 0 goto label1;
+
+        goto label2;
+
+     label2:
+        i6 = i6 + 1;
+        goto label0;
+
+     label3:
+        r16 = virtualinvoke r1.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.FileSystem getFileSystem(org.apache.hadoop.conf.Configuration)>(r0);
+        $z1 = virtualinvoke r16.<org.apache.hadoop.fs.FileSystem: boolean exists(org.apache.hadoop.fs.Path)>(r1);
+        if $z1 == 0 goto label4;
+
+        virtualinvoke r16.<org.apache.hadoop.fs.FileSystem: boolean delete(org.apache.hadoop.fs.Path,boolean)>(r1, 0);
+
+     label4:
+        r17 = staticinvoke <org.apache.hadoop.io.SequenceFile: org.apache.hadoop.io.SequenceFile$Writer createWriter(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.conf.Configuration,org.apache.hadoop.fs.Path,java.lang.Class,java.lang.Class)>(r16, r0, r1, class "org/apache/hadoop/io/Text", class "org/apache/hadoop/io/NullWritable");
+        r9 = staticinvoke <org.apache.hadoop.io.NullWritable: org.apache.hadoop.io.NullWritable get()>();
+        r10 = virtualinvoke r4.<cfhider.TeraInputFormat$TextSampler: org.apache.hadoop.io.Text[] createPartitions(int)>(i0);
+        i7 = lengthof r10;
+        i8 = 0;
+
+     label5:
+        if i8 >= i7 goto label6;
+
+        r11 = r10[i8];
+        virtualinvoke r17.<org.apache.hadoop.io.SequenceFile$Writer: void append(org.apache.hadoop.io.Writable,org.apache.hadoop.io.Writable)>(r11, r9);
+        i8 = i8 + 1;
+        goto label5;
+
+     label6:
+        virtualinvoke r17.<org.apache.hadoop.io.SequenceFile$Writer: void close()>();
+        return;
+    }
+
+    public org.apache.hadoop.mapred.RecordReader getRecordReader(org.apache.hadoop.mapred.InputSplit, org.apache.hadoop.mapred.JobConf, org.apache.hadoop.mapred.Reporter) throws java.io.IOException
+    {
+        cfhider.TeraInputFormat r0;
+        org.apache.hadoop.mapred.InputSplit r1;
+        org.apache.hadoop.mapred.JobConf r2;
+        org.apache.hadoop.mapred.Reporter r3;
+        cfhider.TeraInputFormat$TeraRecordReader $r4;
+        org.apache.hadoop.mapred.FileSplit $r5;
+
+        r0 := @this: cfhider.TeraInputFormat;
+        r1 := @parameter0: org.apache.hadoop.mapred.InputSplit;
+        r2 := @parameter1: org.apache.hadoop.mapred.JobConf;
+        r3 := @parameter2: org.apache.hadoop.mapred.Reporter;
+        $r4 = new cfhider.TeraInputFormat$TeraRecordReader;
+        $r5 = (org.apache.hadoop.mapred.FileSplit) r1;
+        specialinvoke $r4.<cfhider.TeraInputFormat$TeraRecordReader: void <init>(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapred.FileSplit)>(r2, $r5);
+        return $r4;
+    }
+
+    public org.apache.hadoop.mapred.InputSplit[] getSplits(org.apache.hadoop.mapred.JobConf, int) throws java.io.IOException
+    {
+        cfhider.TeraInputFormat r0;
+        org.apache.hadoop.mapred.JobConf r1, r2, r3;
+        int i0;
+        org.apache.hadoop.mapred.InputSplit[] $r4, $r5, $r6;
+
+        r0 := @this: cfhider.TeraInputFormat;
+        r1 := @parameter0: org.apache.hadoop.mapred.JobConf;
+        i0 := @parameter1: int;
+        r2 = r1;
+        r3 = <cfhider.TeraInputFormat: org.apache.hadoop.mapred.JobConf lastConf>;
+        if r2 != r3 goto label0;
+
+        $r4 = <cfhider.TeraInputFormat: org.apache.hadoop.mapred.InputSplit[] lastResult>;
+        return $r4;
+
+     label0:
+        <cfhider.TeraInputFormat: org.apache.hadoop.mapred.JobConf lastConf> = r1;
+        $r5 = specialinvoke r0.<org.apache.hadoop.mapred.FileInputFormat: org.apache.hadoop.mapred.InputSplit[] getSplits(org.apache.hadoop.mapred.JobConf,int)>(r1, i0);
+        <cfhider.TeraInputFormat: org.apache.hadoop.mapred.InputSplit[] lastResult> = $r5;
+        $r6 = <cfhider.TeraInputFormat: org.apache.hadoop.mapred.InputSplit[] lastResult>;
+        return $r6;
+    }
+
+    static void <clinit>()
+    {
+        <cfhider.TeraInputFormat: org.apache.hadoop.mapred.JobConf lastConf> = null;
+        <cfhider.TeraInputFormat: org.apache.hadoop.mapred.InputSplit[] lastResult> = null;
+        return;
+    }
+}

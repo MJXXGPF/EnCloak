@@ -1,0 +1,176 @@
+public class cfhider.PiEstimator$PiMapper extends org.apache.hadoop.mapred.MapReduceBase implements org.apache.hadoop.mapred.Mapper
+{
+    public java.lang.String Cuuid;
+
+    public void <init>()
+    {
+        cfhider.PiEstimator$PiMapper r0;
+
+        r0 := @this: cfhider.PiEstimator$PiMapper;
+        specialinvoke r0.<org.apache.hadoop.mapred.MapReduceBase: void <init>()>();
+        return;
+    }
+
+    public void map(org.apache.hadoop.io.LongWritable, org.apache.hadoop.io.LongWritable, org.apache.hadoop.mapred.OutputCollector, org.apache.hadoop.mapred.Reporter) throws java.io.IOException
+    {
+        cfhider.PiEstimator$PiMapper r0;
+        org.apache.hadoop.io.LongWritable r1, r2, $r14, $r16;
+        org.apache.hadoop.mapred.OutputCollector r3;
+        org.apache.hadoop.mapred.Reporter r4;
+        cfhider.PiEstimator$HaltonSequence $r5, r6;
+        long l0, l1, l2, $l3, $l4, $l7, invokeLineNo, tmpResult1, tmpResult80, invokeLineNoTest;
+        double[] r7;
+        double d0, d1, $d2, $d3, $d4, $d5, $d6;
+        byte $b5, $b6, $b8;
+        java.lang.StringBuilder $r8, $r9, $r10, $r11;
+        java.lang.String $r12, getUUID, invokeUUID, getUUIDTest, invokeUUIDTest;
+        org.apache.hadoop.io.BooleanWritable $r13, $r15;
+        boolean branchInvokeResult, branchInvokeResultTest;
+        invoker.sgx_invoker sgxInvoker, sgxInvokerTest;
+
+        r0 := @this: cfhider.PiEstimator$PiMapper;
+        r1 := @parameter0: org.apache.hadoop.io.LongWritable;
+        r2 := @parameter1: org.apache.hadoop.io.LongWritable;
+        r3 := @parameter2: org.apache.hadoop.mapred.OutputCollector;
+        r4 := @parameter3: org.apache.hadoop.mapred.Reporter;
+        tmpResult80 = 0L;
+        tmpResult1 = 0L;
+        $r5 = null;
+        r6 = null;
+        l0 = 0L;
+        l1 = 0L;
+        l2 = 0L;
+        r7 = null;
+        d0 = 0.0;
+        d1 = 0.0;
+        $l3 = 0L;
+        $l4 = 0L;
+        $b5 = 0;
+        $d2 = 0.0;
+        $d3 = 0.0;
+        $d4 = 0.0;
+        $d5 = 0.0;
+        $d6 = 0.0;
+        $b6 = 0;
+        $l7 = 0L;
+        $b8 = 0;
+        $r8 = null;
+        $r9 = null;
+        $r10 = null;
+        $r11 = null;
+        $r12 = null;
+        $r13 = null;
+        $r14 = null;
+        $r15 = null;
+        $r16 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        $r5 = new cfhider.PiEstimator$HaltonSequence;
+        $l3 = virtualinvoke r1.<org.apache.hadoop.io.LongWritable: long get()>();
+        specialinvoke $r5.<cfhider.PiEstimator$HaltonSequence: void <init>(long)>($l3);
+        r6 = $r5;
+        l0 = 0L;
+        l1 = 0L;
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(long)>(l0);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(long)>(invokeLineNo);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 0L);
+
+     label0:
+        tmpResult1 = virtualinvoke r2.<org.apache.hadoop.io.LongWritable: long get()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(long)>(tmpResult1);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(long)>(l1);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(long)>(invokeLineNo);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 1L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 3L);
+        if branchInvokeResult == 1 goto label4;
+
+        r7 = virtualinvoke r6.<cfhider.PiEstimator$HaltonSequence: double[] nextPoint()>();
+        $d2 = r7[0];
+        d0 = $d2 - 0.5;
+        $d3 = r7[1];
+        d1 = $d3 - 0.5;
+        $d4 = d0 * d0;
+        $d5 = d1 * d1;
+        $d6 = $d4 + $d5;
+        $b6 = $d6 cmpl 0.25;
+        if $b6 <= 0 goto label1;
+
+        l1 = l1 + 1L;
+        goto label2;
+
+     label1:
+        l0 = l0 + 1L;
+
+     label2:
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 4L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 7L);
+        if branchInvokeResult == 1 goto label3;
+
+        $r8 = new java.lang.StringBuilder;
+        specialinvoke $r8.<java.lang.StringBuilder: void <init>()>();
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Generated ");
+        tmpResult80 = virtualinvoke sgxInvoker.<invoker.sgx_invoker: long getLongValue(java.lang.String,int,long)>(getUUID, 0, 8L);
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(tmpResult80);
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" samples.");
+        $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>();
+        interfaceinvoke r4.<org.apache.hadoop.mapred.Reporter: void setStatus(java.lang.String)>($r12);
+
+     label3:
+        goto label0;
+
+     label4:
+        $r13 = new org.apache.hadoop.io.BooleanWritable;
+        specialinvoke $r13.<org.apache.hadoop.io.BooleanWritable: void <init>(boolean)>(1);
+        $r14 = new org.apache.hadoop.io.LongWritable;
+        specialinvoke $r14.<org.apache.hadoop.io.LongWritable: void <init>(long)>(l0);
+        interfaceinvoke r3.<org.apache.hadoop.mapred.OutputCollector: void collect(java.lang.Object,java.lang.Object)>($r13, $r14);
+        $r15 = new org.apache.hadoop.io.BooleanWritable;
+        specialinvoke $r15.<org.apache.hadoop.io.BooleanWritable: void <init>(boolean)>(0);
+        $r16 = new org.apache.hadoop.io.LongWritable;
+        specialinvoke $r16.<org.apache.hadoop.io.LongWritable: void <init>(long)>(l1);
+        interfaceinvoke r3.<org.apache.hadoop.mapred.OutputCollector: void collect(java.lang.Object,java.lang.Object)>($r15, $r16);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return;
+    }
+
+    public volatile void map(java.lang.Object, java.lang.Object, org.apache.hadoop.mapred.OutputCollector, org.apache.hadoop.mapred.Reporter) throws java.io.IOException
+    {
+        cfhider.PiEstimator$PiMapper r0;
+        java.lang.Object r1, r2;
+        org.apache.hadoop.mapred.OutputCollector r3;
+        org.apache.hadoop.mapred.Reporter r4;
+        org.apache.hadoop.io.LongWritable $r5, $r6;
+        long invokeLineNo, invokeLineNoTest;
+        java.lang.String getUUID, invokeUUID, getUUIDTest, invokeUUIDTest;
+        boolean branchInvokeResult, branchInvokeResultTest;
+        invoker.sgx_invoker sgxInvoker, sgxInvokerTest;
+
+        r0 := @this: cfhider.PiEstimator$PiMapper;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.lang.Object;
+        r3 := @parameter2: org.apache.hadoop.mapred.OutputCollector;
+        r4 := @parameter3: org.apache.hadoop.mapred.Reporter;
+        $r5 = null;
+        $r6 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        $r5 = (org.apache.hadoop.io.LongWritable) r1;
+        $r6 = (org.apache.hadoop.io.LongWritable) r2;
+        virtualinvoke r0.<cfhider.PiEstimator$PiMapper: void map(org.apache.hadoop.io.LongWritable,org.apache.hadoop.io.LongWritable,org.apache.hadoop.mapred.OutputCollector,org.apache.hadoop.mapred.Reporter)>($r5, $r6, r3, r4);
+        return;
+    }
+}

@@ -1,0 +1,42 @@
+1
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+In this project, we test wordcount with SGX!
+
+19/05/08 16:33:12 INFO input.FileInputFormat: Total input paths to process : 18
+19/05/08 16:33:12 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/05/08 16:33:12 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/05/08 16:33:13 INFO mapred.JobClient: Running job: job_201905081620_0003
+19/05/08 16:33:14 INFO mapred.JobClient:  map 0% reduce 0%
+19/05/08 16:33:30 INFO mapred.JobClient:  map 4% reduce 0%
+19/05/08 16:33:31 INFO mapred.JobClient:  map 9% reduce 0%
+19/05/08 16:33:33 INFO mapred.JobClient:  map 12% reduce 0%
+19/05/08 16:33:34 INFO mapred.JobClient:  map 14% reduce 0%
+19/05/08 16:33:36 INFO mapred.JobClient:  map 17% reduce 0%
+19/05/08 16:33:37 INFO mapred.JobClient:  map 20% reduce 0%
+19/05/08 16:33:39 INFO mapred.JobClient:  map 21% reduce 0%
+19/05/08 16:33:40 INFO mapred.JobClient:  map 24% reduce 0%
+19/05/08 16:33:43 INFO mapred.JobClient:  map 27% reduce 0%
+19/05/08 16:33:46 INFO mapred.JobClient:  map 29% reduce 0%
+19/05/08 16:33:48 INFO mapred.JobClient:  map 34% reduce 3%
+19/05/08 16:33:49 INFO mapred.JobClient:  map 37% reduce 3%
+19/05/08 16:33:51 INFO mapred.JobClient:  map 39% reduce 3%
+19/05/08 16:33:52 INFO mapred.JobClient:  map 42% reduce 3%
+19/05/08 16:33:54 INFO mapred.JobClient:  map 44% reduce 3%
+19/05/08 16:33:55 INFO mapred.JobClient:  map 47% reduce 3%
+
+real	0m43.485s
+user	0m1.429s
+sys	0m0.047s
+2
+Deleted hdfs://ThinkPad-1:9000/user/xidian/wc_output1G
+
+real	0m0.122s
+user	0m0.115s
+sys	0m0.011s
+3
+In this project, we test wordcount with SGX!
+
+
+real	0m0.279s
+user	0m0.364s
+sys	0m0.023s

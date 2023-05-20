@@ -1,0 +1,174 @@
+1
+Deleted hdfs://ThinkPad-1:9000/user/xidian/terasort_output01
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fd71ba2e27d, pid=21962, tid=140562315818752
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopSort/hs_err_pid21962.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run30.sh: line 18: 21962 Aborted                 (core dumped) hadoop jar 30/ReplaceTestForHadoopTeraSort.jar terasort_input01 terasort_output01
+
+real	0m12.256s
+user	0m2.622s
+sys	0m9.625s
+2
+rmr: cannot remove terasort_output01: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f5cf4b9e27d, pid=22078, tid=140037678364416
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopSort/hs_err_pid22078.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run30.sh: line 18: 22078 Aborted                 (core dumped) hadoop jar 30/ReplaceTestForHadoopTeraSort.jar terasort_input01 terasort_output01
+
+real	0m12.367s
+user	0m2.452s
+sys	0m9.909s
+3
+rmr: cannot remove terasort_output01: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f7a9419627d, pid=22195, tid=140164904892160
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopSort/hs_err_pid22195.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run30.sh: line 18: 22195 Aborted                 (core dumped) hadoop jar 30/ReplaceTestForHadoopTeraSort.jar terasort_input01 terasort_output01
+
+real	0m12.610s
+user	0m2.559s
+sys	0m10.042s
+4
+rmr: cannot remove terasort_output01: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f940460e27d, pid=22308, tid=140274162808576
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopSort/hs_err_pid22308.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run30.sh: line 18: 22308 Aborted                 (core dumped) hadoop jar 30/ReplaceTestForHadoopTeraSort.jar terasort_input01 terasort_output01
+
+real	0m12.425s
+user	0m2.696s
+sys	0m9.730s
+5
+rmr: cannot remove terasort_output01: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fca6943b27d, pid=22421, tid=140507666183936
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopSort/hs_err_pid22421.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run30.sh: line 18: 22421 Aborted                 (core dumped) hadoop jar 30/ReplaceTestForHadoopTeraSort.jar terasort_input01 terasort_output01
+
+real	0m12.337s
+user	0m2.566s
+sys	0m9.774s
+6
+rmr: cannot remove terasort_output01: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f1b504df27d, pid=22533, tid=139755745593088
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/ZyStBleforSGX/cfhider/tests/hadoop/hadoopSort/hs_err_pid22533.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1run30.sh: line 18: 22533 Aborted                 (core dumped) hadoop jar 30/ReplaceTestForHadoopTeraSort.jar terasort_input01 terasort_output01
+
+real	0m12.430s
+user	0m2.496s
+sys	0m9.930s

@@ -1,0 +1,112 @@
+public class cfhider.WordCount$IntSumReducer extends org.apache.hadoop.mapreduce.Reducer
+{
+    private org.apache.hadoop.io.IntWritable result;
+    public java.lang.String Cuuid;
+
+    public void <init>()
+    {
+        cfhider.WordCount$IntSumReducer r0;
+        org.apache.hadoop.io.IntWritable $r1;
+
+        r0 := @this: cfhider.WordCount$IntSumReducer;
+        specialinvoke r0.<org.apache.hadoop.mapreduce.Reducer: void <init>()>();
+        $r1 = new org.apache.hadoop.io.IntWritable;
+        specialinvoke $r1.<org.apache.hadoop.io.IntWritable: void <init>()>();
+        r0.<cfhider.WordCount$IntSumReducer: org.apache.hadoop.io.IntWritable result> = $r1;
+        return;
+    }
+
+    public void reduce(org.apache.hadoop.io.Text, java.lang.Iterable, org.apache.hadoop.mapreduce.Reducer$Context) throws java.io.IOException, java.lang.InterruptedException
+    {
+        cfhider.WordCount$IntSumReducer r0;
+        org.apache.hadoop.io.Text r1;
+        java.lang.Iterable r2;
+        org.apache.hadoop.mapreduce.Reducer$Context r3;
+        int i0, $i1;
+        java.util.Iterator r4;
+        org.apache.hadoop.io.IntWritable r5, $r7, $r8;
+        boolean $z0, branchInvokeResult, tmpResult0;
+        java.lang.Object $r6;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.WordCount$IntSumReducer;
+        r1 := @parameter0: org.apache.hadoop.io.Text;
+        r2 := @parameter1: java.lang.Iterable;
+        r3 := @parameter2: org.apache.hadoop.mapreduce.Reducer$Context;
+        tmpResult0 = 0;
+        i0 = 0;
+        r4 = null;
+        r5 = null;
+        $z0 = 0;
+        $r6 = null;
+        $i1 = 0;
+        $r7 = null;
+        $r8 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        i0 = 0;
+        r4 = interfaceinvoke r2.<java.lang.Iterable: java.util.Iterator iterator()>();
+
+     label0:
+        tmpResult0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult0);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(branchInvokeResult);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 0L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 1L);
+        if branchInvokeResult == 1 goto label1;
+
+        $r6 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>();
+        r5 = (org.apache.hadoop.io.IntWritable) $r6;
+        $i1 = virtualinvoke r5.<org.apache.hadoop.io.IntWritable: int get()>();
+        i0 = i0 + $i1;
+        goto label0;
+
+     label1:
+        $r7 = r0.<cfhider.WordCount$IntSumReducer: org.apache.hadoop.io.IntWritable result>;
+        virtualinvoke $r7.<org.apache.hadoop.io.IntWritable: void set(int)>(i0);
+        $r8 = r0.<cfhider.WordCount$IntSumReducer: org.apache.hadoop.io.IntWritable result>;
+        virtualinvoke r3.<org.apache.hadoop.mapreduce.Reducer$Context: void write(java.lang.Object,java.lang.Object)>(r1, $r8);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return;
+    }
+
+    public volatile void reduce(java.lang.Object, java.lang.Iterable, org.apache.hadoop.mapreduce.Reducer$Context) throws java.io.IOException, java.lang.InterruptedException
+    {
+        cfhider.WordCount$IntSumReducer r0;
+        java.lang.Object r1;
+        java.lang.Iterable r2;
+        org.apache.hadoop.mapreduce.Reducer$Context r3;
+        org.apache.hadoop.io.Text $r4;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.WordCount$IntSumReducer;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.lang.Iterable;
+        r3 := @parameter2: org.apache.hadoop.mapreduce.Reducer$Context;
+        $r4 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        $r4 = (org.apache.hadoop.io.Text) r1;
+        virtualinvoke r0.<cfhider.WordCount$IntSumReducer: void reduce(org.apache.hadoop.io.Text,java.lang.Iterable,org.apache.hadoop.mapreduce.Reducer$Context)>($r4, r2, r3);
+        return;
+    }
+}

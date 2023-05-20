@@ -1,0 +1,1175 @@
+public class invoker.sgx_invoker extends java.lang.Object
+{
+    public static final int N;
+    int[] intArray;
+    int intTail;
+    double[] doubleArray;
+    int doubleTail;
+    float[] floatArray;
+    int floatTail;
+    long[] longArray;
+    int longTail;
+    char[] charArray;
+    int charTail;
+    byte[] byteArray;
+    int byteTail;
+    int[] iarr;
+    double[] darr;
+    float[] farr;
+    char[] carr;
+    long[] larr;
+    byte[] barr;
+    int[][] miarr;
+    double[][] mdarr;
+    float[][] mfarr;
+    char[][] mcarr;
+    long[][] mlarr;
+    byte[][] mbarr;
+    int size_i;
+    int size_d;
+    int size_f;
+    int size_c;
+    int size_l;
+    int size_b;
+    long counter;
+    java.lang.String cuuid;
+
+    static void <clinit>()
+    {
+        java.lang.Exception r0, $r2;
+        java.lang.StringBuilder $r1, $r5;
+        java.io.PrintStream $r3;
+        java.lang.String $r4, $r6;
+
+     label0:
+        staticinvoke <java.lang.System: void loadLibrary(java.lang.String)>("SGX");
+
+     label1:
+        goto label3;
+
+     label2:
+        $r2 := @caughtexception;
+        r0 = $r2;
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+        $r1 = new java.lang.StringBuilder;
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>(java.lang.String)>("invoker");
+        $r4 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("java.library.path");
+        $r5 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r4);
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>($r6);
+        virtualinvoke r0.<java.lang.Exception: void printStackTrace()>();
+
+     label3:
+        return;
+
+        catch java.lang.Exception from label0 to label1 with label2;
+    }
+
+    public void <init>()
+    {
+        invoker.sgx_invoker r0;
+        int[] $r1, $r7;
+        double[] $r2, $r8;
+        float[] $r3, $r9;
+        long[] $r4, $r11;
+        char[] $r5, $r10;
+        byte[] $r6, $r12;
+        int[][] $r13;
+        double[][] $r14;
+        float[][] $r15;
+        char[][] $r16;
+        long[][] $r17;
+        byte[][] $r18;
+
+        r0 := @this: invoker.sgx_invoker;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        $r1 = newarray (int)[20];
+        r0.<invoker.sgx_invoker: int[] intArray> = $r1;
+        r0.<invoker.sgx_invoker: int intTail> = 0;
+        $r2 = newarray (double)[20];
+        r0.<invoker.sgx_invoker: double[] doubleArray> = $r2;
+        r0.<invoker.sgx_invoker: int doubleTail> = 0;
+        $r3 = newarray (float)[20];
+        r0.<invoker.sgx_invoker: float[] floatArray> = $r3;
+        r0.<invoker.sgx_invoker: int floatTail> = 0;
+        $r4 = newarray (long)[20];
+        r0.<invoker.sgx_invoker: long[] longArray> = $r4;
+        r0.<invoker.sgx_invoker: int longTail> = 0;
+        $r5 = newarray (char)[20];
+        r0.<invoker.sgx_invoker: char[] charArray> = $r5;
+        r0.<invoker.sgx_invoker: int charTail> = 0;
+        $r6 = newarray (byte)[20];
+        r0.<invoker.sgx_invoker: byte[] byteArray> = $r6;
+        r0.<invoker.sgx_invoker: int byteTail> = 0;
+        $r7 = newarray (int)[100];
+        r0.<invoker.sgx_invoker: int[] iarr> = $r7;
+        $r8 = newarray (double)[100];
+        r0.<invoker.sgx_invoker: double[] darr> = $r8;
+        $r9 = newarray (float)[100];
+        r0.<invoker.sgx_invoker: float[] farr> = $r9;
+        $r10 = newarray (char)[100];
+        r0.<invoker.sgx_invoker: char[] carr> = $r10;
+        $r11 = newarray (long)[100];
+        r0.<invoker.sgx_invoker: long[] larr> = $r11;
+        $r12 = newarray (byte)[100];
+        r0.<invoker.sgx_invoker: byte[] barr> = $r12;
+        $r13 = newmultiarray (int)[100][100];
+        r0.<invoker.sgx_invoker: int[][] miarr> = $r13;
+        $r14 = newmultiarray (double)[100][100];
+        r0.<invoker.sgx_invoker: double[][] mdarr> = $r14;
+        $r15 = newmultiarray (float)[100][100];
+        r0.<invoker.sgx_invoker: float[][] mfarr> = $r15;
+        $r16 = newmultiarray (char)[100][100];
+        r0.<invoker.sgx_invoker: char[][] mcarr> = $r16;
+        $r17 = newmultiarray (long)[100][100];
+        r0.<invoker.sgx_invoker: long[][] mlarr> = $r17;
+        $r18 = newmultiarray (byte)[100][100];
+        r0.<invoker.sgx_invoker: byte[][] mbarr> = $r18;
+        r0.<invoker.sgx_invoker: int size_i> = 0;
+        r0.<invoker.sgx_invoker: int size_d> = 0;
+        r0.<invoker.sgx_invoker: int size_f> = 0;
+        r0.<invoker.sgx_invoker: int size_c> = 0;
+        r0.<invoker.sgx_invoker: int size_l> = 0;
+        r0.<invoker.sgx_invoker: int size_b> = 0;
+        r0.<invoker.sgx_invoker: long counter> = -1L;
+        r0.<invoker.sgx_invoker: java.lang.String cuuid> = null;
+        return;
+    }
+
+    public static native int print_ms();
+
+    public static native int init();
+
+    public static native int destroy();
+
+    public static native int commitInt(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native float commitFloat(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native double commitDouble(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native char commitChar(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native byte commitByte(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native long commitLong(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native int commitBranch(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native int commitUpdate(long, int[], int, double[], int, float[], int, long[], int, char[], int, byte[], int, java.lang.String);
+
+    public static native int[] commitIntArray(long, java.lang.String);
+
+    public static native double[] commitDoubleArray(long, java.lang.String);
+
+    public static native byte[] commitByteArray(long, java.lang.String);
+
+    public static native int commitUpdateMutliArray(long, java.lang.String, java.lang.String);
+
+    public static native int initValue(java.lang.String, java.lang.String, long);
+
+    public static native int deleteValue(java.lang.String, java.lang.String, long);
+
+    public static native void initArray(java.lang.String, int, int, int);
+
+    public static native void initNode(java.lang.String, int, int);
+
+    public void sgx_invoker()
+    {
+        invoker.sgx_invoker r0;
+
+        r0 := @this: invoker.sgx_invoker;
+        return;
+    }
+
+    public void clear()
+    {
+        invoker.sgx_invoker r0;
+
+        r0 := @this: invoker.sgx_invoker;
+        r0.<invoker.sgx_invoker: int intTail> = 0;
+        r0.<invoker.sgx_invoker: int doubleTail> = 0;
+        r0.<invoker.sgx_invoker: int floatTail> = 0;
+        r0.<invoker.sgx_invoker: int longTail> = 0;
+        r0.<invoker.sgx_invoker: int charTail> = 0;
+        r0.<invoker.sgx_invoker: int byteTail> = 0;
+        r0.<invoker.sgx_invoker: int size_i> = 0;
+        r0.<invoker.sgx_invoker: int size_d> = 0;
+        r0.<invoker.sgx_invoker: int size_f> = 0;
+        r0.<invoker.sgx_invoker: int size_c> = 0;
+        r0.<invoker.sgx_invoker: int size_l> = 0;
+        r0.<invoker.sgx_invoker: int size_b> = 0;
+        return;
+    }
+
+    public void add(java.lang.Object)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.Object r1;
+        int $i0, $i1, $i2, $i3, $i4;
+        int[] $r3, $r4;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.Object;
+        if r1 != null goto label0;
+
+        $r3 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i0 = r0.<invoker.sgx_invoker: int intTail>;
+        $i1 = $i0 + 1;
+        r0.<invoker.sgx_invoker: int intTail> = $i1;
+        $r3[$i0] = 0;
+        goto label1;
+
+     label0:
+        $r4 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i2 = r0.<invoker.sgx_invoker: int intTail>;
+        $i3 = $i2 + 1;
+        r0.<invoker.sgx_invoker: int intTail> = $i3;
+        $i4 = virtualinvoke r1.<java.lang.Object: int hashCode()>();
+        $r4[$i2] = $i4;
+
+     label1:
+        return;
+    }
+
+    public void add(int)
+    {
+        invoker.sgx_invoker r0;
+        int i0, $i1, $i2;
+        int[] $r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        i0 := @parameter0: int;
+        $r2 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i1 = r0.<invoker.sgx_invoker: int intTail>;
+        $i2 = $i1 + 1;
+        r0.<invoker.sgx_invoker: int intTail> = $i2;
+        $r2[$i1] = i0;
+        return;
+    }
+
+    public void add(double)
+    {
+        invoker.sgx_invoker r0;
+        double d0;
+        int $i0, $i1;
+        double[] $r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        d0 := @parameter0: double;
+        $r2 = r0.<invoker.sgx_invoker: double[] doubleArray>;
+        $i0 = r0.<invoker.sgx_invoker: int doubleTail>;
+        $i1 = $i0 + 1;
+        r0.<invoker.sgx_invoker: int doubleTail> = $i1;
+        $r2[$i0] = d0;
+        return;
+    }
+
+    public void add(float)
+    {
+        invoker.sgx_invoker r0;
+        float f0;
+        int $i0, $i1;
+        float[] $r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        f0 := @parameter0: float;
+        $r2 = r0.<invoker.sgx_invoker: float[] floatArray>;
+        $i0 = r0.<invoker.sgx_invoker: int floatTail>;
+        $i1 = $i0 + 1;
+        r0.<invoker.sgx_invoker: int floatTail> = $i1;
+        $r2[$i0] = f0;
+        return;
+    }
+
+    public void add(long)
+    {
+        invoker.sgx_invoker r0;
+        long l0;
+        int $i1, $i2;
+        long[] $r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        l0 := @parameter0: long;
+        $r2 = r0.<invoker.sgx_invoker: long[] longArray>;
+        $i1 = r0.<invoker.sgx_invoker: int longTail>;
+        $i2 = $i1 + 1;
+        r0.<invoker.sgx_invoker: int longTail> = $i2;
+        $r2[$i1] = l0;
+        return;
+    }
+
+    public void add(char)
+    {
+        invoker.sgx_invoker r0;
+        char c0;
+        int $i1, $i2;
+        char[] $r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        c0 := @parameter0: char;
+        $r2 = r0.<invoker.sgx_invoker: char[] charArray>;
+        $i1 = r0.<invoker.sgx_invoker: int charTail>;
+        $i2 = $i1 + 1;
+        r0.<invoker.sgx_invoker: int charTail> = $i2;
+        $r2[$i1] = c0;
+        return;
+    }
+
+    public void add(byte)
+    {
+        invoker.sgx_invoker r0;
+        byte b0;
+        int $i1, $i2;
+        int[] $r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        b0 := @parameter0: byte;
+        $r2 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i1 = r0.<invoker.sgx_invoker: int intTail>;
+        $i2 = $i1 + 1;
+        r0.<invoker.sgx_invoker: int intTail> = $i2;
+        $r2[$i1] = b0;
+        return;
+    }
+
+    public void add(int[])
+    {
+        invoker.sgx_invoker r0;
+        int[] r1, $r2;
+        int $i0, $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: int[];
+        $i0 = lengthof r1;
+        r0.<invoker.sgx_invoker: int size_i> = $i0;
+        $r2 = r0.<invoker.sgx_invoker: int[] iarr>;
+        $i1 = r0.<invoker.sgx_invoker: int size_i>;
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, 0, $r2, 0, $i1);
+        return;
+    }
+
+    public void add(double[])
+    {
+        invoker.sgx_invoker r0;
+        double[] r1, $r2;
+        int $i0, $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: double[];
+        $i0 = lengthof r1;
+        r0.<invoker.sgx_invoker: int size_d> = $i0;
+        $r2 = r0.<invoker.sgx_invoker: double[] darr>;
+        $i1 = r0.<invoker.sgx_invoker: int size_d>;
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, 0, $r2, 0, $i1);
+        return;
+    }
+
+    public void add(float[])
+    {
+        invoker.sgx_invoker r0;
+        float[] r1, $r2;
+        int $i0, $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: float[];
+        $i0 = lengthof r1;
+        r0.<invoker.sgx_invoker: int size_f> = $i0;
+        $r2 = r0.<invoker.sgx_invoker: float[] farr>;
+        $i1 = r0.<invoker.sgx_invoker: int size_f>;
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, 0, $r2, 0, $i1);
+        return;
+    }
+
+    public void add(char[])
+    {
+        invoker.sgx_invoker r0;
+        char[] r1, $r2;
+        int $i0, $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: char[];
+        $i0 = lengthof r1;
+        r0.<invoker.sgx_invoker: int size_c> = $i0;
+        $r2 = r0.<invoker.sgx_invoker: char[] carr>;
+        $i1 = r0.<invoker.sgx_invoker: int size_c>;
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, 0, $r2, 0, $i1);
+        return;
+    }
+
+    public void add(long[])
+    {
+        invoker.sgx_invoker r0;
+        long[] r1, $r2;
+        int $i0, $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: long[];
+        $i0 = lengthof r1;
+        r0.<invoker.sgx_invoker: int size_l> = $i0;
+        $r2 = r0.<invoker.sgx_invoker: long[] larr>;
+        $i1 = r0.<invoker.sgx_invoker: int size_l>;
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, 0, $r2, 0, $i1);
+        return;
+    }
+
+    public void add(byte[])
+    {
+        invoker.sgx_invoker r0;
+        byte[] r1, $r2;
+        int $i0, $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: byte[];
+        $i0 = lengthof r1;
+        r0.<invoker.sgx_invoker: int size_b> = $i0;
+        $r2 = r0.<invoker.sgx_invoker: byte[] barr>;
+        $i1 = r0.<invoker.sgx_invoker: int size_b>;
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, 0, $r2, 0, $i1);
+        return;
+    }
+
+    public void add(int[][])
+    {
+        invoker.sgx_invoker r0;
+        int[][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: int[][];
+        return;
+    }
+
+    public void add(double[][])
+    {
+        invoker.sgx_invoker r0;
+        double[][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: double[][];
+        return;
+    }
+
+    public void add(float[][])
+    {
+        invoker.sgx_invoker r0;
+        float[][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: float[][];
+        return;
+    }
+
+    public void add(char[][])
+    {
+        invoker.sgx_invoker r0;
+        char[][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: char[][];
+        return;
+    }
+
+    public void add(long[][])
+    {
+        invoker.sgx_invoker r0;
+        long[][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: long[][];
+        return;
+    }
+
+    public void add(byte[][])
+    {
+        invoker.sgx_invoker r0;
+        byte[][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: byte[][];
+        return;
+    }
+
+    public void add(int[][][])
+    {
+        invoker.sgx_invoker r0;
+        int[][][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: int[][][];
+        return;
+    }
+
+    public void add(double[][][])
+    {
+        invoker.sgx_invoker r0;
+        double[][][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: double[][][];
+        return;
+    }
+
+    public void add(float[][][])
+    {
+        invoker.sgx_invoker r0;
+        float[][][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: float[][][];
+        return;
+    }
+
+    public void add(char[][][])
+    {
+        invoker.sgx_invoker r0;
+        char[][][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: char[][][];
+        return;
+    }
+
+    public void add(long[][][])
+    {
+        invoker.sgx_invoker r0;
+        long[][][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: long[][][];
+        return;
+    }
+
+    public void add(byte[][][])
+    {
+        invoker.sgx_invoker r0;
+        byte[][][] r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: byte[][][];
+        return;
+    }
+
+    public void setCounter(long)
+    {
+        invoker.sgx_invoker r0;
+        long l0;
+
+        r0 := @this: invoker.sgx_invoker;
+        l0 := @parameter0: long;
+        r0.<invoker.sgx_invoker: long counter> = l0;
+        return;
+    }
+
+    public void setCuuid(java.lang.String)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        r0.<invoker.sgx_invoker: java.lang.String cuuid> = r1;
+        return;
+    }
+
+    public boolean initenclave()
+    {
+        invoker.sgx_invoker r0;
+        int $i0;
+
+        r0 := @this: invoker.sgx_invoker;
+        $i0 = staticinvoke <invoker.sgx_invoker: int init()>();
+        if 1 != $i0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean closeenclave()
+    {
+        invoker.sgx_invoker r0;
+        int $i0;
+
+        r0 := @this: invoker.sgx_invoker;
+        $i0 = staticinvoke <invoker.sgx_invoker: int destroy()>();
+        if $i0 != 0 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public java.lang.String getUUID()
+    {
+        invoker.sgx_invoker r0;
+        java.util.UUID $r1;
+        java.lang.String r2, $r3, $r4;
+
+        r0 := @this: invoker.sgx_invoker;
+        $r1 = staticinvoke <java.util.UUID: java.util.UUID randomUUID()>();
+        $r3 = virtualinvoke $r1.<java.util.UUID: java.lang.String toString()>();
+        $r4 = virtualinvoke $r3.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("-", "");
+        r2 = virtualinvoke $r4.<java.lang.String: java.lang.String toLowerCase()>();
+        return r2;
+    }
+
+    public void initArrayInEnclave(java.lang.String, int, int, int)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0, i1, i2;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        i2 := @parameter3: int;
+        staticinvoke <invoker.sgx_invoker: void initArray(java.lang.String,int,int,int)>(r1, i0, i1, i2);
+        return;
+    }
+
+    public void initNodeInEnclave(java.lang.String, int, int)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0, i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        staticinvoke <invoker.sgx_invoker: void initNode(java.lang.String,int,int)>(r1, i0, i1);
+        return;
+    }
+
+    public boolean initValueInEnclave(java.lang.String, java.lang.String, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1, r2;
+        long l0;
+        int $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        l0 := @parameter2: long;
+        $i1 = staticinvoke <invoker.sgx_invoker: int initValue(java.lang.String,java.lang.String,long)>(r1, r2, l0);
+        if 1 != $i1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public boolean deleteValueInEnclave(java.lang.String, java.lang.String, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1, r2;
+        long l0;
+        int $i1;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        r2 := @parameter1: java.lang.String;
+        l0 := @parameter2: long;
+        $i1 = staticinvoke <invoker.sgx_invoker: int deleteValue(java.lang.String,java.lang.String,long)>(r1, r2, l0);
+        if 1 != $i1 goto label0;
+
+        return 1;
+
+     label0:
+        return 0;
+    }
+
+    public void updateValueInEnclave(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1, $r11, $r13, $r14, $r15, $r27, $r29, $r30, $r31, $r36;
+        int i0, i2, i3, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, i18, $i19, i20, $i21, i22, $i24, i25, $i27, $i29, $i30, $i31, $i32, $i33, $i34;
+        long l1, $l23;
+        int[] r2, $r7, $r18;
+        double[] r3, $r8, $r19;
+        float[] r4, $r9, $r20;
+        long[] r5, $r10, $r21;
+        byte[] r6, $r17, $r22;
+        char[] $r12, $r16, $r28, $r32;
+        double $d0;
+        float $f0;
+        byte $b26;
+        java.io.PrintStream $r33;
+        java.lang.StringBuilder $r34, $r35;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        i2 = -1;
+        if i0 != 0 goto label4;
+
+        $r7 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i5 = r0.<invoker.sgx_invoker: int intTail>;
+        $r8 = r0.<invoker.sgx_invoker: double[] doubleArray>;
+        $i6 = r0.<invoker.sgx_invoker: int doubleTail>;
+        $r9 = r0.<invoker.sgx_invoker: float[] floatArray>;
+        $i7 = r0.<invoker.sgx_invoker: int floatTail>;
+        $r10 = r0.<invoker.sgx_invoker: long[] longArray>;
+        $i8 = r0.<invoker.sgx_invoker: int longTail>;
+        $r11 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        if $r11 != null goto label0;
+
+        $r12 = r0.<invoker.sgx_invoker: char[] charArray>;
+        goto label1;
+
+     label0:
+        $r13 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        $r12 = virtualinvoke $r13.<java.lang.String: char[] toCharArray()>();
+
+     label1:
+        $r14 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        if $r14 != null goto label2;
+
+        $i9 = r0.<invoker.sgx_invoker: int charTail>;
+        goto label3;
+
+     label2:
+        $r15 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        $r16 = virtualinvoke $r15.<java.lang.String: char[] toCharArray()>();
+        $i9 = lengthof $r16;
+
+     label3:
+        $r17 = r0.<invoker.sgx_invoker: byte[] byteArray>;
+        $i10 = r0.<invoker.sgx_invoker: int byteTail>;
+        i2 = staticinvoke <invoker.sgx_invoker: int commitUpdate(long,int[],int,double[],int,float[],int,long[],int,char[],int,byte[],int,java.lang.String)>(l1, $r7, $i5, $r8, $i6, $r9, $i7, $r10, $i8, $r12, $i9, $r17, $i10, r1);
+        goto label19;
+
+     label4:
+        if i0 != 1 goto label19;
+
+        $i11 = r0.<invoker.sgx_invoker: int size_i>;
+        r2 = newarray (int)[$i11];
+        $i12 = r0.<invoker.sgx_invoker: int size_d>;
+        r3 = newarray (double)[$i12];
+        $i13 = r0.<invoker.sgx_invoker: int size_f>;
+        r4 = newarray (float)[$i13];
+        $i14 = r0.<invoker.sgx_invoker: int size_l>;
+        r5 = newarray (long)[$i14];
+        $i15 = r0.<invoker.sgx_invoker: int size_b>;
+        r6 = newarray (byte)[$i15];
+        i3 = 0;
+        goto label6;
+
+     label5:
+        $r18 = r0.<invoker.sgx_invoker: int[] iarr>;
+        $i16 = $r18[i3];
+        r2[i3] = $i16;
+        i3 = i3 + 1;
+
+     label6:
+        $i17 = r0.<invoker.sgx_invoker: int size_i>;
+        if i3 < $i17 goto label5;
+
+        i18 = 0;
+        goto label8;
+
+     label7:
+        $r19 = r0.<invoker.sgx_invoker: double[] darr>;
+        $d0 = $r19[i18];
+        r3[i18] = $d0;
+        i18 = i18 + 1;
+
+     label8:
+        $i19 = r0.<invoker.sgx_invoker: int size_d>;
+        if i18 < $i19 goto label7;
+
+        i20 = 0;
+        goto label10;
+
+     label9:
+        $r20 = r0.<invoker.sgx_invoker: float[] farr>;
+        $f0 = $r20[i20];
+        r4[i20] = $f0;
+        i20 = i20 + 1;
+
+     label10:
+        $i21 = r0.<invoker.sgx_invoker: int size_f>;
+        if i20 < $i21 goto label9;
+
+        i22 = 0;
+        goto label12;
+
+     label11:
+        $r21 = r0.<invoker.sgx_invoker: long[] larr>;
+        $l23 = $r21[i22];
+        r5[i22] = $l23;
+        i22 = i22 + 1;
+
+     label12:
+        $i24 = r0.<invoker.sgx_invoker: int size_l>;
+        if i22 < $i24 goto label11;
+
+        i25 = 0;
+        goto label14;
+
+     label13:
+        $r22 = r0.<invoker.sgx_invoker: byte[] barr>;
+        $b26 = $r22[i25];
+        r6[i25] = $b26;
+        i25 = i25 + 1;
+
+     label14:
+        $i27 = r0.<invoker.sgx_invoker: int size_b>;
+        if i25 < $i27 goto label13;
+
+        $i29 = r0.<invoker.sgx_invoker: int size_i>;
+        $i30 = r0.<invoker.sgx_invoker: int size_d>;
+        $i31 = r0.<invoker.sgx_invoker: int size_f>;
+        $i32 = r0.<invoker.sgx_invoker: int size_l>;
+        $r27 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        if $r27 != null goto label15;
+
+        $r28 = r0.<invoker.sgx_invoker: char[] charArray>;
+        goto label16;
+
+     label15:
+        $r29 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        $r28 = virtualinvoke $r29.<java.lang.String: char[] toCharArray()>();
+
+     label16:
+        $r30 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        if $r30 != null goto label17;
+
+        $i33 = r0.<invoker.sgx_invoker: int charTail>;
+        goto label18;
+
+     label17:
+        $r31 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        $r32 = virtualinvoke $r31.<java.lang.String: char[] toCharArray()>();
+        $i33 = lengthof $r32;
+
+     label18:
+        $i34 = r0.<invoker.sgx_invoker: int size_b>;
+        i2 = staticinvoke <invoker.sgx_invoker: int commitUpdate(long,int[],int,double[],int,float[],int,long[],int,char[],int,byte[],int,java.lang.String)>(l1, r2, $i29, r3, $i30, r4, $i31, r5, $i32, $r28, $i33, r6, $i34, r1);
+
+     label19:
+        if i2 == 1000 goto label20;
+
+        $r33 = <java.lang.System: java.io.PrintStream out>;
+        $r34 = new java.lang.StringBuilder;
+        specialinvoke $r34.<java.lang.StringBuilder: void <init>(java.lang.String)>("update wrong:");
+        $r35 = virtualinvoke $r34.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i2);
+        $r36 = virtualinvoke $r35.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke $r33.<java.io.PrintStream: void println(java.lang.String)>($r36);
+
+     label20:
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return;
+    }
+
+    public void updateMultArray(java.lang.String, int, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1, $r2;
+        int i0, i1;
+        long l2;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        l2 := @parameter3: long;
+        $r2 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        staticinvoke <invoker.sgx_invoker: int commitUpdateMutliArray(long,java.lang.String,java.lang.String)>(l2, r1, $r2);
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return;
+    }
+
+    public boolean getBooleanValue(java.lang.String, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1, $r11;
+        long l0;
+        byte b1;
+        int[] $r2;
+        int $i2, $i3, $i4, $i5, $i6, $i7, i8;
+        double[] $r3;
+        float[] $r4;
+        long[] $r5;
+        char[] $r6;
+        byte[] $r7;
+        java.io.PrintStream $r8, $r12, $r13;
+        java.lang.StringBuilder $r9, $r10;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        l0 := @parameter1: long;
+        b1 = -1;
+        $r2 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i2 = r0.<invoker.sgx_invoker: int intTail>;
+        $r3 = r0.<invoker.sgx_invoker: double[] doubleArray>;
+        $i3 = r0.<invoker.sgx_invoker: int doubleTail>;
+        $r4 = r0.<invoker.sgx_invoker: float[] floatArray>;
+        $i4 = r0.<invoker.sgx_invoker: int floatTail>;
+        $r5 = r0.<invoker.sgx_invoker: long[] longArray>;
+        $i5 = r0.<invoker.sgx_invoker: int longTail>;
+        $r6 = r0.<invoker.sgx_invoker: char[] charArray>;
+        $i6 = r0.<invoker.sgx_invoker: int charTail>;
+        $r7 = r0.<invoker.sgx_invoker: byte[] byteArray>;
+        $i7 = r0.<invoker.sgx_invoker: int byteTail>;
+        i8 = staticinvoke <invoker.sgx_invoker: int commitBranch(long,int[],int,double[],int,float[],int,long[],int,char[],int,byte[],int,java.lang.String)>(l0, $r2, $i2, $r3, $i3, $r4, $i4, $r5, $i5, $r6, $i6, $r7, $i7, r1);
+        if i8 != 1 goto label0;
+
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return 1;
+
+     label0:
+        if i8 != 0 goto label1;
+
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return 0;
+
+     label1:
+        $r8 = <java.lang.System: java.io.PrintStream out>;
+        $r9 = new java.lang.StringBuilder;
+        specialinvoke $r9.<java.lang.StringBuilder: void <init>(java.lang.String)>("branch ret:");
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i8);
+        $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke $r8.<java.io.PrintStream: void println(java.lang.String)>($r11);
+        $r12 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r12.<java.io.PrintStream: void println(java.lang.String)>("branch error");
+        $r13 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r13.<java.io.PrintStream: void println(java.lang.String)>("ret");
+        staticinvoke <java.lang.System: void exit(int)>(1);
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return 0;
+    }
+
+    public int getIntValue(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0, $i3, $i4, $i5, $i6, $i7, $i8, i9;
+        long l1;
+        byte b2;
+        int[] $r2;
+        double[] $r3;
+        float[] $r4;
+        long[] $r5;
+        char[] $r6;
+        byte[] $r7;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        b2 = -1;
+        $r2 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i3 = r0.<invoker.sgx_invoker: int intTail>;
+        $r3 = r0.<invoker.sgx_invoker: double[] doubleArray>;
+        $i4 = r0.<invoker.sgx_invoker: int doubleTail>;
+        $r4 = r0.<invoker.sgx_invoker: float[] floatArray>;
+        $i5 = r0.<invoker.sgx_invoker: int floatTail>;
+        $r5 = r0.<invoker.sgx_invoker: long[] longArray>;
+        $i6 = r0.<invoker.sgx_invoker: int longTail>;
+        $r6 = r0.<invoker.sgx_invoker: char[] charArray>;
+        $i7 = r0.<invoker.sgx_invoker: int charTail>;
+        $r7 = r0.<invoker.sgx_invoker: byte[] byteArray>;
+        $i8 = r0.<invoker.sgx_invoker: int byteTail>;
+        i9 = staticinvoke <invoker.sgx_invoker: int commitInt(long,int[],int,double[],int,float[],int,long[],int,char[],int,byte[],int,java.lang.String)>(l1, $r2, $i3, $r3, $i4, $r4, $i5, $r5, $i6, $r6, $i7, $r7, $i8, r1);
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return i9;
+    }
+
+    public int[] getIntArray(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1, $r3;
+        int i0;
+        long l1;
+        int[] r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        if i0 != 1 goto label0;
+
+        $r3 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        r2 = staticinvoke <invoker.sgx_invoker: int[] commitIntArray(long,java.lang.String)>(l1, $r3);
+        goto label1;
+
+     label0:
+        r2 = staticinvoke <invoker.sgx_invoker: int[] commitIntArray(long,java.lang.String)>(l1, r1);
+
+     label1:
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return r2;
+    }
+
+    public double[] getDoubleArray(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1, $r3;
+        int i0;
+        long l1;
+        double[] r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        if i0 != 1 goto label0;
+
+        $r3 = r0.<invoker.sgx_invoker: java.lang.String cuuid>;
+        r2 = staticinvoke <invoker.sgx_invoker: double[] commitDoubleArray(long,java.lang.String)>(l1, $r3);
+        goto label1;
+
+     label0:
+        r2 = staticinvoke <invoker.sgx_invoker: double[] commitDoubleArray(long,java.lang.String)>(l1, r1);
+
+     label1:
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return r2;
+    }
+
+    public byte[] getByteArray(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0;
+        long l1;
+        byte[] r2;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        r2 = staticinvoke <invoker.sgx_invoker: byte[] commitByteArray(long,java.lang.String)>(l1, r1);
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return r2;
+    }
+
+    public float getFloatValue(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0;
+        long l1;
+        float f0;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        f0 = -1.0F;
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return f0;
+    }
+
+    public double getDoubleValue(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0, $i2, $i3, $i4, $i5, $i6, $i7;
+        long l1;
+        double d0, d1;
+        int[] $r2;
+        double[] $r3;
+        float[] $r4;
+        long[] $r5;
+        char[] $r6;
+        byte[] $r7;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        d0 = -1.0;
+        $r2 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i2 = r0.<invoker.sgx_invoker: int intTail>;
+        $r3 = r0.<invoker.sgx_invoker: double[] doubleArray>;
+        $i3 = r0.<invoker.sgx_invoker: int doubleTail>;
+        $r4 = r0.<invoker.sgx_invoker: float[] floatArray>;
+        $i4 = r0.<invoker.sgx_invoker: int floatTail>;
+        $r5 = r0.<invoker.sgx_invoker: long[] longArray>;
+        $i5 = r0.<invoker.sgx_invoker: int longTail>;
+        $r6 = r0.<invoker.sgx_invoker: char[] charArray>;
+        $i6 = r0.<invoker.sgx_invoker: int charTail>;
+        $r7 = r0.<invoker.sgx_invoker: byte[] byteArray>;
+        $i7 = r0.<invoker.sgx_invoker: int byteTail>;
+        d1 = staticinvoke <invoker.sgx_invoker: double commitDouble(long,int[],int,double[],int,float[],int,long[],int,char[],int,byte[],int,java.lang.String)>(l1, $r2, $i2, $r3, $i3, $r4, $i4, $r5, $i5, $r6, $i6, $r7, $i7, r1);
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return d1;
+    }
+
+    public char getCharValue(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0;
+        long l1;
+        char c2;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        c2 = 0;
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return c2;
+    }
+
+    public long getLongValue(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0, $i3, $i4, $i5, $i6, $i7, $i8;
+        long l1, l2, l9;
+        int[] $r2;
+        double[] $r3;
+        float[] $r4;
+        long[] $r5;
+        char[] $r6;
+        byte[] $r7;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        l2 = -1L;
+        $r2 = r0.<invoker.sgx_invoker: int[] intArray>;
+        $i3 = r0.<invoker.sgx_invoker: int intTail>;
+        $r3 = r0.<invoker.sgx_invoker: double[] doubleArray>;
+        $i4 = r0.<invoker.sgx_invoker: int doubleTail>;
+        $r4 = r0.<invoker.sgx_invoker: float[] floatArray>;
+        $i5 = r0.<invoker.sgx_invoker: int floatTail>;
+        $r5 = r0.<invoker.sgx_invoker: long[] longArray>;
+        $i6 = r0.<invoker.sgx_invoker: int longTail>;
+        $r6 = r0.<invoker.sgx_invoker: char[] charArray>;
+        $i7 = r0.<invoker.sgx_invoker: int charTail>;
+        $r7 = r0.<invoker.sgx_invoker: byte[] byteArray>;
+        $i8 = r0.<invoker.sgx_invoker: int byteTail>;
+        l9 = staticinvoke <invoker.sgx_invoker: long commitLong(long,int[],int,double[],int,float[],int,long[],int,char[],int,byte[],int,java.lang.String)>(l1, $r2, $i3, $r3, $i4, $r4, $i5, $r5, $i6, $r6, $i7, $r7, $i8, r1);
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return l9;
+    }
+
+    public byte getByteValue(java.lang.String, int, long)
+    {
+        invoker.sgx_invoker r0;
+        java.lang.String r1;
+        int i0;
+        long l1;
+        byte b2;
+
+        r0 := @this: invoker.sgx_invoker;
+        r1 := @parameter0: java.lang.String;
+        i0 := @parameter1: int;
+        l1 := @parameter2: long;
+        b2 = 0;
+        virtualinvoke r0.<invoker.sgx_invoker: void clear()>();
+        return b2;
+    }
+}

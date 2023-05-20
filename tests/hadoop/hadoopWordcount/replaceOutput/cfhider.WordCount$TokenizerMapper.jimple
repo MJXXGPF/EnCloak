@@ -1,0 +1,120 @@
+public class cfhider.WordCount$TokenizerMapper extends org.apache.hadoop.mapreduce.Mapper
+{
+    private static final org.apache.hadoop.io.IntWritable one;
+    private org.apache.hadoop.io.Text word;
+    public java.lang.String Cuuid;
+
+    public void <init>()
+    {
+        cfhider.WordCount$TokenizerMapper r0;
+        org.apache.hadoop.io.Text $r1;
+
+        r0 := @this: cfhider.WordCount$TokenizerMapper;
+        specialinvoke r0.<org.apache.hadoop.mapreduce.Mapper: void <init>()>();
+        $r1 = new org.apache.hadoop.io.Text;
+        specialinvoke $r1.<org.apache.hadoop.io.Text: void <init>()>();
+        r0.<cfhider.WordCount$TokenizerMapper: org.apache.hadoop.io.Text word> = $r1;
+        return;
+    }
+
+    public void map(java.lang.Object, org.apache.hadoop.io.Text, org.apache.hadoop.mapreduce.Mapper$Context) throws java.io.IOException, java.lang.InterruptedException
+    {
+        cfhider.WordCount$TokenizerMapper r0;
+        java.lang.Object r1;
+        org.apache.hadoop.io.Text r2, $r7, $r9;
+        org.apache.hadoop.mapreduce.Mapper$Context r3;
+        java.util.StringTokenizer $r4, r5;
+        java.lang.String $r6, $r8, getUUID, invokeUUID;
+        boolean $z0, branchInvokeResult, tmpResult4;
+        org.apache.hadoop.io.IntWritable $r10;
+        long invokeLineNo;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.WordCount$TokenizerMapper;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: org.apache.hadoop.io.Text;
+        r3 := @parameter2: org.apache.hadoop.mapreduce.Mapper$Context;
+        tmpResult4 = 0;
+        $r4 = null;
+        r5 = null;
+        $r6 = null;
+        $z0 = 0;
+        $r7 = null;
+        $r8 = null;
+        $r9 = null;
+        $r10 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        $r4 = new java.util.StringTokenizer;
+        $r6 = virtualinvoke r2.<org.apache.hadoop.io.Text: java.lang.String toString()>();
+        specialinvoke $r4.<java.util.StringTokenizer: void <init>(java.lang.String)>($r6);
+        r5 = $r4;
+
+     label0:
+        tmpResult4 = virtualinvoke r5.<java.util.StringTokenizer: boolean hasMoreTokens()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult4);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(branchInvokeResult);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 4L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 5L);
+        if branchInvokeResult == 1 goto label1;
+
+        $r7 = r0.<cfhider.WordCount$TokenizerMapper: org.apache.hadoop.io.Text word>;
+        $r8 = virtualinvoke r5.<java.util.StringTokenizer: java.lang.String nextToken()>();
+        virtualinvoke $r7.<org.apache.hadoop.io.Text: void set(java.lang.String)>($r8);
+        $r9 = r0.<cfhider.WordCount$TokenizerMapper: org.apache.hadoop.io.Text word>;
+        $r10 = <cfhider.WordCount$TokenizerMapper: org.apache.hadoop.io.IntWritable one>;
+        virtualinvoke r3.<org.apache.hadoop.mapreduce.Mapper$Context: void write(java.lang.Object,java.lang.Object)>($r9, $r10);
+        goto label0;
+
+     label1:
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return;
+    }
+
+    public volatile void map(java.lang.Object, java.lang.Object, org.apache.hadoop.mapreduce.Mapper$Context) throws java.io.IOException, java.lang.InterruptedException
+    {
+        cfhider.WordCount$TokenizerMapper r0;
+        java.lang.Object r1, r2;
+        org.apache.hadoop.mapreduce.Mapper$Context r3;
+        org.apache.hadoop.io.Text $r4;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.WordCount$TokenizerMapper;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.lang.Object;
+        r3 := @parameter2: org.apache.hadoop.mapreduce.Mapper$Context;
+        $r4 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        $r4 = (org.apache.hadoop.io.Text) r2;
+        virtualinvoke r0.<cfhider.WordCount$TokenizerMapper: void map(java.lang.Object,org.apache.hadoop.io.Text,org.apache.hadoop.mapreduce.Mapper$Context)>(r1, $r4, r3);
+        return;
+    }
+
+    static void <clinit>()
+    {
+        org.apache.hadoop.io.IntWritable $r0;
+
+        $r0 = new org.apache.hadoop.io.IntWritable;
+        specialinvoke $r0.<org.apache.hadoop.io.IntWritable: void <init>(int)>(1);
+        <cfhider.WordCount$TokenizerMapper: org.apache.hadoop.io.IntWritable one> = $r0;
+        return;
+    }
+}

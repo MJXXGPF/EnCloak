@@ -1,0 +1,485 @@
+1
+Deleted hdfs://ThinkPad-1:9000/user/xidian/terasort_output02
+############################ Cache Hit ##########################
+
+0||1
+19/04/18 05:19:31 INFO cfhider.TeraSort: starting
+19/04/18 05:19:31 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/18 05:19:31 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/18 05:19:31 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/18 05:19:33 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+19/04/18 05:19:33 INFO compress.CodecPool: Got brand-new compressor
+Making 1 from 100000 records
+Step size is 100000.0
+19/04/18 05:20:29 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/18 05:20:29 INFO mapred.JobClient: Running job: job_201904172237_0045
+19/04/18 05:20:30 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/18 05:20:46 INFO mapred.JobClient:  map 12% reduce 0%
+19/04/18 05:20:47 INFO mapred.JobClient:  map 14% reduce 0%
+19/04/18 05:20:48 INFO mapred.JobClient:  map 15% reduce 0%
+19/04/18 05:20:50 INFO mapred.JobClient:  map 16% reduce 0%
+19/04/18 05:20:51 INFO mapred.JobClient:  map 17% reduce 0%
+19/04/18 05:20:53 INFO mapred.JobClient:  map 18% reduce 0%
+19/04/18 05:20:55 INFO mapred.JobClient:  map 21% reduce 0%
+19/04/18 05:20:56 INFO mapred.JobClient:  map 22% reduce 0%
+19/04/18 05:20:57 INFO mapred.JobClient:  map 23% reduce 0%
+19/04/18 05:20:58 INFO mapred.JobClient:  map 32% reduce 2%
+19/04/18 05:21:00 INFO mapred.JobClient:  map 33% reduce 2%
+19/04/18 05:21:03 INFO mapred.JobClient:  map 34% reduce 2%
+19/04/18 05:21:04 INFO mapred.JobClient:  map 37% reduce 3%
+19/04/18 05:21:05 INFO mapred.JobClient:  map 39% reduce 3%
+19/04/18 05:21:07 INFO mapred.JobClient:  map 42% reduce 5%
+19/04/18 05:21:08 INFO mapred.JobClient:  map 44% reduce 5%
+19/04/18 05:21:10 INFO mapred.JobClient:  map 48% reduce 5%
+19/04/18 05:21:11 INFO mapred.JobClient:  map 49% reduce 5%
+19/04/18 05:21:12 INFO mapred.JobClient:  map 50% reduce 5%
+19/04/18 05:21:13 INFO mapred.JobClient:  map 55% reduce 6%
+19/04/18 05:21:14 INFO mapred.JobClient:  map 56% reduce 6%
+19/04/18 05:21:15 INFO mapred.JobClient:  map 57% reduce 6%
+19/04/18 05:21:16 INFO mapred.JobClient:  map 60% reduce 6%
+19/04/18 05:21:18 INFO mapred.JobClient:  map 61% reduce 6%
+19/04/18 05:21:19 INFO mapred.JobClient:  map 61% reduce 7%
+19/04/18 05:21:20 INFO mapred.JobClient:  map 62% reduce 7%
+19/04/18 05:21:21 INFO mapred.JobClient:  map 63% reduce 7%
+19/04/18 05:21:22 INFO mapred.JobClient:  map 66% reduce 9%
+19/04/18 05:21:23 INFO mapred.JobClient:  map 67% reduce 9%
+19/04/18 05:21:25 INFO mapred.JobClient:  map 75% reduce 9%
+19/04/18 05:21:26 INFO mapred.JobClient:  map 76% reduce 9%
+19/04/18 05:21:28 INFO mapred.JobClient:  map 78% reduce 10%
+19/04/18 05:21:31 INFO mapred.JobClient:  map 81% reduce 11%
+19/04/18 05:21:33 INFO mapred.JobClient:  map 82% reduce 11%
+19/04/18 05:21:34 INFO mapred.JobClient:  map 85% reduce 11%
+19/04/18 05:21:37 INFO mapred.JobClient:  map 85% reduce 13%
+19/04/18 05:21:38 INFO mapred.JobClient:  map 87% reduce 13%
+19/04/18 05:21:40 INFO mapred.JobClient:  map 90% reduce 14%
+19/04/18 05:21:42 INFO mapred.JobClient:  map 91% reduce 14%
+19/04/18 05:21:43 INFO mapred.JobClient:  map 94% reduce 15%
+19/04/18 05:21:49 INFO mapred.JobClient:  map 94% reduce 16%
+19/04/18 05:21:52 INFO mapred.JobClient:  map 94% reduce 17%
+19/04/18 05:21:53 INFO mapred.JobClient:  map 97% reduce 17%
+19/04/18 05:21:55 INFO mapred.JobClient:  map 97% reduce 18%
+19/04/18 05:22:04 INFO mapred.JobClient:  map 97% reduce 19%
+19/04/18 05:22:07 INFO mapred.JobClient:  map 97% reduce 20%
+19/04/18 05:22:16 INFO mapred.JobClient:  map 97% reduce 22%
+19/04/18 05:22:22 INFO mapred.JobClient:  map 98% reduce 22%
+19/04/18 05:22:25 INFO mapred.JobClient:  map 98% reduce 23%
+19/04/18 05:22:31 INFO mapred.JobClient:  map 98% reduce 25%
+19/04/18 05:22:37 INFO mapred.JobClient:  map 98% reduce 26%
+19/04/18 05:22:46 INFO mapred.JobClient:  map 99% reduce 27%
+19/04/18 05:22:52 INFO mapred.JobClient:  map 99% reduce 28%
+19/04/18 05:23:01 INFO mapred.JobClient:  map 99% reduce 29%
+19/04/18 05:23:04 INFO mapred.JobClient:  map 100% reduce 30%
+19/04/18 05:23:10 INFO mapred.JobClient:  map 100% reduce 32%
+19/04/18 05:23:22 INFO mapred.JobClient:  map 100% reduce 33%
+19/04/18 05:23:25 INFO mapred.JobClient:  map 100% reduce 67%
+19/04/18 05:23:28 INFO mapred.JobClient:  map 100% reduce 69%
+19/04/18 05:23:31 INFO mapred.JobClient:  map 100% reduce 71%
+19/04/18 05:23:34 INFO mapred.JobClient:  map 100% reduce 73%
+19/04/18 05:23:37 INFO mapred.JobClient:  map 100% reduce 75%
+19/04/18 05:23:40 INFO mapred.JobClient:  map 100% reduce 77%
+19/04/18 05:23:43 INFO mapred.JobClient:  map 100% reduce 79%
+19/04/18 05:23:46 INFO mapred.JobClient:  map 100% reduce 80%
+19/04/18 05:23:49 INFO mapred.JobClient:  map 100% reduce 82%
+19/04/18 05:23:52 INFO mapred.JobClient:  map 100% reduce 84%
+19/04/18 05:23:55 INFO mapred.JobClient:  map 100% reduce 86%
+19/04/18 05:23:58 INFO mapred.JobClient:  map 100% reduce 88%
+19/04/18 05:24:01 INFO mapred.JobClient:  map 100% reduce 90%
+19/04/18 05:24:04 INFO mapred.JobClient:  map 100% reduce 92%
+19/04/18 05:24:07 INFO mapred.JobClient:  map 100% reduce 94%
+19/04/18 05:24:10 INFO mapred.JobClient:  map 100% reduce 95%
+19/04/18 05:24:13 INFO mapred.JobClient:  map 100% reduce 97%
+19/04/18 05:24:16 INFO mapred.JobClient:  map 100% reduce 99%
+19/04/18 05:24:22 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/18 05:24:27 INFO mapred.JobClient: Job complete: job_201904172237_0045
+19/04/18 05:24:27 INFO mapred.JobClient: Counters: 31
+19/04/18 05:24:27 INFO mapred.JobClient:   Job Counters 
+19/04/18 05:24:27 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/18 05:24:27 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=501466
+19/04/18 05:24:27 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/18 05:24:27 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/18 05:24:27 INFO mapred.JobClient:     Rack-local map tasks=13
+19/04/18 05:24:27 INFO mapred.JobClient:     Launched map tasks=37
+19/04/18 05:24:27 INFO mapred.JobClient:     Data-local map tasks=24
+19/04/18 05:24:27 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=213379
+19/04/18 05:24:27 INFO mapred.JobClient:   File Input Format Counters 
+19/04/18 05:24:27 INFO mapred.JobClient:     Bytes Read=2147606510
+19/04/18 05:24:27 INFO mapred.JobClient:   File Output Format Counters 
+19/04/18 05:24:27 INFO mapred.JobClient:     Bytes Written=2147483600
+19/04/18 05:24:27 INFO mapred.JobClient:   FileSystemCounters
+19/04/18 05:24:27 INFO mapred.JobClient:     FILE_BYTES_READ=6092147184
+19/04/18 05:24:27 INFO mapred.JobClient:     HDFS_BYTES_READ=2147610190
+19/04/18 05:24:27 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=8283312996
+19/04/18 05:24:27 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=2147483600
+19/04/18 05:24:27 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/18 05:24:27 INFO mapred.JobClient:     Map output materialized bytes=2190433464
+19/04/18 05:24:27 INFO mapred.JobClient:     Map input records=21474836
+19/04/18 05:24:27 INFO mapred.JobClient:     Reduce shuffle bytes=2121982380
+19/04/18 05:24:27 INFO mapred.JobClient:     Spilled Records=81201721
+19/04/18 05:24:27 INFO mapred.JobClient:     Map output bytes=2147483600
+19/04/18 05:24:27 INFO mapred.JobClient:     Total committed heap usage (bytes)=6848249856
+19/04/18 05:24:27 INFO mapred.JobClient:     CPU time spent (ms)=1264060
+19/04/18 05:24:27 INFO mapred.JobClient:     Map input bytes=2147483600
+19/04/18 05:24:27 INFO mapred.JobClient:     SPLIT_RAW_BYTES=3680
+19/04/18 05:24:27 INFO mapred.JobClient:     Combine input records=0
+19/04/18 05:24:27 INFO mapred.JobClient:     Reduce input records=21474836
+19/04/18 05:24:27 INFO mapred.JobClient:     Reduce input groups=21474836
+19/04/18 05:24:27 INFO mapred.JobClient:     Combine output records=0
+19/04/18 05:24:27 INFO mapred.JobClient:     Physical memory (bytes) snapshot=7750705152
+19/04/18 05:24:27 INFO mapred.JobClient:     Reduce output records=21474836
+19/04/18 05:24:27 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=25628160000
+19/04/18 05:24:27 INFO mapred.JobClient:     Map output records=21474836
+19/04/18 05:24:27 INFO cfhider.TeraSort: done
+start initialize_enclave -------sgx_create_enclave----zystble
+end_sgx_create_enclave is ok.
+ ret==0------zystble---------------------initialize_enclave()_time:0.070261s
+read crypt file ok
+splitting
+line_num: 424
+load ok
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+1
+1
+
+real	4m56.874s
+user	6m15.135s
+sys	0m0.459s
+2
+Deleted hdfs://ThinkPad-1:9000/user/xidian/terasort_output02
+############################ Cache Hit ##########################
+
+0||1
+19/04/18 05:24:28 INFO cfhider.TeraSort: starting
+19/04/18 05:24:28 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/18 05:24:28 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/18 05:24:28 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/18 05:24:30 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+19/04/18 05:24:30 INFO compress.CodecPool: Got brand-new compressor
+Making 1 from 100000 records
+Step size is 100000.0
+19/04/18 05:25:26 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/18 05:25:26 INFO mapred.JobClient: Running job: job_201904172237_0046
+19/04/18 05:25:27 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/18 05:25:43 INFO mapred.JobClient:  map 6% reduce 0%
+19/04/18 05:25:44 INFO mapred.JobClient:  map 14% reduce 0%
+19/04/18 05:25:45 INFO mapred.JobClient:  map 15% reduce 0%
+19/04/18 05:25:47 INFO mapred.JobClient:  map 16% reduce 0%
+19/04/18 05:25:48 INFO mapred.JobClient:  map 17% reduce 0%
+19/04/18 05:25:50 INFO mapred.JobClient:  map 18% reduce 0%
+19/04/18 05:25:53 INFO mapred.JobClient:  map 23% reduce 0%
+19/04/18 05:25:55 INFO mapred.JobClient:  map 29% reduce 2%
+19/04/18 05:25:56 INFO mapred.JobClient:  map 32% reduce 2%
+19/04/18 05:25:57 INFO mapred.JobClient:  map 33% reduce 2%
+19/04/18 05:26:00 INFO mapred.JobClient:  map 34% reduce 2%
+19/04/18 05:26:01 INFO mapred.JobClient:  map 34% reduce 3%
+19/04/18 05:26:02 INFO mapred.JobClient:  map 39% reduce 3%
+19/04/18 05:26:05 INFO mapred.JobClient:  map 44% reduce 3%
+19/04/18 05:26:07 INFO mapred.JobClient:  map 44% reduce 5%
+19/04/18 05:26:08 INFO mapred.JobClient:  map 45% reduce 5%
+19/04/18 05:26:09 INFO mapred.JobClient:  map 46% reduce 5%
+19/04/18 05:26:10 INFO mapred.JobClient:  map 51% reduce 6%
+19/04/18 05:26:11 INFO mapred.JobClient:  map 55% reduce 6%
+19/04/18 05:26:13 INFO mapred.JobClient:  map 57% reduce 6%
+19/04/18 05:26:14 INFO mapred.JobClient:  map 61% reduce 6%
+19/04/18 05:26:16 INFO mapred.JobClient:  map 61% reduce 7%
+19/04/18 05:26:17 INFO mapred.JobClient:  map 63% reduce 7%
+19/04/18 05:26:19 INFO mapred.JobClient:  map 63% reduce 8%
+19/04/18 05:26:20 INFO mapred.JobClient:  map 67% reduce 8%
+19/04/18 05:26:21 INFO mapred.JobClient:  map 68% reduce 8%
+19/04/18 05:26:22 INFO mapred.JobClient:  map 72% reduce 10%
+19/04/18 05:26:23 INFO mapred.JobClient:  map 76% reduce 10%
+19/04/18 05:26:25 INFO mapred.JobClient:  map 78% reduce 10%
+19/04/18 05:26:28 INFO mapred.JobClient:  map 78% reduce 11%
+19/04/18 05:26:29 INFO mapred.JobClient:  map 81% reduce 11%
+19/04/18 05:26:31 INFO mapred.JobClient:  map 81% reduce 12%
+19/04/18 05:26:32 INFO mapred.JobClient:  map 84% reduce 12%
+19/04/18 05:26:33 INFO mapred.JobClient:  map 85% reduce 12%
+19/04/18 05:26:34 INFO mapred.JobClient:  map 87% reduce 14%
+19/04/18 05:26:36 INFO mapred.JobClient:  map 88% reduce 14%
+19/04/18 05:26:38 INFO mapred.JobClient:  map 91% reduce 14%
+19/04/18 05:26:40 INFO mapred.JobClient:  map 91% reduce 15%
+19/04/18 05:26:41 INFO mapred.JobClient:  map 94% reduce 15%
+19/04/18 05:26:43 INFO mapred.JobClient:  map 94% reduce 16%
+19/04/18 05:26:49 INFO mapred.JobClient:  map 94% reduce 18%
+19/04/18 05:26:50 INFO mapred.JobClient:  map 97% reduce 18%
+19/04/18 05:27:01 INFO mapred.JobClient:  map 97% reduce 20%
+19/04/18 05:27:10 INFO mapred.JobClient:  map 97% reduce 21%
+19/04/18 05:27:13 INFO mapred.JobClient:  map 97% reduce 22%
+19/04/18 05:27:14 INFO mapred.JobClient:  map 98% reduce 22%
+19/04/18 05:27:19 INFO mapred.JobClient:  map 98% reduce 23%
+19/04/18 05:27:25 INFO mapred.JobClient:  map 98% reduce 25%
+19/04/18 05:27:34 INFO mapred.JobClient:  map 98% reduce 26%
+19/04/18 05:27:40 INFO mapred.JobClient:  map 98% reduce 27%
+19/04/18 05:27:44 INFO mapred.JobClient:  map 99% reduce 27%
+19/04/18 05:27:49 INFO mapred.JobClient:  map 99% reduce 28%
+19/04/18 05:27:55 INFO mapred.JobClient:  map 99% reduce 29%
+19/04/18 05:27:59 INFO mapred.JobClient:  map 100% reduce 29%
+19/04/18 05:28:04 INFO mapred.JobClient:  map 100% reduce 31%
+19/04/18 05:28:10 INFO mapred.JobClient:  map 100% reduce 32%
+19/04/18 05:28:25 INFO mapred.JobClient:  map 100% reduce 33%
+19/04/18 05:28:28 INFO mapred.JobClient:  map 100% reduce 68%
+19/04/18 05:28:31 INFO mapred.JobClient:  map 100% reduce 70%
+19/04/18 05:28:34 INFO mapred.JobClient:  map 100% reduce 71%
+19/04/18 05:28:37 INFO mapred.JobClient:  map 100% reduce 73%
+19/04/18 05:28:40 INFO mapred.JobClient:  map 100% reduce 75%
+19/04/18 05:28:43 INFO mapred.JobClient:  map 100% reduce 77%
+19/04/18 05:28:46 INFO mapred.JobClient:  map 100% reduce 79%
+19/04/18 05:28:49 INFO mapred.JobClient:  map 100% reduce 81%
+19/04/18 05:28:52 INFO mapred.JobClient:  map 100% reduce 83%
+19/04/18 05:28:55 INFO mapred.JobClient:  map 100% reduce 84%
+19/04/18 05:28:58 INFO mapred.JobClient:  map 100% reduce 86%
+19/04/18 05:29:01 INFO mapred.JobClient:  map 100% reduce 88%
+19/04/18 05:29:04 INFO mapred.JobClient:  map 100% reduce 90%
+19/04/18 05:29:07 INFO mapred.JobClient:  map 100% reduce 92%
+19/04/18 05:29:10 INFO mapred.JobClient:  map 100% reduce 93%
+19/04/18 05:29:13 INFO mapred.JobClient:  map 100% reduce 95%
+19/04/18 05:29:16 INFO mapred.JobClient:  map 100% reduce 97%
+19/04/18 05:29:19 INFO mapred.JobClient:  map 100% reduce 99%
+19/04/18 05:29:25 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/18 05:29:30 INFO mapred.JobClient: Job complete: job_201904172237_0046
+19/04/18 05:29:30 INFO mapred.JobClient: Counters: 31
+19/04/18 05:29:30 INFO mapred.JobClient:   Job Counters 
+19/04/18 05:29:30 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/18 05:29:30 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=495066
+19/04/18 05:29:30 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/18 05:29:30 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/18 05:29:30 INFO mapred.JobClient:     Rack-local map tasks=12
+19/04/18 05:29:30 INFO mapred.JobClient:     Launched map tasks=36
+19/04/18 05:29:30 INFO mapred.JobClient:     Data-local map tasks=24
+19/04/18 05:29:30 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=218487
+19/04/18 05:29:30 INFO mapred.JobClient:   File Input Format Counters 
+19/04/18 05:29:30 INFO mapred.JobClient:     Bytes Read=2147606510
+19/04/18 05:29:30 INFO mapred.JobClient:   File Output Format Counters 
+19/04/18 05:29:30 INFO mapred.JobClient:     Bytes Written=2147483600
+19/04/18 05:29:30 INFO mapred.JobClient:   FileSystemCounters
+19/04/18 05:29:30 INFO mapred.JobClient:     FILE_BYTES_READ=6092147184
+19/04/18 05:29:30 INFO mapred.JobClient:     HDFS_BYTES_READ=2147610190
+19/04/18 05:29:30 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=8283312937
+19/04/18 05:29:30 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=2147483600
+19/04/18 05:29:30 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/18 05:29:30 INFO mapred.JobClient:     Map output materialized bytes=2190433464
+19/04/18 05:29:30 INFO mapred.JobClient:     Map input records=21474836
+19/04/18 05:29:30 INFO mapred.JobClient:     Reduce shuffle bytes=2121982380
+19/04/18 05:29:30 INFO mapred.JobClient:     Spilled Records=81201721
+19/04/18 05:29:30 INFO mapred.JobClient:     Map output bytes=2147483600
+19/04/18 05:29:30 INFO mapred.JobClient:     Total committed heap usage (bytes)=6844055552
+19/04/18 05:29:30 INFO mapred.JobClient:     CPU time spent (ms)=1282080
+19/04/18 05:29:30 INFO mapred.JobClient:     Map input bytes=2147483600
+19/04/18 05:29:30 INFO mapred.JobClient:     SPLIT_RAW_BYTES=3680
+19/04/18 05:29:30 INFO mapred.JobClient:     Combine input records=0
+19/04/18 05:29:30 INFO mapred.JobClient:     Reduce input records=21474836
+19/04/18 05:29:30 INFO mapred.JobClient:     Reduce input groups=21474836
+19/04/18 05:29:30 INFO mapred.JobClient:     Combine output records=0
+19/04/18 05:29:30 INFO mapred.JobClient:     Physical memory (bytes) snapshot=7748202496
+19/04/18 05:29:30 INFO mapred.JobClient:     Reduce output records=21474836
+19/04/18 05:29:30 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=25551654912
+19/04/18 05:29:30 INFO mapred.JobClient:     Map output records=21474836
+19/04/18 05:29:30 INFO cfhider.TeraSort: done
+start initialize_enclave -------sgx_create_enclave----zystble
+end_sgx_create_enclave is ok.
+ ret==0------zystble---------------------initialize_enclave()_time:0.069771s
+read crypt file ok
+splitting
+line_num: 424
+load ok
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+1
+1
+
+real	5m2.736s
+user	6m21.539s
+sys	0m0.510s
+3
+Deleted hdfs://ThinkPad-1:9000/user/xidian/terasort_output02
+############################ Cache Hit ##########################
+
+0||1
+19/04/18 05:29:31 INFO cfhider.TeraSort: starting
+19/04/18 05:29:32 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/18 05:29:32 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+19/04/18 05:29:32 WARN snappy.LoadSnappy: Snappy native library not loaded
+19/04/18 05:29:33 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+19/04/18 05:29:33 INFO compress.CodecPool: Got brand-new compressor
+Making 1 from 100000 records
+Step size is 100000.0
+19/04/18 05:30:29 INFO mapred.FileInputFormat: Total input paths to process : 2
+19/04/18 05:30:29 INFO mapred.JobClient: Running job: job_201904172237_0047
+19/04/18 05:30:30 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/18 05:30:46 INFO mapred.JobClient:  map 5% reduce 0%
+19/04/18 05:30:47 INFO mapred.JobClient:  map 8% reduce 0%
+19/04/18 05:30:48 INFO mapred.JobClient:  map 15% reduce 0%
+19/04/18 05:30:50 INFO mapred.JobClient:  map 17% reduce 0%
+19/04/18 05:30:53 INFO mapred.JobClient:  map 18% reduce 0%
+19/04/18 05:30:56 INFO mapred.JobClient:  map 19% reduce 0%
+19/04/18 05:30:57 INFO mapred.JobClient:  map 23% reduce 0%
+19/04/18 05:30:58 INFO mapred.JobClient:  map 29% reduce 2%
+19/04/18 05:31:00 INFO mapred.JobClient:  map 33% reduce 2%
+19/04/18 05:31:04 INFO mapred.JobClient:  map 33% reduce 3%
+19/04/18 05:31:05 INFO mapred.JobClient:  map 36% reduce 3%
+19/04/18 05:31:06 INFO mapred.JobClient:  map 39% reduce 3%
+19/04/18 05:31:08 INFO mapred.JobClient:  map 41% reduce 5%
+19/04/18 05:31:09 INFO mapred.JobClient:  map 44% reduce 5%
+19/04/18 05:31:11 INFO mapred.JobClient:  map 50% reduce 5%
+19/04/18 05:31:14 INFO mapred.JobClient:  map 53% reduce 6%
+19/04/18 05:31:15 INFO mapred.JobClient:  map 57% reduce 6%
+19/04/18 05:31:18 INFO mapred.JobClient:  map 60% reduce 6%
+19/04/18 05:31:20 INFO mapred.JobClient:  map 60% reduce 9%
+19/04/18 05:31:21 INFO mapred.JobClient:  map 61% reduce 9%
+19/04/18 05:31:23 INFO mapred.JobClient:  map 63% reduce 9%
+19/04/18 05:31:24 INFO mapred.JobClient:  map 66% reduce 9%
+19/04/18 05:31:26 INFO mapred.JobClient:  map 71% reduce 9%
+19/04/18 05:31:27 INFO mapred.JobClient:  map 75% reduce 9%
+19/04/18 05:31:29 INFO mapred.JobClient:  map 78% reduce 10%
+19/04/18 05:31:30 INFO mapred.JobClient:  map 79% reduce 10%
+19/04/18 05:31:32 INFO mapred.JobClient:  map 80% reduce 10%
+19/04/18 05:31:33 INFO mapred.JobClient:  map 84% reduce 10%
+19/04/18 05:31:35 INFO mapred.JobClient:  map 84% reduce 12%
+19/04/18 05:31:36 INFO mapred.JobClient:  map 87% reduce 12%
+19/04/18 05:31:38 INFO mapred.JobClient:  map 87% reduce 14%
+19/04/18 05:31:41 INFO mapred.JobClient:  map 88% reduce 14%
+19/04/18 05:31:42 INFO mapred.JobClient:  map 90% reduce 14%
+19/04/18 05:31:44 INFO mapred.JobClient:  map 91% reduce 14%
+19/04/18 05:31:45 INFO mapred.JobClient:  map 94% reduce 14%
+19/04/18 05:31:47 INFO mapred.JobClient:  map 94% reduce 15%
+19/04/18 05:31:50 INFO mapred.JobClient:  map 94% reduce 16%
+19/04/18 05:31:54 INFO mapred.JobClient:  map 97% reduce 16%
+19/04/18 05:31:59 INFO mapred.JobClient:  map 97% reduce 17%
+19/04/18 05:32:02 INFO mapred.JobClient:  map 97% reduce 18%
+19/04/18 05:32:08 INFO mapred.JobClient:  map 97% reduce 19%
+19/04/18 05:32:14 INFO mapred.JobClient:  map 97% reduce 20%
+19/04/18 05:32:20 INFO mapred.JobClient:  map 97% reduce 21%
+19/04/18 05:32:26 INFO mapred.JobClient:  map 97% reduce 22%
+19/04/18 05:32:29 INFO mapred.JobClient:  map 98% reduce 23%
+19/04/18 05:32:35 INFO mapred.JobClient:  map 98% reduce 25%
+19/04/18 05:32:44 INFO mapred.JobClient:  map 98% reduce 26%
+19/04/18 05:32:50 INFO mapred.JobClient:  map 98% reduce 27%
+19/04/18 05:32:51 INFO mapred.JobClient:  map 99% reduce 27%
+19/04/18 05:32:56 INFO mapred.JobClient:  map 99% reduce 28%
+19/04/18 05:32:59 INFO mapred.JobClient:  map 99% reduce 29%
+19/04/18 05:33:03 INFO mapred.JobClient:  map 100% reduce 29%
+19/04/18 05:33:05 INFO mapred.JobClient:  map 100% reduce 30%
+19/04/18 05:33:11 INFO mapred.JobClient:  map 100% reduce 31%
+19/04/18 05:33:20 INFO mapred.JobClient:  map 100% reduce 32%
+19/04/18 05:33:38 INFO mapred.JobClient:  map 100% reduce 33%
+19/04/18 05:33:41 INFO mapred.JobClient:  map 100% reduce 68%
+19/04/18 05:33:44 INFO mapred.JobClient:  map 100% reduce 69%
+19/04/18 05:33:47 INFO mapred.JobClient:  map 100% reduce 71%
+19/04/18 05:33:50 INFO mapred.JobClient:  map 100% reduce 73%
+19/04/18 05:33:53 INFO mapred.JobClient:  map 100% reduce 75%
+19/04/18 05:33:56 INFO mapred.JobClient:  map 100% reduce 76%
+19/04/18 05:33:59 INFO mapred.JobClient:  map 100% reduce 78%
+19/04/18 05:34:02 INFO mapred.JobClient:  map 100% reduce 80%
+19/04/18 05:34:05 INFO mapred.JobClient:  map 100% reduce 82%
+19/04/18 05:34:08 INFO mapred.JobClient:  map 100% reduce 84%
+19/04/18 05:34:11 INFO mapred.JobClient:  map 100% reduce 86%
+19/04/18 05:34:14 INFO mapred.JobClient:  map 100% reduce 87%
+19/04/18 05:34:17 INFO mapred.JobClient:  map 100% reduce 89%
+19/04/18 05:34:20 INFO mapred.JobClient:  map 100% reduce 91%
+19/04/18 05:34:23 INFO mapred.JobClient:  map 100% reduce 93%
+19/04/18 05:34:26 INFO mapred.JobClient:  map 100% reduce 94%
+19/04/18 05:34:29 INFO mapred.JobClient:  map 100% reduce 96%
+19/04/18 05:34:32 INFO mapred.JobClient:  map 100% reduce 98%
+19/04/18 05:34:38 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/18 05:34:43 INFO mapred.JobClient: Job complete: job_201904172237_0047
+19/04/18 05:34:43 INFO mapred.JobClient: Counters: 31
+19/04/18 05:34:43 INFO mapred.JobClient:   Job Counters 
+19/04/18 05:34:43 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/18 05:34:43 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=504229
+19/04/18 05:34:43 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/18 05:34:43 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/18 05:34:43 INFO mapred.JobClient:     Rack-local map tasks=14
+19/04/18 05:34:43 INFO mapred.JobClient:     Launched map tasks=37
+19/04/18 05:34:43 INFO mapred.JobClient:     Data-local map tasks=23
+19/04/18 05:34:43 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=227615
+19/04/18 05:34:43 INFO mapred.JobClient:   File Input Format Counters 
+19/04/18 05:34:43 INFO mapred.JobClient:     Bytes Read=2147606510
+19/04/18 05:34:43 INFO mapred.JobClient:   File Output Format Counters 
+19/04/18 05:34:43 INFO mapred.JobClient:     Bytes Written=2147483600
+19/04/18 05:34:43 INFO mapred.JobClient:   FileSystemCounters
+19/04/18 05:34:43 INFO mapred.JobClient:     FILE_BYTES_READ=6092147184
+19/04/18 05:34:43 INFO mapred.JobClient:     HDFS_BYTES_READ=2147610190
+19/04/18 05:34:43 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=8283312927
+19/04/18 05:34:43 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=2147483600
+19/04/18 05:34:43 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/18 05:34:43 INFO mapred.JobClient:     Map output materialized bytes=2190433464
+19/04/18 05:34:43 INFO mapred.JobClient:     Map input records=21474836
+19/04/18 05:34:43 INFO mapred.JobClient:     Reduce shuffle bytes=2121982482
+19/04/18 05:34:43 INFO mapred.JobClient:     Spilled Records=81201721
+19/04/18 05:34:43 INFO mapred.JobClient:     Map output bytes=2147483600
+19/04/18 05:34:43 INFO mapred.JobClient:     Total committed heap usage (bytes)=6848249856
+19/04/18 05:34:43 INFO mapred.JobClient:     CPU time spent (ms)=1313000
+19/04/18 05:34:43 INFO mapred.JobClient:     Map input bytes=2147483600
+19/04/18 05:34:43 INFO mapred.JobClient:     SPLIT_RAW_BYTES=3680
+19/04/18 05:34:43 INFO mapred.JobClient:     Combine input records=0
+19/04/18 05:34:43 INFO mapred.JobClient:     Reduce input records=21474836
+19/04/18 05:34:43 INFO mapred.JobClient:     Reduce input groups=21474836
+19/04/18 05:34:43 INFO mapred.JobClient:     Combine output records=0
+19/04/18 05:34:43 INFO mapred.JobClient:     Physical memory (bytes) snapshot=7775268864
+19/04/18 05:34:43 INFO mapred.JobClient:     Reduce output records=21474836
+19/04/18 05:34:43 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=25553104896
+19/04/18 05:34:43 INFO mapred.JobClient:     Map output records=21474836
+19/04/18 05:34:43 INFO cfhider.TeraSort: done
+start initialize_enclave -------sgx_create_enclave----zystble
+end_sgx_create_enclave is ok.
+ ret==0------zystble---------------------initialize_enclave()_time:0.073900s
+read crypt file ok
+splitting
+line_num: 424
+load ok
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+1
+1
+
+real	5m12.189s
+user	6m33.194s
+sys	0m0.491s

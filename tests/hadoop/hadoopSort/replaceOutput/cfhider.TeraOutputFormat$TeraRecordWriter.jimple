@@ -1,0 +1,142 @@
+class cfhider.TeraOutputFormat$TeraRecordWriter extends org.apache.hadoop.mapred.TextOutputFormat$LineRecordWriter
+{
+    private static final byte[] newLine;
+    private boolean finalSync;
+    public java.lang.String Cuuid;
+
+    public void <init>(java.io.DataOutputStream, org.apache.hadoop.mapred.JobConf)
+    {
+        cfhider.TeraOutputFormat$TeraRecordWriter r0;
+        java.io.DataOutputStream r1;
+        org.apache.hadoop.mapred.JobConf r2;
+        boolean $z0;
+
+        r0 := @this: cfhider.TeraOutputFormat$TeraRecordWriter;
+        r1 := @parameter0: java.io.DataOutputStream;
+        r2 := @parameter1: org.apache.hadoop.mapred.JobConf;
+        specialinvoke r0.<org.apache.hadoop.mapred.TextOutputFormat$LineRecordWriter: void <init>(java.io.DataOutputStream)>(r1);
+        r0.<cfhider.TeraOutputFormat$TeraRecordWriter: boolean finalSync> = 0;
+        $z0 = staticinvoke <cfhider.TeraOutputFormat: boolean getFinalSync(org.apache.hadoop.mapred.JobConf)>(r2);
+        r0.<cfhider.TeraOutputFormat$TeraRecordWriter: boolean finalSync> = $z0;
+        return;
+    }
+
+    public synchronized void write(org.apache.hadoop.io.Text, org.apache.hadoop.io.Text) throws java.io.IOException
+    {
+        cfhider.TeraOutputFormat$TeraRecordWriter r0;
+        org.apache.hadoop.io.Text r1, r2;
+        java.io.DataOutputStream $r3, $r5, $r7;
+        byte[] $r4, $r6, $r8, $r9;
+        int $i0, $i1, $i2, tmpResult0, tmpResult12;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.TeraOutputFormat$TeraRecordWriter;
+        r1 := @parameter0: org.apache.hadoop.io.Text;
+        r2 := @parameter1: org.apache.hadoop.io.Text;
+        tmpResult12 = 0;
+        tmpResult0 = 0;
+        $r3 = null;
+        $r4 = null;
+        $i0 = 0;
+        $r5 = null;
+        $r6 = null;
+        $i1 = 0;
+        $r7 = null;
+        $r8 = null;
+        $r9 = null;
+        $i2 = 0;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        $r3 = r0.<cfhider.TeraOutputFormat$TeraRecordWriter: java.io.DataOutputStream out>;
+        $r4 = virtualinvoke r1.<org.apache.hadoop.io.Text: byte[] getBytes()>();
+        $i0 = virtualinvoke r1.<org.apache.hadoop.io.Text: int getLength()>();
+        virtualinvoke $r3.<java.io.DataOutputStream: void write(byte[],int,int)>($r4, 0, $i0);
+        $r5 = r0.<cfhider.TeraOutputFormat$TeraRecordWriter: java.io.DataOutputStream out>;
+        $r6 = virtualinvoke r2.<org.apache.hadoop.io.Text: byte[] getBytes()>();
+        tmpResult0 = virtualinvoke r2.<org.apache.hadoop.io.Text: int getLength()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>($i0);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult0);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>($i2);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 0L);
+        tmpResult12 = virtualinvoke sgxInvoker.<invoker.sgx_invoker: int getIntValue(java.lang.String,int,long)>(getUUID, 0, 1L);
+        virtualinvoke $r5.<java.io.DataOutputStream: void write(byte[],int,int)>($r6, 0, tmpResult12);
+        $r7 = r0.<cfhider.TeraOutputFormat$TeraRecordWriter: java.io.DataOutputStream out>;
+        $r8 = <cfhider.TeraOutputFormat$TeraRecordWriter: byte[] newLine>;
+        $r9 = <cfhider.TeraOutputFormat$TeraRecordWriter: byte[] newLine>;
+        $i2 = lengthof $r9;
+        virtualinvoke $r7.<java.io.DataOutputStream: void write(byte[],int,int)>($r8, 0, $i2);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return;
+    }
+
+    public void close() throws java.io.IOException
+    {
+        cfhider.TeraOutputFormat$TeraRecordWriter r0;
+        boolean $z0;
+        java.io.DataOutputStream $r1;
+        org.apache.hadoop.fs.FSDataOutputStream $r2;
+
+        r0 := @this: cfhider.TeraOutputFormat$TeraRecordWriter;
+        $z0 = r0.<cfhider.TeraOutputFormat$TeraRecordWriter: boolean finalSync>;
+        if $z0 == 0 goto label0;
+
+        $r1 = r0.<cfhider.TeraOutputFormat$TeraRecordWriter: java.io.DataOutputStream out>;
+        $r2 = (org.apache.hadoop.fs.FSDataOutputStream) $r1;
+        virtualinvoke $r2.<org.apache.hadoop.fs.FSDataOutputStream: void sync()>();
+
+     label0:
+        specialinvoke r0.<org.apache.hadoop.mapred.TextOutputFormat$LineRecordWriter: void close(org.apache.hadoop.mapred.Reporter)>(null);
+        return;
+    }
+
+    public volatile void write(java.lang.Object, java.lang.Object) throws java.io.IOException
+    {
+        cfhider.TeraOutputFormat$TeraRecordWriter r0;
+        java.lang.Object r1, r2;
+        org.apache.hadoop.io.Text $r3, $r4;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.TeraOutputFormat$TeraRecordWriter;
+        r1 := @parameter0: java.lang.Object;
+        r2 := @parameter1: java.lang.Object;
+        $r3 = null;
+        $r4 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        $r3 = (org.apache.hadoop.io.Text) r1;
+        $r4 = (org.apache.hadoop.io.Text) r2;
+        virtualinvoke r0.<cfhider.TeraOutputFormat$TeraRecordWriter: void write(org.apache.hadoop.io.Text,org.apache.hadoop.io.Text)>($r3, $r4);
+        return;
+    }
+
+    static void <clinit>()
+    {
+        java.lang.String $r0;
+        byte[] $r1;
+
+        $r0 = "\r\n";
+        $r1 = virtualinvoke $r0.<java.lang.String: byte[] getBytes()>();
+        <cfhider.TeraOutputFormat$TeraRecordWriter: byte[] newLine> = $r1;
+        return;
+    }
+}

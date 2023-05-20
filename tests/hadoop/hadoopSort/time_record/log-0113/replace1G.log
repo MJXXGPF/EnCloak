@@ -1,0 +1,38 @@
+1
+rmr: cannot remove terasort_output01: No such file or directory.
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f9c275dd27d, pid=23617, tid=140309109548800
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_79-b15) (build 1.7.0_79-b15)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libsgx_urts.so+0x627d]  __morestack+0x7d
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/xidian/bitbucket/cfhider/tests/hadoop/hadoopSort/hs_err_pid23617.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0./1runreplace.sh: line 18: 23617 Aborted                 (core dumped) hadoop jar replaceOutput/ReplaceTestForHadoopTeraSort.jar terasort_input01 terasort_output01
+
+real	0m19.016s
+user	0m2.386s
+sys	0m10.147s
+2
+rmr: cannot remove terasort_output01: No such file or directory.
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+
+real	0m2.516s
+user	0m0.352s
+sys	0m2.223s
+3

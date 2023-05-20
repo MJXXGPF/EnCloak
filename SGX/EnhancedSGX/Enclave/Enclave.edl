@@ -1,0 +1,131 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+	
+	include "user_types.h" /* buffer_t */
+	include "hot_calls.h"
+  	include "common.h"
+
+
+	from "../App/function/print.edl" import *;
+	from "io/stdio.edl" import *;
+	from "io/fcntl.edl" import *;
+	from "io/stdlib.edl" import *;
+	from "io/stat.edl" import *;
+	from "io/time.edl" import *;
+	from "io/unistd.edl" import *;
+	trusted{
+		/*public int encall_switch_type_i(long Line,[user_check]int* int_array,int int_tail,
+					[user_check]double* double_array,int double_tail,
+					[user_check]float* float_array,int float_tail, 
+					[user_check]char* char_array,int char_tail,
+					[user_check]long* long_array,int long_tail,
+					[user_check]char* byte_array,int byte_tail,
+					[user_check]char* uuid);*/
+
+
+                public void encall_switch_type_get_i([user_check]void* data, [user_check]void* rei,[user_check]int* int_array,int intTail,
+					[user_check]double* double_array,int doubleTail,
+					[user_check]float* float_array,int floatTail,
+					[user_check]char* char_array,int charTail,
+					[user_check]long* long_array,int longTail,
+					[user_check]char* byte_array,int byteTail,
+					[user_check]char* uuid,
+					[user_check]char* cuuid);
+		public void encall_switch_type_branch([user_check]void* data, [user_check]void* rei,[user_check]int* int_array,int intTail,
+					[user_check]double* double_array,int doubleTail,
+					[user_check]float* float_array,int floatTail,
+					[user_check]char* char_array,int charTail,
+					[user_check]long* long_array,int longTail,
+					[user_check]char* byte_array,int byteTail,
+					[user_check]char* uuid,
+					[user_check]char* cuuid);
+		public void encall_switch_type_update([user_check]void* data, [user_check]void* rei,[user_check]int* int_array,int intTail,
+					[user_check]double* double_array,int doubleTail,
+					[user_check]float* float_array,int floatTail,
+					[user_check]char* char_array,int charTail,
+					[user_check]long* long_array,int longTail,
+					[user_check]char* byte_array,int byteTail,
+					[user_check]char* uuid,
+					[user_check]char* cuuid);
+		public double encall_switch_get_d(long Line, [user_check]int* int_array, int lenint,
+					[user_check]double* double_array, int lendouble,
+					[user_check]float* float_array, int lenfloat,
+					[user_check]char* char_array, int lenchar,
+					[user_check]long* long_array, int lenlong,
+					[user_check]char* byte_array, int lenbyte,
+					[user_check]char* uuid);
+
+
+		/*public float encall_switch_type_f(long Line, [user_check]int* int_array, int lenint,
+					[user_check]double* double_array, int lendouble,
+					[user_check]float* float_array, int lenfloat,
+					[user_check]char* char_array, int lenchar,
+					[user_check]long* long_array, int lenlong,
+					[user_check]char* byte_array, int lenbyte);
+		public char encall_switch_type_c(long Line, [user_check]int* int_array, int lenint,
+					[user_check]double* double_array, int lendouble,
+					[user_check]float* float_array, int lenfloat,
+					[user_check]char* char_array, int lenchar,
+					[user_check]long* long_array, int lenlong,
+					[user_check]char* byte_array, int lenbyte);
+*/
+		public long encall_switch_get_l(long Line,[user_check]int* int_array, int lenint,
+					[user_check]double* double_array, int lendouble,
+					[user_check]float* float_array, int lenfloat,
+					[user_check]char* char_array, int lenchar,
+					[user_check]long* long_array, int lenlong,
+					[user_check]char* byte_array, int lenbyte,
+					[user_check]char* uuid);
+/*		public char encall_switch_type_b(long Line, [user_check]int* int_array, int lenint,
+					[user_check]double* double_array, int lendouble,
+					[user_check]float* float_array, int lenfloat,
+					[user_check]char* char_array, int lenchar,
+					[user_check]long* long_array, int lenlong,
+					[user_check]char* byte_array, int lenbyte);
+		
+*/
+
+		
+		//update(value)
+		public int print_int(long line,[user_check]int* int_array,[user_check]char* uuid,[user_check]char* cuuid);
+		public long print_long(long line,[user_check]long* long_array,[user_check]int* int_array,[user_check]char* uuid,[user_check]char* cuuid);
+		public double print_double(long line,[user_check]double* double_array,[user_check]int* int_array,[user_check]char* uuid,[user_check]char* cuuid);
+		public float print_float(long line,[user_check]float* float_array,[user_check]char* uuid);
+		public int print_char(long line,[user_check]char* char_array,[user_check]char* uuid);
+		public int print_byte(long line,[user_check]char* byte_array,[user_check]int* int_array,[user_check]char* uuid);
+		//update(array)
+		public int print_array_i(long line,[user_check]int* int_array,int int_tail,[user_check]char* uuid,[user_check]char* cuuid);
+		public int print_array_d(long line,[user_check]double* double_array,int double_tail,[user_check]char* uuid,[user_check]char* cuuid);
+
+		//init(matrix)
+		public int encall_table_load(void);
+		public int encall_hash_readin([in,size=400]char* buf,long line);
+		public int encall_read_line([in,size=50]char* in_buf,int buf_len,long line,int isIndex);
+		
+		//init and delete Stack Frame
+		public void encall_varible([user_check]void* data,[user_check]char* uuid,[user_check]char* calluuid);//[user_check]int* v_array,
+		public void encall_deleteValue([user_check]void* data,[user_check]char* uuid,[user_check]char* cuuid);
+
+		//init array
+		public void encall_initArray([user_check]char* uuid,int index,int size,int isSens);
+		public void encall_initNode([user_check]char* uuid,int type,int size);
+
+		//get Array from enclave
+		public int encall_getArraySize(long line,[user_check]char* uuid);
+		public void encall_getIntArray([user_check]int* re,int size,long line,[user_check]char* uuid);
+		public void encall_getDoubleArray([user_check]double* re,int size,long line,[user_check]char* uuid);
+
+		//field
+		public void encall_initmultiArray(long line,[user_check]char* uuid,[user_check]char* cuuid);
+
+   		//hotcalls
+		public void EcallStartResponder( [user_check] HotCall* fastEcall );
+		//public void EcallStartResponder1( [user_check] HotCall* fastEcall );
+		//public void EcallStartResponder2( [user_check] HotCall* fastEcall );
+		public void EcallStartResponder3( [user_check] HotCall* fastEcall );
+
+	};
+        
+
+};

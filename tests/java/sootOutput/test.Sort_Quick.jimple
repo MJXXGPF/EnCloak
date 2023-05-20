@@ -1,0 +1,120 @@
+public class test.Sort_Quick extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        test.Sort_Quick r0;
+
+        r0 := @this: test.Sort_Quick;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        int[] r1;
+        int i0, $i1;
+        double $d0, $d1;
+
+        r0 := @parameter0: java.lang.String[];
+        r1 = newarray (int)[100];
+        i0 = 0;
+
+     label0:
+        if i0 >= 100 goto label1;
+
+        $d0 = staticinvoke <java.lang.Math: double random()>();
+        $d1 = $d0 * 100001.0;
+        $i1 = (int) $d1;
+        r1[i0] = $i1;
+        i0 = i0 + 1;
+        goto label0;
+
+     label1:
+        staticinvoke <test.Sort_Quick: void quick(int[])>(r1);
+        return;
+    }
+
+    public static int getMiddle(int[], int, int)
+    {
+        int[] r0;
+        int i0, i1, i2, $i3, $i4, $i5, $i6;
+
+        r0 := @parameter0: int[];
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        i2 = r0[i0];
+
+     label0:
+        if i0 >= i1 goto label5;
+
+     label1:
+        if i0 >= i1 goto label2;
+
+        $i3 = r0[i1];
+        if $i3 < i2 goto label2;
+
+        i1 = i1 + -1;
+        goto label1;
+
+     label2:
+        $i4 = r0[i1];
+        r0[i0] = $i4;
+
+     label3:
+        if i0 >= i1 goto label4;
+
+        $i5 = r0[i0];
+        if $i5 > i2 goto label4;
+
+        i0 = i0 + 1;
+        goto label3;
+
+     label4:
+        $i6 = r0[i0];
+        r0[i1] = $i6;
+        goto label0;
+
+     label5:
+        r0[i0] = i2;
+        return i0;
+    }
+
+    public static void quickSort(int[], int, int)
+    {
+        int[] r0;
+        int i0, i1, i2, $i3, $i4;
+
+        r0 := @parameter0: int[];
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        if i0 >= i1 goto label0;
+
+        i2 = staticinvoke <test.Sort_Quick: int getMiddle(int[],int,int)>(r0, i0, i1);
+        $i3 = i2 - 1;
+        staticinvoke <test.Sort_Quick: void quickSort(int[],int,int)>(r0, i0, $i3);
+        $i4 = i2 + 1;
+        staticinvoke <test.Sort_Quick: void quickSort(int[],int,int)>(r0, $i4, i1);
+
+     label0:
+        return;
+    }
+
+    public static void quick(int[])
+    {
+        int[] r0;
+        int $i0, $i1, $i2;
+
+        r0 := @parameter0: int[];
+        $i0 = lengthof r0;
+        if $i0 <= 0 goto label0;
+
+        $i1 = lengthof r0;
+        $i2 = $i1 - 1;
+        staticinvoke <test.Sort_Quick: void quickSort(int[],int,int)>(r0, 0, $i2);
+
+     label0:
+        return;
+    }
+}

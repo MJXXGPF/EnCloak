@@ -1,0 +1,220 @@
+1
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:14 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.631s
+user	0m0.788s
+sys	0m0.038s
+2
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:15 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.689s
+user	0m0.844s
+sys	0m0.037s
+3
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:16 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.607s
+user	0m0.836s
+sys	0m0.038s
+4
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:18 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.618s
+user	0m0.816s
+sys	0m0.057s
+5
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:19 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.617s
+user	0m0.809s
+sys	0m0.048s
+6
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:20 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.590s
+user	0m0.781s
+sys	0m0.033s
+7
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:21 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.613s
+user	0m0.775s
+sys	0m0.071s
+8
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:23 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.619s
+user	0m0.799s
+sys	0m0.048s
+9
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:24 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.581s
+user	0m0.769s
+sys	0m0.046s
+10
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:25 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.662s
+user	0m0.822s
+sys	0m0.045s
+11
+rmr: cannot remove terasort_output01: No such file or directory.
+19/04/11 21:58:26 INFO cfhider.TeraSort: starting
+Exception in thread "main" org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: hdfs://ThinkPad-1:9000/user/xidian/terasort_input01
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:197)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:208)
+	at cfhider.TeraInputFormat.getSplits(TeraInputFormat.java:209)
+	at cfhider.TeraInputFormat.writePartitionFile(TeraInputFormat.java:116)
+	at cfhider.TeraSort.run(TeraSort.java:244)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.TeraSort.main(TeraSort.java:258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.569s
+user	0m0.758s
+sys	0m0.027s

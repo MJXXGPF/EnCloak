@@ -1,0 +1,126 @@
+public class cfhider.WordCount extends java.lang.Object
+{
+    public java.lang.String Cuuid;
+
+    public void <init>()
+    {
+        cfhider.WordCount r0;
+
+        r0 := @this: cfhider.WordCount;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[]) throws java.lang.Exception
+    {
+        java.lang.String[] r0, r4;
+        java.io.PrintStream $r1, $r13;
+        org.apache.hadoop.conf.Configuration r2, $r6;
+        org.apache.hadoop.util.GenericOptionsParser r3, $r7;
+        long l0, $l3, $l4, invokeLineNo;
+        org.apache.hadoop.mapreduce.Job r5, $r8;
+        byte b1, $b2;
+        double d0, $d1;
+        org.apache.hadoop.fs.Path $r9, $r11;
+        java.lang.String $r10, $r12, $r18, getUUID, invokeUUID;
+        boolean $z0, branchInvokeResult, tmpResult2;
+        java.lang.StringBuilder $r14, $r15, $r16, $r17;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @parameter0: java.lang.String[];
+        tmpResult2 = 0;
+        $r1 = null;
+        r2 = null;
+        r3 = null;
+        r4 = null;
+        l0 = 0L;
+        r5 = null;
+        b1 = 0;
+        d0 = 0.0;
+        $r6 = null;
+        $r7 = null;
+        $r8 = null;
+        $r9 = null;
+        $r10 = null;
+        $r11 = null;
+        $r12 = null;
+        $z0 = 0;
+        $b2 = 0;
+        $l3 = 0L;
+        $l4 = 0L;
+        $d1 = 0.0;
+        $r13 = null;
+        $r14 = null;
+        $r15 = null;
+        $r16 = null;
+        $r17 = null;
+        $r18 = null;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("In this project, we test wordcount with SGX!\n");
+        $r6 = new org.apache.hadoop.conf.Configuration;
+        specialinvoke $r6.<org.apache.hadoop.conf.Configuration: void <init>()>();
+        r2 = $r6;
+        $r7 = new org.apache.hadoop.util.GenericOptionsParser;
+        specialinvoke $r7.<org.apache.hadoop.util.GenericOptionsParser: void <init>(org.apache.hadoop.conf.Configuration,java.lang.String[])>(r2, r0);
+        r3 = $r7;
+        r4 = virtualinvoke r3.<org.apache.hadoop.util.GenericOptionsParser: java.lang.String[] getRemainingArgs()>();
+        l0 = staticinvoke <java.lang.System: long currentTimeMillis()>();
+        $r8 = new org.apache.hadoop.mapreduce.Job;
+        specialinvoke $r8.<org.apache.hadoop.mapreduce.Job: void <init>(org.apache.hadoop.conf.Configuration,java.lang.String)>(r2, "word count");
+        r5 = $r8;
+        virtualinvoke r5.<org.apache.hadoop.mapreduce.Job: void setJarByClass(java.lang.Class)>(class "cfhider/WordCount");
+        virtualinvoke r5.<org.apache.hadoop.mapreduce.Job: void setMapperClass(java.lang.Class)>(class "cfhider/WordCount$TokenizerMapper");
+        virtualinvoke r5.<org.apache.hadoop.mapreduce.Job: void setCombinerClass(java.lang.Class)>(class "cfhider/WordCount$IntSumReducer");
+        virtualinvoke r5.<org.apache.hadoop.mapreduce.Job: void setReducerClass(java.lang.Class)>(class "cfhider/WordCount$IntSumReducer");
+        virtualinvoke r5.<org.apache.hadoop.mapreduce.Job: void setOutputKeyClass(java.lang.Class)>(class "org/apache/hadoop/io/Text");
+        virtualinvoke r5.<org.apache.hadoop.mapreduce.Job: void setOutputValueClass(java.lang.Class)>(class "org/apache/hadoop/io/IntWritable");
+        $r9 = new org.apache.hadoop.fs.Path;
+        $r10 = r4[0];
+        specialinvoke $r9.<org.apache.hadoop.fs.Path: void <init>(java.lang.String)>($r10);
+        staticinvoke <org.apache.hadoop.mapreduce.lib.input.FileInputFormat: void addInputPath(org.apache.hadoop.mapreduce.Job,org.apache.hadoop.fs.Path)>(r5, $r9);
+        $r11 = new org.apache.hadoop.fs.Path;
+        $r12 = r4[1];
+        specialinvoke $r11.<org.apache.hadoop.fs.Path: void <init>(java.lang.String)>($r12);
+        staticinvoke <org.apache.hadoop.mapreduce.lib.output.FileOutputFormat: void setOutputPath(org.apache.hadoop.mapreduce.Job,org.apache.hadoop.fs.Path)>(r5, $r11);
+        tmpResult2 = virtualinvoke r5.<org.apache.hadoop.mapreduce.Job: boolean waitForCompletion(boolean)>(1);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult2);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 2L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 3L);
+        if branchInvokeResult == 1 goto label0;
+
+        $b2 = 0;
+        goto label1;
+
+     label0:
+        $b2 = 1;
+
+     label1:
+        b1 = $b2;
+        $l3 = staticinvoke <java.lang.System: long currentTimeMillis()>();
+        $l4 = $l3 - l0;
+        $d1 = (double) $l4;
+        d0 = $d1 / 1000.0;
+        $r13 = <java.lang.System: java.io.PrintStream out>;
+        $r14 = new java.lang.StringBuilder;
+        specialinvoke $r14.<java.lang.StringBuilder: void <init>()>();
+        $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Job Finished in ");
+        $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d0);
+        $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" seconds");
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke $r13.<java.io.PrintStream: void println(java.lang.String)>($r18);
+        staticinvoke <java.lang.System: void exit(int)>(b1);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean closeenclave()>();
+        return;
+    }
+}

@@ -1,0 +1,107 @@
+public class cfhider.TeraSort extends org.apache.hadoop.conf.Configured implements org.apache.hadoop.util.Tool
+{
+    private static final org.apache.commons.logging.Log LOG;
+    public java.lang.String Cuuid;
+
+    public void <init>()
+    {
+        cfhider.TeraSort r0;
+
+        r0 := @this: cfhider.TeraSort;
+        specialinvoke r0.<org.apache.hadoop.conf.Configured: void <init>()>();
+        return;
+    }
+
+    public int run(java.lang.String[]) throws java.lang.Exception
+    {
+        cfhider.TeraSort r0;
+        java.lang.String[] r1;
+        org.apache.commons.logging.Log $r2, $r26;
+        org.apache.hadoop.mapred.JobConf r3;
+        org.apache.hadoop.fs.Path r4, r5, $r7, $r9, r12, $r13, $r23;
+        java.net.URI r6, $r14;
+        org.apache.hadoop.conf.Configuration $r8;
+        java.lang.String $r10, $r16, $r20, $r22, $r24;
+        org.apache.hadoop.fs.FileSystem $r11;
+        java.lang.StringBuilder $r15, $r17, $r18, $r19;
+        org.apache.hadoop.fs.Path[] $r21;
+
+        r0 := @this: cfhider.TeraSort;
+        r1 := @parameter0: java.lang.String[];
+        $r2 = <cfhider.TeraSort: org.apache.commons.logging.Log LOG>;
+        interfaceinvoke $r2.<org.apache.commons.logging.Log: void info(java.lang.Object)>("starting");
+        $r8 = virtualinvoke r0.<cfhider.TeraSort: org.apache.hadoop.conf.Configuration getConf()>();
+        r3 = (org.apache.hadoop.mapred.JobConf) $r8;
+        $r9 = new org.apache.hadoop.fs.Path;
+        $r10 = r1[0];
+        specialinvoke $r9.<org.apache.hadoop.fs.Path: void <init>(java.lang.String)>($r10);
+        r4 = $r9;
+        $r11 = virtualinvoke r4.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.FileSystem getFileSystem(org.apache.hadoop.conf.Configuration)>(r3);
+        r12 = virtualinvoke r4.<org.apache.hadoop.fs.Path: org.apache.hadoop.fs.Path makeQualified(org.apache.hadoop.fs.FileSystem)>($r11);
+        $r13 = new org.apache.hadoop.fs.Path;
+        specialinvoke $r13.<org.apache.hadoop.fs.Path: void <init>(org.apache.hadoop.fs.Path,java.lang.String)>(r12, "_partition.lst");
+        r5 = $r13;
+        $r14 = new java.net.URI;
+        $r15 = new java.lang.StringBuilder;
+        specialinvoke $r15.<java.lang.StringBuilder: void <init>()>();
+        $r16 = virtualinvoke r5.<org.apache.hadoop.fs.Path: java.lang.String toString()>();
+        $r17 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r16);
+        $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("#");
+        $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("_partition.lst");
+        $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.String toString()>();
+        specialinvoke $r14.<java.net.URI: void <init>(java.lang.String)>($r20);
+        r6 = $r14;
+        $r21 = newarray (org.apache.hadoop.fs.Path)[1];
+        $r7 = new org.apache.hadoop.fs.Path;
+        $r22 = r1[0];
+        specialinvoke $r7.<org.apache.hadoop.fs.Path: void <init>(java.lang.String)>($r22);
+        $r21[0] = $r7;
+        staticinvoke <cfhider.TeraInputFormat: void setInputPaths(org.apache.hadoop.mapred.JobConf,org.apache.hadoop.fs.Path[])>(r3, $r21);
+        $r23 = new org.apache.hadoop.fs.Path;
+        $r24 = r1[1];
+        specialinvoke $r23.<org.apache.hadoop.fs.Path: void <init>(java.lang.String)>($r24);
+        staticinvoke <org.apache.hadoop.mapred.FileOutputFormat: void setOutputPath(org.apache.hadoop.mapred.JobConf,org.apache.hadoop.fs.Path)>(r3, $r23);
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setJobName(java.lang.String)>("TeraSort");
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setJarByClass(java.lang.Class)>(class "cfhider/TeraSort");
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setOutputKeyClass(java.lang.Class)>(class "org/apache/hadoop/io/Text");
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setOutputValueClass(java.lang.Class)>(class "org/apache/hadoop/io/Text");
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setInputFormat(java.lang.Class)>(class "cfhider/TeraInputFormat");
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setOutputFormat(java.lang.Class)>(class "cfhider/TeraOutputFormat");
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setPartitionerClass(java.lang.Class)>(class "cfhider/TeraSort$TotalOrderPartitioner");
+        staticinvoke <cfhider.TeraInputFormat: void writePartitionFile(org.apache.hadoop.mapred.JobConf,org.apache.hadoop.fs.Path)>(r3, r5);
+        staticinvoke <org.apache.hadoop.filecache.DistributedCache: void addCacheFile(java.net.URI,org.apache.hadoop.conf.Configuration)>(r6, r3);
+        staticinvoke <org.apache.hadoop.filecache.DistributedCache: void createSymlink(org.apache.hadoop.conf.Configuration)>(r3);
+        virtualinvoke r3.<org.apache.hadoop.mapred.JobConf: void setInt(java.lang.String,int)>("dfs.replication", 1);
+        staticinvoke <cfhider.TeraOutputFormat: void setFinalSync(org.apache.hadoop.mapred.JobConf,boolean)>(r3, 1);
+        staticinvoke <org.apache.hadoop.mapred.JobClient: org.apache.hadoop.mapred.RunningJob runJob(org.apache.hadoop.mapred.JobConf)>(r3);
+        $r26 = <cfhider.TeraSort: org.apache.commons.logging.Log LOG>;
+        interfaceinvoke $r26.<org.apache.commons.logging.Log: void info(java.lang.Object)>("done");
+        return 0;
+    }
+
+    public static void main(java.lang.String[]) throws java.lang.Exception
+    {
+        java.lang.String[] r0;
+        org.apache.hadoop.mapred.JobConf $r1;
+        int i0;
+        cfhider.TeraSort $r2;
+
+        r0 := @parameter0: java.lang.String[];
+        $r1 = new org.apache.hadoop.mapred.JobConf;
+        specialinvoke $r1.<org.apache.hadoop.mapred.JobConf: void <init>()>();
+        $r2 = new cfhider.TeraSort;
+        specialinvoke $r2.<cfhider.TeraSort: void <init>()>();
+        i0 = staticinvoke <org.apache.hadoop.util.ToolRunner: int run(org.apache.hadoop.conf.Configuration,org.apache.hadoop.util.Tool,java.lang.String[])>($r1, $r2, r0);
+        staticinvoke <java.lang.System: void exit(int)>(i0);
+        return;
+    }
+
+    static void <clinit>()
+    {
+        org.apache.commons.logging.Log $r0;
+
+        $r0 = staticinvoke <org.apache.commons.logging.LogFactory: org.apache.commons.logging.Log getLog(java.lang.Class)>(class "cfhider/TeraSort");
+        <cfhider.TeraSort: org.apache.commons.logging.Log LOG> = $r0;
+        return;
+    }
+}

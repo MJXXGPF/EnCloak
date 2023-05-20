@@ -1,0 +1,22 @@
+1
+rmr: cannot remove terasort_output03: No such file or directory.
+start initialize_enclave by zystble cfhidernew N1
+sgx_create_enclave in setting
+end_sgx_create_enclave:ret==1
+Error: Unexpected error occurred.
+init Failed ...
+
+real	0m12.383s
+user	0m0.375s
+sys	0m12.105s
+2
+rmr: cannot remove terasort_output03: No such file or directory.
+start initialize_enclave by zystble cfhidernew N1
+sgx_create_enclave in setting
+end_sgx_create_enclave:ret==1
+Error: Unexpected error occurred.
+init Failed ...
+
+real	0m20.473s
+user	0m0.450s
+sys	0m20.125s

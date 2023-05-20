@@ -1,0 +1,84 @@
+public class test.BinarySearch extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        test.BinarySearch r0;
+
+        r0 := @this: test.BinarySearch;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        int[] r1;
+        int i0, i1, i2;
+        java.io.PrintStream $r2;
+
+        r0 := @parameter0: java.lang.String[];
+        r1 = newarray (int)[4000];
+        i0 = 0;
+
+     label0:
+        if i0 >= 4000 goto label1;
+
+        r1[i0] = i0;
+        i0 = i0 + 1;
+        goto label0;
+
+     label1:
+        i1 = 1;
+        if i1 <= 1 goto label2;
+
+        i1 = i1 + 1;
+
+     label2:
+        r1[0] = i1;
+        i2 = staticinvoke <test.BinarySearch: int binarySearch(int[],int,int)>(r1, 49, 0);
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r2.<java.io.PrintStream: void println(int)>(i2);
+        return;
+    }
+
+    public static int binarySearch(int[], int, int)
+    {
+        int[] r0;
+        int i0, i1, i2, i3, i4, $i5, $i6, $i7, $i8;
+
+        r0 := @parameter0: int[];
+        i0 := @parameter1: int;
+        i1 := @parameter2: int;
+        r0[i1] = 1000;
+        i2 = 0;
+        $i5 = lengthof r0;
+        i3 = $i5 - 1;
+
+     label0:
+        if i2 > i3 goto label4;
+
+        $i6 = i2 + i3;
+        i4 = $i6 / 2;
+        $i7 = r0[i4];
+        if i0 != $i7 goto label1;
+
+        return i4;
+
+     label1:
+        $i8 = r0[i4];
+        if i0 >= $i8 goto label2;
+
+        i3 = i4 - 1;
+        goto label3;
+
+     label2:
+        i2 = i4 + 1;
+
+     label3:
+        goto label0;
+
+     label4:
+        return -1;
+    }
+}

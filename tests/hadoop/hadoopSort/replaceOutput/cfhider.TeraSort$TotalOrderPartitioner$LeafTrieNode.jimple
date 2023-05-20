@@ -1,0 +1,105 @@
+class cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode extends cfhider.TeraSort$TotalOrderPartitioner$TrieNode
+{
+    int lower;
+    int upper;
+    org.apache.hadoop.io.Text[] splitPoints;
+    public java.lang.String Cuuid;
+
+    void <init>(int, org.apache.hadoop.io.Text[], int, int)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode r0;
+        int i0, i1, i2;
+        org.apache.hadoop.io.Text[] r1;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode;
+        i0 := @parameter0: int;
+        r1 := @parameter1: org.apache.hadoop.io.Text[];
+        i1 := @parameter2: int;
+        i2 := @parameter3: int;
+        specialinvoke r0.<cfhider.TeraSort$TotalOrderPartitioner$TrieNode: void <init>(int)>(i0);
+        r0.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: org.apache.hadoop.io.Text[] splitPoints> = r1;
+        r0.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: int lower> = i1;
+        r0.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: int upper> = i2;
+        return;
+    }
+
+    int findPartition(org.apache.hadoop.io.Text)
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode r0;
+        org.apache.hadoop.io.Text r1, $r3;
+        int i0, $i1, $i2, $i3, tmpGetField12, tmpGetField13, tmpResult15, tmpGetField18;
+        org.apache.hadoop.io.Text[] $r2;
+        long invokeLineNo;
+        java.lang.String getUUID, invokeUUID;
+        boolean branchInvokeResult;
+        invoker.sgx_invoker sgxInvoker;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode;
+        r1 := @parameter0: org.apache.hadoop.io.Text;
+        tmpGetField18 = 0;
+        tmpResult15 = 0;
+        tmpGetField13 = 0;
+        tmpGetField12 = 0;
+        i0 = 0;
+        $i1 = 0;
+        $r2 = null;
+        $r3 = null;
+        $i2 = 0;
+        $i3 = 0;
+        invokeLineNo = 0L;
+        getUUID = null;
+        invokeUUID = null;
+        branchInvokeResult = 0;
+        sgxInvoker = null;
+        sgxInvoker = new invoker.sgx_invoker;
+        specialinvoke sgxInvoker.<invoker.sgx_invoker: void <init>()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initenclave()>();
+        getUUID = virtualinvoke sgxInvoker.<invoker.sgx_invoker: java.lang.String getUUID()>();
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean initValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, invokeUUID, invokeLineNo);
+        tmpGetField12 = r0.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: int lower>;
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpGetField12);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 12L);
+
+     label0:
+        tmpGetField13 = r0.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: int upper>;
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpGetField12);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpGetField13);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 13L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 14L);
+        if branchInvokeResult == 1 goto label2;
+
+        $r2 = r0.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: org.apache.hadoop.io.Text[] splitPoints>;
+        $r3 = $r2[i0];
+        tmpResult15 = virtualinvoke $r3.<org.apache.hadoop.io.Text: int compareTo(org.apache.hadoop.io.BinaryComparable)>(r1);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpResult15);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpGetField12);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 15L);
+        branchInvokeResult = virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean getBooleanValue(java.lang.String,long)>(getUUID, 16L);
+        if branchInvokeResult == 1 goto label1;
+
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return i0;
+
+     label1:
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 17L);
+        goto label0;
+
+     label2:
+        tmpGetField18 = r0.<cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode: int upper>;
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpGetField18);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void add(int)>(tmpGetField12);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: void updateValueInEnclave(java.lang.String,int,long)>(getUUID, 0, 18L);
+        virtualinvoke sgxInvoker.<invoker.sgx_invoker: boolean deleteValueInEnclave(java.lang.String,java.lang.String,long)>(getUUID, "", 0L);
+        return $i3;
+    }
+
+    void print(java.io.PrintStream) throws java.io.IOException
+    {
+        cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode r0;
+        java.io.PrintStream r1;
+
+        r0 := @this: cfhider.TeraSort$TotalOrderPartitioner$LeafTrieNode;
+        r1 := @parameter0: java.io.PrintStream;
+        return;
+    }
+}

@@ -1,0 +1,890 @@
+1
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:10:55 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:10:55 INFO mapred.JobClient: Running job: job_201901112110_0033
+19/01/11 22:10:56 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:11:25 INFO mapred.JobClient:  map 10% reduce 0%
+19/01/11 22:11:26 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:11:30 INFO mapred.JobClient:  map 40% reduce 0%
+19/01/11 22:11:32 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:11:33 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:11:35 INFO mapred.JobClient:  map 60% reduce 13%
+19/01/11 22:11:44 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:11:47 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:11:48 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:11:50 INFO mapred.JobClient:  map 100% reduce 23%
+19/01/11 22:11:59 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:12:11 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:12:16 INFO mapred.JobClient: Job complete: job_201901112110_0033
+19/01/11 22:12:16 INFO mapred.JobClient: Counters: 31
+19/01/11 22:12:16 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:12:16 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:12:16 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=249856
+19/01/11 22:12:16 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:12:16 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:12:16 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:12:16 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:12:16 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:12:16 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=42971
+19/01/11 22:12:16 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:12:16 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:12:16 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:12:16 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:12:16 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:12:16 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:12:16 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:12:16 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:12:16 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:12:16 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:12:16 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:12:16 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:12:16 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:12:16 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:12:16 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:12:16 INFO mapred.JobClient:     Total committed heap usage (bytes)=2213543936
+19/01/11 22:12:16 INFO mapred.JobClient:     CPU time spent (ms)=163870
+19/01/11 22:12:16 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:12:16 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:12:16 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:12:16 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:12:16 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:12:16 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:12:16 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2493943808
+19/01/11 22:12:16 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:12:16 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55517519872
+19/01/11 22:12:16 INFO mapred.JobClient:     Map output records=20
+Job Finished in 81.077 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m33.991s
+user	0m3.683s
+sys	0m10.178s
+2
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:12:29 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:12:29 INFO mapred.JobClient: Running job: job_201901112110_0034
+19/01/11 22:12:30 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:12:58 INFO mapred.JobClient:  map 10% reduce 0%
+19/01/11 22:12:59 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:13:02 INFO mapred.JobClient:  map 40% reduce 0%
+19/01/11 22:13:04 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:13:05 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:13:07 INFO mapred.JobClient:  map 60% reduce 13%
+19/01/11 22:13:16 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:13:19 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:13:20 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:13:22 INFO mapred.JobClient:  map 100% reduce 23%
+19/01/11 22:13:31 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:13:46 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:13:51 INFO mapred.JobClient: Job complete: job_201901112110_0034
+19/01/11 22:13:51 INFO mapred.JobClient: Counters: 31
+19/01/11 22:13:51 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:13:51 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:13:51 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=249755
+19/01/11 22:13:51 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:13:51 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:13:51 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:13:51 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:13:51 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:13:51 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=45974
+19/01/11 22:13:51 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:13:51 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:13:51 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:13:51 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:13:51 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:13:51 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:13:51 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:13:51 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:13:51 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:13:51 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:13:51 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:13:51 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:13:51 INFO mapred.JobClient:     Reduce shuffle bytes=280
+19/01/11 22:13:51 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:13:51 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:13:51 INFO mapred.JobClient:     Total committed heap usage (bytes)=2211971072
+19/01/11 22:13:51 INFO mapred.JobClient:     CPU time spent (ms)=163800
+19/01/11 22:13:51 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:13:51 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:13:51 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:13:51 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:13:51 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:13:51 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:13:51 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2507444224
+19/01/11 22:13:51 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:13:51 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55523880960
+19/01/11 22:13:51 INFO mapred.JobClient:     Map output records=20
+Job Finished in 82.839 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m35.729s
+user	0m3.787s
+sys	0m9.850s
+3
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:14:04 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:14:05 INFO mapred.JobClient: Running job: job_201901112110_0035
+19/01/11 22:14:06 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:14:35 INFO mapred.JobClient:  map 10% reduce 0%
+19/01/11 22:14:36 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:14:38 INFO mapred.JobClient:  map 40% reduce 0%
+19/01/11 22:14:39 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:14:42 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:14:44 INFO mapred.JobClient:  map 60% reduce 16%
+19/01/11 22:14:53 INFO mapred.JobClient:  map 60% reduce 20%
+19/01/11 22:14:56 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:14:57 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:15:08 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:15:20 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:15:25 INFO mapred.JobClient: Job complete: job_201901112110_0035
+19/01/11 22:15:25 INFO mapred.JobClient: Counters: 31
+19/01/11 22:15:25 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:15:25 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:15:25 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=250212
+19/01/11 22:15:25 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:15:25 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:15:25 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:15:25 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:15:25 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:15:25 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=42869
+19/01/11 22:15:25 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:15:25 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:15:25 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:15:25 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:15:25 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:15:25 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:15:25 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:15:25 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:15:25 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:15:25 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:15:25 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:15:25 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:15:25 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:15:25 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:15:25 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:15:25 INFO mapred.JobClient:     Total committed heap usage (bytes)=2211971072
+19/01/11 22:15:25 INFO mapred.JobClient:     CPU time spent (ms)=163160
+19/01/11 22:15:25 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:15:25 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:15:25 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:15:25 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:15:25 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:15:25 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:15:25 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2501611520
+19/01/11 22:15:25 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:15:25 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55515230208
+19/01/11 22:15:25 INFO mapred.JobClient:     Map output records=20
+Job Finished in 80.871 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m33.400s
+user	0m3.876s
+sys	0m9.707s
+4
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:15:38 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:15:38 INFO mapred.JobClient: Running job: job_201901112110_0036
+19/01/11 22:15:39 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:16:06 INFO mapred.JobClient:  map 10% reduce 0%
+19/01/11 22:16:08 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:16:09 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:16:11 INFO mapred.JobClient:  map 40% reduce 0%
+19/01/11 22:16:14 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:16:17 INFO mapred.JobClient:  map 60% reduce 13%
+19/01/11 22:16:26 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:16:28 INFO mapred.JobClient:  map 80% reduce 20%
+19/01/11 22:16:29 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:16:31 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:16:32 INFO mapred.JobClient:  map 100% reduce 23%
+19/01/11 22:16:41 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:16:53 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:16:58 INFO mapred.JobClient: Job complete: job_201901112110_0036
+19/01/11 22:16:58 INFO mapred.JobClient: Counters: 31
+19/01/11 22:16:58 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:16:58 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:16:58 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=252634
+19/01/11 22:16:58 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:16:58 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:16:58 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:16:58 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:16:58 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:16:58 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=42914
+19/01/11 22:16:58 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:16:58 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:16:58 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:16:58 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:16:58 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:16:58 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:16:58 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:16:58 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:16:58 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:16:58 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:16:58 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:16:58 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:16:58 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:16:58 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:16:58 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:16:58 INFO mapred.JobClient:     Total committed heap usage (bytes)=2213543936
+19/01/11 22:16:58 INFO mapred.JobClient:     CPU time spent (ms)=163460
+19/01/11 22:16:58 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:16:58 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:16:58 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:16:58 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:16:58 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:16:58 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:16:58 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2511585280
+19/01/11 22:16:58 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:16:58 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55511871488
+19/01/11 22:16:58 INFO mapred.JobClient:     Map output records=20
+Job Finished in 80.918 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m33.500s
+user	0m3.588s
+sys	0m9.977s
+5
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:17:11 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:17:12 INFO mapred.JobClient: Running job: job_201901112110_0037
+19/01/11 22:17:13 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:17:42 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:17:45 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:17:48 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:17:51 INFO mapred.JobClient:  map 60% reduce 16%
+19/01/11 22:18:00 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:18:02 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:18:03 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:18:06 INFO mapred.JobClient:  map 100% reduce 23%
+19/01/11 22:18:15 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:18:27 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:18:32 INFO mapred.JobClient: Job complete: job_201901112110_0037
+19/01/11 22:18:32 INFO mapred.JobClient: Counters: 31
+19/01/11 22:18:32 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:18:32 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:18:32 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=246048
+19/01/11 22:18:32 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:18:32 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:18:32 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:18:32 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:18:32 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:18:32 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=42956
+19/01/11 22:18:32 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:18:32 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:18:32 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:18:32 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:18:32 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:18:32 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:18:32 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:18:32 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:18:32 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:18:32 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:18:32 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:18:32 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:18:32 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:18:32 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:18:32 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:18:32 INFO mapred.JobClient:     Total committed heap usage (bytes)=2213543936
+19/01/11 22:18:32 INFO mapred.JobClient:     CPU time spent (ms)=163400
+19/01/11 22:18:32 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:18:32 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:18:32 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:18:32 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:18:32 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:18:32 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:18:32 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2510225408
+19/01/11 22:18:32 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:18:32 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55513284608
+19/01/11 22:18:32 INFO mapred.JobClient:     Map output records=20
+Job Finished in 81.145 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m33.787s
+user	0m3.802s
+sys	0m9.886s
+6
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:18:45 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:18:45 INFO mapred.JobClient: Running job: job_201901112110_0038
+19/01/11 22:18:46 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:19:15 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:19:18 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:19:21 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:19:24 INFO mapred.JobClient:  map 60% reduce 16%
+19/01/11 22:19:33 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:19:35 INFO mapred.JobClient:  map 80% reduce 20%
+19/01/11 22:19:36 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:19:38 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:19:39 INFO mapred.JobClient:  map 100% reduce 23%
+19/01/11 22:19:49 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:19:58 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:20:03 INFO mapred.JobClient: Job complete: job_201901112110_0038
+19/01/11 22:20:03 INFO mapred.JobClient: Counters: 31
+19/01/11 22:20:03 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:20:03 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:20:03 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=243125
+19/01/11 22:20:03 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:20:03 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:20:03 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:20:03 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:20:03 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:20:03 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=39929
+19/01/11 22:20:03 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:20:03 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:20:03 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:20:03 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:20:03 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:20:03 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:20:03 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:20:03 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:20:03 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:20:03 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:20:03 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:20:03 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:20:03 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:20:03 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:20:03 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:20:03 INFO mapred.JobClient:     Total committed heap usage (bytes)=2211971072
+19/01/11 22:20:03 INFO mapred.JobClient:     CPU time spent (ms)=160020
+19/01/11 22:20:03 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:20:03 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:20:03 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:20:03 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:20:03 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:20:03 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:20:03 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2516353024
+19/01/11 22:20:03 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:20:03 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55513038848
+19/01/11 22:20:03 INFO mapred.JobClient:     Map output records=20
+Job Finished in 77.791 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m30.462s
+user	0m3.691s
+sys	0m9.987s
+7
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:20:15 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:20:16 INFO mapred.JobClient: Running job: job_201901112110_0039
+19/01/11 22:20:17 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:20:45 INFO mapred.JobClient:  map 10% reduce 0%
+19/01/11 22:20:48 INFO mapred.JobClient:  map 40% reduce 0%
+19/01/11 22:20:51 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:20:54 INFO mapred.JobClient:  map 60% reduce 13%
+19/01/11 22:21:03 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:21:05 INFO mapred.JobClient:  map 80% reduce 20%
+19/01/11 22:21:08 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:21:09 INFO mapred.JobClient:  map 100% reduce 23%
+19/01/11 22:21:18 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:21:27 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:21:32 INFO mapred.JobClient: Job complete: job_201901112110_0039
+19/01/11 22:21:32 INFO mapred.JobClient: Counters: 31
+19/01/11 22:21:32 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:21:32 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:21:32 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=240397
+19/01/11 22:21:32 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:21:32 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:21:32 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:21:32 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:21:32 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:21:32 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=39917
+19/01/11 22:21:32 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:21:32 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:21:32 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:21:32 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:21:32 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:21:32 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:21:32 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:21:32 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:21:32 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:21:32 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:21:32 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:21:32 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:21:32 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:21:32 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:21:32 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:21:32 INFO mapred.JobClient:     Total committed heap usage (bytes)=2211971072
+19/01/11 22:21:32 INFO mapred.JobClient:     CPU time spent (ms)=158570
+19/01/11 22:21:32 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:21:32 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:21:32 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:21:32 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:21:32 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:21:32 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:21:32 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2516586496
+19/01/11 22:21:32 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:21:32 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55518912512
+19/01/11 22:21:32 INFO mapred.JobClient:     Map output records=20
+Job Finished in 77.326 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m29.932s
+user	0m3.636s
+sys	0m9.936s
+8
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:21:45 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:21:46 INFO mapred.JobClient: Running job: job_201901112110_0040
+19/01/11 22:21:47 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:22:16 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:22:19 INFO mapred.JobClient:  map 40% reduce 0%
+19/01/11 22:22:22 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:22:25 INFO mapred.JobClient:  map 60% reduce 13%
+19/01/11 22:22:34 INFO mapred.JobClient:  map 60% reduce 20%
+19/01/11 22:22:36 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:22:37 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:22:39 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:22:49 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:23:01 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:23:05 INFO mapred.JobClient: Job complete: job_201901112110_0040
+19/01/11 22:23:05 INFO mapred.JobClient: Counters: 31
+19/01/11 22:23:05 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:23:05 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:23:05 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=255511
+19/01/11 22:23:05 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:23:05 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:23:05 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:23:05 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:23:05 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:23:05 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=43054
+19/01/11 22:23:05 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:23:05 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:23:05 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:23:05 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:23:05 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:23:05 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:23:05 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:23:05 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:23:05 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:23:05 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:23:05 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:23:05 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:23:05 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:23:05 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:23:05 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:23:05 INFO mapred.JobClient:     Total committed heap usage (bytes)=2209873920
+19/01/11 22:23:05 INFO mapred.JobClient:     CPU time spent (ms)=165570
+19/01/11 22:23:05 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:23:05 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:23:05 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:23:05 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:23:05 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:23:05 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:23:05 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2499547136
+19/01/11 22:23:05 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:23:05 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55515086848
+19/01/11 22:23:05 INFO mapred.JobClient:     Map output records=20
+Job Finished in 79.882 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m32.481s
+user	0m3.495s
+sys	0m10.077s
+9
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:23:18 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:23:18 INFO mapred.JobClient: Running job: job_201901112110_0041
+19/01/11 22:23:19 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:23:48 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:23:51 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:23:54 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:23:57 INFO mapred.JobClient:  map 60% reduce 16%
+19/01/11 22:24:03 INFO mapred.JobClient:  map 70% reduce 16%
+19/01/11 22:24:06 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:24:09 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:24:12 INFO mapred.JobClient:  map 100% reduce 30%
+19/01/11 22:24:21 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:24:33 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:24:38 INFO mapred.JobClient: Job complete: job_201901112110_0041
+19/01/11 22:24:38 INFO mapred.JobClient: Counters: 31
+19/01/11 22:24:38 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:24:38 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:24:38 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=236951
+19/01/11 22:24:38 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:24:38 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:24:38 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:24:38 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:24:38 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:24:38 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=43058
+19/01/11 22:24:38 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:24:38 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:24:38 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:24:38 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:24:38 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:24:38 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:24:38 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:24:38 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:24:38 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:24:38 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:24:38 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:24:38 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:24:38 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:24:38 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:24:38 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:24:38 INFO mapred.JobClient:     Total committed heap usage (bytes)=2213543936
+19/01/11 22:24:38 INFO mapred.JobClient:     CPU time spent (ms)=160500
+19/01/11 22:24:38 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:24:38 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:24:38 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:24:38 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:24:38 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:24:38 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:24:38 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2497798144
+19/01/11 22:24:38 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:24:38 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55487176704
+19/01/11 22:24:38 INFO mapred.JobClient:     Map output records=20
+Job Finished in 80.836 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m33.445s
+user	0m3.659s
+sys	0m9.865s
+10
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:24:51 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:24:52 INFO mapred.JobClient: Running job: job_201901112110_0042
+19/01/11 22:24:53 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:25:22 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:25:25 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:25:28 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:25:31 INFO mapred.JobClient:  map 60% reduce 16%
+19/01/11 22:25:39 INFO mapred.JobClient:  map 70% reduce 16%
+19/01/11 22:25:40 INFO mapred.JobClient:  map 80% reduce 20%
+19/01/11 22:25:42 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:25:43 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:25:46 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:25:55 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:26:04 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:26:09 INFO mapred.JobClient: Job complete: job_201901112110_0042
+19/01/11 22:26:09 INFO mapred.JobClient: Counters: 31
+19/01/11 22:26:09 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:26:09 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:26:09 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=243276
+19/01/11 22:26:09 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:26:09 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:26:09 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:26:09 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:26:09 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:26:09 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=39992
+19/01/11 22:26:09 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:26:09 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:26:09 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:26:09 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:26:09 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:26:09 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:26:09 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:26:09 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:26:09 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:26:09 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:26:09 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:26:09 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:26:09 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:26:09 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:26:09 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:26:09 INFO mapred.JobClient:     Total committed heap usage (bytes)=2241331200
+19/01/11 22:26:09 INFO mapred.JobClient:     CPU time spent (ms)=159050
+19/01/11 22:26:09 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:26:09 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:26:09 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:26:09 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:26:09 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:26:09 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:26:09 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2513010688
+19/01/11 22:26:09 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:26:09 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55490052096
+19/01/11 22:26:09 INFO mapred.JobClient:     Map output records=20
+Job Finished in 77.849 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m30.453s
+user	0m3.846s
+sys	0m9.667s
+11
+############################ Cache Hit ##########################
+
+0||1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:26:22 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:26:22 INFO mapred.JobClient: Running job: job_201901112110_0043
+19/01/11 22:26:23 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:26:52 INFO mapred.JobClient:  map 30% reduce 0%
+19/01/11 22:26:55 INFO mapred.JobClient:  map 50% reduce 0%
+19/01/11 22:26:58 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:27:01 INFO mapred.JobClient:  map 60% reduce 16%
+19/01/11 22:27:10 INFO mapred.JobClient:  map 70% reduce 20%
+19/01/11 22:27:12 INFO mapred.JobClient:  map 90% reduce 20%
+19/01/11 22:27:13 INFO mapred.JobClient:  map 100% reduce 20%
+19/01/11 22:27:16 INFO mapred.JobClient:  map 100% reduce 23%
+19/01/11 22:27:25 INFO mapred.JobClient:  map 100% reduce 66%
+19/01/11 22:27:37 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:27:42 INFO mapred.JobClient: Job complete: job_201901112110_0043
+19/01/11 22:27:42 INFO mapred.JobClient: Counters: 31
+19/01/11 22:27:42 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:27:42 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:27:42 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=246089
+19/01/11 22:27:42 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:27:42 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:27:42 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:27:42 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:27:42 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:27:42 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=42970
+19/01/11 22:27:42 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:27:42 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:27:42 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:27:42 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:27:42 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:27:42 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:27:42 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:27:42 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:27:42 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:27:42 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:27:42 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:27:42 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:27:42 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:27:42 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:27:42 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:27:42 INFO mapred.JobClient:     Total committed heap usage (bytes)=2211971072
+19/01/11 22:27:42 INFO mapred.JobClient:     CPU time spent (ms)=162680
+19/01/11 22:27:42 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:27:42 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:27:42 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:27:42 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:27:42 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:27:42 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:27:42 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2497396736
+19/01/11 22:27:42 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:27:42 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=55500013568
+19/01/11 22:27:42 INFO mapred.JobClient:     Map output records=20
+Job Finished in 80.874 seconds
+Estimated value of Pi is 3.14155200000000000000
+start initialize_enclavesgx_create_enclave
+enclave path:enclave.signed.so
+end_sgx_create_enclave:ret==0==in ocall_print:read ok
+==in ocall_print:splitting
+-in ocall_long:1647
+-in ocall_long:720
+
+real	1m33.493s
+user	0m3.645s
+sys	0m9.962s

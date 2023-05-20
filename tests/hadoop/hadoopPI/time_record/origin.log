@@ -1,0 +1,1805 @@
+1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 21:34:20 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 21:34:21 INFO mapred.JobClient: Running job: job_201901112110_0012
+19/01/11 21:34:22 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 21:34:37 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 21:34:43 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 21:34:46 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 21:34:54 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 21:34:59 INFO mapred.JobClient: Job complete: job_201901112110_0012
+19/01/11 21:34:59 INFO mapred.JobClient: Counters: 31
+19/01/11 21:34:59 INFO mapred.JobClient:   Job Counters 
+19/01/11 21:34:59 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 21:34:59 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=45113
+19/01/11 21:34:59 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 21:34:59 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 21:34:59 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 21:34:59 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 21:34:59 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 21:34:59 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16114
+19/01/11 21:34:59 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 21:34:59 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 21:34:59 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 21:34:59 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 21:34:59 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 21:34:59 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 21:34:59 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 21:34:59 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 21:34:59 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 21:34:59 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 21:34:59 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 21:34:59 INFO mapred.JobClient:     Map input records=10
+19/01/11 21:34:59 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 21:34:59 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 21:34:59 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 21:34:59 INFO mapred.JobClient:     Total committed heap usage (bytes)=1886388224
+19/01/11 21:34:59 INFO mapred.JobClient:     CPU time spent (ms)=3340
+19/01/11 21:34:59 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 21:34:59 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 21:34:59 INFO mapred.JobClient:     Combine input records=0
+19/01/11 21:34:59 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 21:34:59 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 21:34:59 INFO mapred.JobClient:     Combine output records=0
+19/01/11 21:34:59 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2030161920
+19/01/11 21:34:59 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 21:34:59 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7865405440
+19/01/11 21:34:59 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.637 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.498s
+user	0m1.610s
+sys	0m0.131s
+2
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 21:35:00 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 21:35:00 INFO mapred.JobClient: Running job: job_201901112110_0013
+19/01/11 21:35:01 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 21:35:15 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 21:35:18 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 21:35:21 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 21:35:24 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 21:35:33 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 21:35:38 INFO mapred.JobClient: Job complete: job_201901112110_0013
+19/01/11 21:35:38 INFO mapred.JobClient: Counters: 31
+19/01/11 21:35:38 INFO mapred.JobClient:   Job Counters 
+19/01/11 21:35:38 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 21:35:38 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=45272
+19/01/11 21:35:38 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 21:35:38 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 21:35:38 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 21:35:38 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 21:35:38 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 21:35:38 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16036
+19/01/11 21:35:38 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 21:35:38 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 21:35:38 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 21:35:38 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 21:35:38 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 21:35:38 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 21:35:38 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 21:35:38 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 21:35:38 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 21:35:38 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 21:35:38 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 21:35:38 INFO mapred.JobClient:     Map input records=10
+19/01/11 21:35:38 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 21:35:38 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 21:35:38 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 21:35:38 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 21:35:38 INFO mapred.JobClient:     CPU time spent (ms)=3080
+19/01/11 21:35:38 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 21:35:38 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 21:35:38 INFO mapred.JobClient:     Combine input records=0
+19/01/11 21:35:38 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 21:35:38 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 21:35:38 INFO mapred.JobClient:     Combine output records=0
+19/01/11 21:35:38 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2029400064
+19/01/11 21:35:38 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 21:35:38 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7886565376
+19/01/11 21:35:38 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.636 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.530s
+user	0m1.701s
+sys	0m0.144s
+3
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 21:35:39 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 21:35:40 INFO mapred.JobClient: Running job: job_201901112110_0014
+19/01/11 21:35:41 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 21:35:55 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 21:36:01 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 21:36:04 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 21:36:13 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 21:36:18 INFO mapred.JobClient: Job complete: job_201901112110_0014
+19/01/11 21:36:18 INFO mapred.JobClient: Counters: 31
+19/01/11 21:36:18 INFO mapred.JobClient:   Job Counters 
+19/01/11 21:36:18 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 21:36:18 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44923
+19/01/11 21:36:18 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 21:36:18 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 21:36:18 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 21:36:18 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 21:36:18 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 21:36:18 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16012
+19/01/11 21:36:18 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 21:36:18 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 21:36:18 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 21:36:18 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 21:36:18 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 21:36:18 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 21:36:18 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 21:36:18 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 21:36:18 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 21:36:18 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 21:36:18 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 21:36:18 INFO mapred.JobClient:     Map input records=10
+19/01/11 21:36:18 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 21:36:18 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 21:36:18 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 21:36:18 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 21:36:18 INFO mapred.JobClient:     CPU time spent (ms)=2860
+19/01/11 21:36:18 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 21:36:18 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 21:36:18 INFO mapred.JobClient:     Combine input records=0
+19/01/11 21:36:18 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 21:36:18 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 21:36:18 INFO mapred.JobClient:     Combine output records=0
+19/01/11 21:36:18 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2055561216
+19/01/11 21:36:18 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 21:36:18 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=8050843648
+19/01/11 21:36:18 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.632 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.493s
+user	0m1.634s
+sys	0m0.125s
+4
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 21:36:19 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 21:36:19 INFO mapred.JobClient: Running job: job_201901112110_0015
+19/01/11 21:36:20 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 21:36:33 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 21:36:39 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 21:36:42 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 21:36:51 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 21:36:56 INFO mapred.JobClient: Job complete: job_201901112110_0015
+19/01/11 21:36:56 INFO mapred.JobClient: Counters: 31
+19/01/11 21:36:56 INFO mapred.JobClient:   Job Counters 
+19/01/11 21:36:56 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 21:36:56 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=45128
+19/01/11 21:36:56 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 21:36:56 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 21:36:56 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 21:36:56 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 21:36:56 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 21:36:56 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16032
+19/01/11 21:36:56 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 21:36:56 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 21:36:56 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 21:36:56 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 21:36:56 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 21:36:56 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 21:36:56 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 21:36:56 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 21:36:56 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 21:36:56 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 21:36:56 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 21:36:56 INFO mapred.JobClient:     Map input records=10
+19/01/11 21:36:56 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 21:36:56 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 21:36:56 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 21:36:56 INFO mapred.JobClient:     Total committed heap usage (bytes)=1914175488
+19/01/11 21:36:56 INFO mapred.JobClient:     CPU time spent (ms)=2910
+19/01/11 21:36:56 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 21:36:56 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 21:36:56 INFO mapred.JobClient:     Combine input records=0
+19/01/11 21:36:56 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 21:36:56 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 21:36:56 INFO mapred.JobClient:     Combine output records=0
+19/01/11 21:36:56 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2024448000
+19/01/11 21:36:56 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 21:36:56 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=8059318272
+19/01/11 21:36:56 INFO mapred.JobClient:     Map output records=20
+Job Finished in 37.613 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m38.498s
+user	0m1.618s
+sys	0m0.105s
+5
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 21:36:57 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 21:36:58 INFO mapred.JobClient: Running job: job_201901112110_0016
+19/01/11 21:36:59 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 21:37:13 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 21:37:19 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 21:37:22 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 21:37:31 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 21:37:36 INFO mapred.JobClient: Job complete: job_201901112110_0016
+19/01/11 21:37:36 INFO mapred.JobClient: Counters: 31
+19/01/11 21:37:36 INFO mapred.JobClient:   Job Counters 
+19/01/11 21:37:36 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 21:37:36 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44926
+19/01/11 21:37:36 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 21:37:36 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 21:37:36 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 21:37:36 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 21:37:36 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 21:37:36 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16039
+19/01/11 21:37:36 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 21:37:36 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 21:37:36 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 21:37:36 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 21:37:36 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 21:37:36 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 21:37:36 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 21:37:36 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 21:37:36 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 21:37:36 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 21:37:36 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 21:37:36 INFO mapred.JobClient:     Map input records=10
+19/01/11 21:37:36 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 21:37:36 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 21:37:36 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 21:37:36 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 21:37:36 INFO mapred.JobClient:     CPU time spent (ms)=3190
+19/01/11 21:37:36 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 21:37:36 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 21:37:36 INFO mapred.JobClient:     Combine input records=0
+19/01/11 21:37:36 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 21:37:36 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 21:37:36 INFO mapred.JobClient:     Combine output records=0
+19/01/11 21:37:36 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2030993408
+19/01/11 21:37:36 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 21:37:36 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7900450816
+19/01/11 21:37:36 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.576 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.494s
+user	0m1.711s
+sys	0m0.110s
+1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:31:47 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:31:47 INFO mapred.JobClient: Running job: job_201901112110_0044
+19/01/11 22:31:48 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:32:01 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:32:03 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:32:07 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:32:10 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:32:19 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:32:24 INFO mapred.JobClient: Job complete: job_201901112110_0044
+19/01/11 22:32:24 INFO mapred.JobClient: Counters: 31
+19/01/11 22:32:24 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:32:24 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:32:24 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44925
+19/01/11 22:32:24 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:32:24 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:32:24 INFO mapred.JobClient:     Rack-local map tasks=8
+19/01/11 22:32:24 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:32:24 INFO mapred.JobClient:     Data-local map tasks=2
+19/01/11 22:32:24 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=15960
+19/01/11 22:32:24 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:32:24 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:32:24 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:32:24 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:32:24 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:32:24 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:32:24 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:32:24 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:32:24 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:32:24 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:32:24 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:32:24 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:32:24 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:32:24 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:32:24 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:32:24 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 22:32:24 INFO mapred.JobClient:     CPU time spent (ms)=2820
+19/01/11 22:32:24 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:32:24 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:32:24 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:32:24 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:32:24 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:32:24 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:32:24 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2061475840
+19/01/11 22:32:24 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:32:24 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=8068616192
+19/01/11 22:32:24 INFO mapred.JobClient:     Map output records=20
+Job Finished in 37.628 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m38.511s
+user	0m1.634s
+sys	0m0.082s
+2
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:32:25 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:32:26 INFO mapred.JobClient: Running job: job_201901112110_0045
+19/01/11 22:32:27 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:32:40 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:32:41 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:32:46 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:32:49 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:32:58 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:33:03 INFO mapred.JobClient: Job complete: job_201901112110_0045
+19/01/11 22:33:03 INFO mapred.JobClient: Counters: 31
+19/01/11 22:33:03 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:33:03 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:33:03 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44919
+19/01/11 22:33:03 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:33:03 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:33:03 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:33:03 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:33:03 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:33:03 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16062
+19/01/11 22:33:03 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:33:03 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:33:03 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:33:03 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:33:03 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:33:03 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:33:03 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:33:03 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:33:03 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:33:03 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:33:03 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:33:03 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:33:03 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:33:03 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:33:03 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:33:03 INFO mapred.JobClient:     Total committed heap usage (bytes)=1914175488
+19/01/11 22:33:03 INFO mapred.JobClient:     CPU time spent (ms)=4230
+19/01/11 22:33:03 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:33:03 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:33:03 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:33:03 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:33:03 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:33:03 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:33:03 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2061320192
+19/01/11 22:33:03 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:33:03 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7889084416
+19/01/11 22:33:03 INFO mapred.JobClient:     Map output records=20
+Job Finished in 37.584 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m38.449s
+user	0m1.633s
+sys	0m0.098s
+3
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:33:04 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:33:04 INFO mapred.JobClient: Running job: job_201901112110_0046
+19/01/11 22:33:05 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:33:18 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:33:20 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:33:24 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:33:27 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:33:36 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:33:41 INFO mapred.JobClient: Job complete: job_201901112110_0046
+19/01/11 22:33:41 INFO mapred.JobClient: Counters: 31
+19/01/11 22:33:41 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:33:41 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:33:41 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44918
+19/01/11 22:33:41 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:33:41 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:33:41 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:33:41 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:33:41 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:33:41 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16033
+19/01/11 22:33:41 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:33:41 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:33:41 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:33:41 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:33:41 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:33:41 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:33:41 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:33:41 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:33:41 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:33:41 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:33:41 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:33:41 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:33:41 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:33:41 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:33:41 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:33:41 INFO mapred.JobClient:     Total committed heap usage (bytes)=1886388224
+19/01/11 22:33:41 INFO mapred.JobClient:     CPU time spent (ms)=2890
+19/01/11 22:33:41 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:33:41 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:33:41 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:33:41 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:33:41 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:33:41 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:33:41 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2032046080
+19/01/11 22:33:41 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:33:41 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7888072704
+19/01/11 22:33:41 INFO mapred.JobClient:     Map output records=20
+Job Finished in 37.64 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m38.489s
+user	0m1.603s
+sys	0m0.105s
+4
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:33:42 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:33:43 INFO mapred.JobClient: Running job: job_201901112110_0047
+19/01/11 22:33:44 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:33:58 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:33:59 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:34:04 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:34:07 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:34:16 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:34:21 INFO mapred.JobClient: Job complete: job_201901112110_0047
+19/01/11 22:34:21 INFO mapred.JobClient: Counters: 31
+19/01/11 22:34:21 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:34:21 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:34:21 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44949
+19/01/11 22:34:21 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:34:21 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:34:21 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:34:21 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:34:21 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:34:21 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16011
+19/01/11 22:34:21 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:34:21 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:34:21 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:34:21 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:34:21 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:34:21 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:34:21 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:34:21 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:34:21 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:34:21 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:34:21 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:34:21 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:34:21 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:34:21 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:34:21 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:34:21 INFO mapred.JobClient:     Total committed heap usage (bytes)=1886388224
+19/01/11 22:34:21 INFO mapred.JobClient:     CPU time spent (ms)=2920
+19/01/11 22:34:21 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:34:21 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:34:21 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:34:21 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:34:21 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:34:21 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:34:21 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2034290688
+19/01/11 22:34:21 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:34:21 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7913865216
+19/01/11 22:34:21 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.619 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.457s
+user	0m1.627s
+sys	0m0.087s
+5
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:34:22 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:34:22 INFO mapred.JobClient: Running job: job_201901112110_0048
+19/01/11 22:34:23 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:34:37 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:34:38 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:34:43 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:34:46 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:34:55 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:35:00 INFO mapred.JobClient: Job complete: job_201901112110_0048
+19/01/11 22:35:00 INFO mapred.JobClient: Counters: 31
+19/01/11 22:35:00 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:35:00 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:35:00 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44990
+19/01/11 22:35:00 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:35:00 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:35:00 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:35:00 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:35:00 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:35:00 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16030
+19/01/11 22:35:00 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:35:00 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:35:00 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:35:00 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:35:00 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:35:00 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:35:00 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:35:00 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:35:00 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:35:00 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:35:00 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:35:00 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:35:00 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:35:00 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:35:00 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:35:00 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 22:35:00 INFO mapred.JobClient:     CPU time spent (ms)=2930
+19/01/11 22:35:00 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:35:00 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:35:00 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:35:00 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:35:00 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:35:00 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:35:00 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2024456192
+19/01/11 22:35:00 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:35:00 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7892783104
+19/01/11 22:35:00 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.593 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.449s
+user	0m1.553s
+sys	0m0.131s
+6
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:35:01 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:35:02 INFO mapred.JobClient: Running job: job_201901112110_0049
+19/01/11 22:35:03 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:35:16 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:35:17 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:35:22 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:35:25 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:35:34 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:35:39 INFO mapred.JobClient: Job complete: job_201901112110_0049
+19/01/11 22:35:39 INFO mapred.JobClient: Counters: 31
+19/01/11 22:35:39 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:35:39 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:35:39 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44822
+19/01/11 22:35:39 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:35:39 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:35:39 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:35:39 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:35:39 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:35:39 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=15976
+19/01/11 22:35:39 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:35:39 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:35:39 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:35:39 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:35:39 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:35:39 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:35:39 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:35:39 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:35:39 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:35:39 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:35:39 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:35:39 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:35:39 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:35:39 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:35:39 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:35:39 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 22:35:39 INFO mapred.JobClient:     CPU time spent (ms)=2880
+19/01/11 22:35:39 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:35:39 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:35:39 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:35:39 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:35:39 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:35:39 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:35:39 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2026876928
+19/01/11 22:35:39 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:35:39 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7879720960
+19/01/11 22:35:39 INFO mapred.JobClient:     Map output records=20
+Job Finished in 37.615 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m38.448s
+user	0m1.630s
+sys	0m0.105s
+7
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:35:40 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:35:40 INFO mapred.JobClient: Running job: job_201901112110_0050
+19/01/11 22:35:41 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:35:55 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:35:56 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:36:01 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:36:04 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:36:13 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:36:18 INFO mapred.JobClient: Job complete: job_201901112110_0050
+19/01/11 22:36:18 INFO mapred.JobClient: Counters: 31
+19/01/11 22:36:18 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:36:18 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:36:18 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44941
+19/01/11 22:36:18 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:36:18 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:36:18 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:36:18 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:36:18 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:36:18 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16068
+19/01/11 22:36:18 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:36:18 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:36:18 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:36:18 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:36:18 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:36:18 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:36:18 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:36:18 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:36:18 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:36:18 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:36:18 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:36:18 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:36:18 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:36:18 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:36:18 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:36:18 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 22:36:18 INFO mapred.JobClient:     CPU time spent (ms)=3660
+19/01/11 22:36:18 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:36:18 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:36:18 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:36:18 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:36:18 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:36:18 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:36:18 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2053996544
+19/01/11 22:36:18 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:36:18 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7909146624
+19/01/11 22:36:18 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.864 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.678s
+user	0m1.590s
+sys	0m0.133s
+8
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:36:19 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:36:20 INFO mapred.JobClient: Running job: job_201901112110_0051
+19/01/11 22:36:21 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:36:35 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:36:41 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:36:44 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:36:53 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:36:58 INFO mapred.JobClient: Job complete: job_201901112110_0051
+19/01/11 22:36:58 INFO mapred.JobClient: Counters: 31
+19/01/11 22:36:58 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:36:58 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:36:58 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=44945
+19/01/11 22:36:58 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:36:58 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:36:58 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:36:58 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:36:58 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:36:58 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=15986
+19/01/11 22:36:58 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:36:58 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:36:58 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:36:58 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:36:58 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:36:58 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:36:58 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:36:58 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:36:58 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:36:58 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:36:58 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:36:58 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:36:58 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:36:58 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:36:58 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:36:58 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 22:36:58 INFO mapred.JobClient:     CPU time spent (ms)=3060
+19/01/11 22:36:58 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:36:58 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:36:58 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:36:58 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:36:58 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:36:58 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:36:58 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2030440448
+19/01/11 22:36:58 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:36:58 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7892955136
+19/01/11 22:36:58 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.591 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.498s
+user	0m1.661s
+sys	0m0.097s
+9
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:36:59 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:36:59 INFO mapred.JobClient: Running job: job_201901112110_0052
+19/01/11 22:37:00 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:37:13 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:37:14 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:37:19 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:37:22 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:37:31 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:37:36 INFO mapred.JobClient: Job complete: job_201901112110_0052
+19/01/11 22:37:36 INFO mapred.JobClient: Counters: 31
+19/01/11 22:37:36 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:37:36 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:37:36 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=45758
+19/01/11 22:37:36 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:37:36 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:37:36 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:37:36 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:37:36 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:37:36 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16130
+19/01/11 22:37:36 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:37:36 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:37:36 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:37:36 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:37:36 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:37:36 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:37:36 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:37:36 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:37:36 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:37:36 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:37:36 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:37:36 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:37:36 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:37:36 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:37:36 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:37:36 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 22:37:36 INFO mapred.JobClient:     CPU time spent (ms)=2920
+19/01/11 22:37:36 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:37:36 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:37:36 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:37:36 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:37:36 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:37:36 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:37:36 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2031861760
+19/01/11 22:37:36 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:37:36 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7873630208
+19/01/11 22:37:36 INFO mapred.JobClient:     Map output records=20
+Job Finished in 37.659 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m38.494s
+user	0m1.655s
+sys	0m0.129s
+10
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:37:38 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:37:38 INFO mapred.JobClient: Running job: job_201901112110_0053
+19/01/11 22:37:39 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:37:53 INFO mapred.JobClient:  map 60% reduce 0%
+19/01/11 22:37:54 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:37:59 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:38:02 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:38:11 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:38:16 INFO mapred.JobClient: Job complete: job_201901112110_0053
+19/01/11 22:38:16 INFO mapred.JobClient: Counters: 31
+19/01/11 22:38:16 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:38:16 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:38:16 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=45363
+19/01/11 22:38:16 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:38:16 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:38:16 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:38:16 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:38:16 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:38:16 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16170
+19/01/11 22:38:16 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:38:16 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:38:16 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:38:16 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:38:16 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:38:16 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:38:16 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:38:16 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:38:16 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:38:16 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:38:16 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:38:16 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:38:16 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:38:16 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:38:16 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:38:16 INFO mapred.JobClient:     Total committed heap usage (bytes)=1914175488
+19/01/11 22:38:16 INFO mapred.JobClient:     CPU time spent (ms)=3340
+19/01/11 22:38:16 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:38:16 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:38:16 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:38:16 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:38:16 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:38:16 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:38:16 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2033086464
+19/01/11 22:38:16 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:38:16 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7895650304
+19/01/11 22:38:16 INFO mapred.JobClient:     Map output records=20
+Job Finished in 38.608 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m39.555s
+user	0m1.774s
+sys	0m0.122s
+11
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/01/11 22:38:17 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/01/11 22:38:17 INFO mapred.JobClient: Running job: job_201901112110_0054
+19/01/11 22:38:18 INFO mapred.JobClient:  map 0% reduce 0%
+19/01/11 22:38:31 INFO mapred.JobClient:  map 20% reduce 0%
+19/01/11 22:38:32 INFO mapred.JobClient:  map 80% reduce 0%
+19/01/11 22:38:37 INFO mapred.JobClient:  map 100% reduce 0%
+19/01/11 22:38:40 INFO mapred.JobClient:  map 100% reduce 26%
+19/01/11 22:38:49 INFO mapred.JobClient:  map 100% reduce 100%
+19/01/11 22:38:54 INFO mapred.JobClient: Job complete: job_201901112110_0054
+19/01/11 22:38:54 INFO mapred.JobClient: Counters: 31
+19/01/11 22:38:54 INFO mapred.JobClient:   Job Counters 
+19/01/11 22:38:54 INFO mapred.JobClient:     Launched reduce tasks=1
+19/01/11 22:38:54 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=45015
+19/01/11 22:38:54 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/01/11 22:38:54 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/01/11 22:38:54 INFO mapred.JobClient:     Rack-local map tasks=6
+19/01/11 22:38:54 INFO mapred.JobClient:     Launched map tasks=10
+19/01/11 22:38:54 INFO mapred.JobClient:     Data-local map tasks=4
+19/01/11 22:38:54 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=16063
+19/01/11 22:38:54 INFO mapred.JobClient:   File Input Format Counters 
+19/01/11 22:38:54 INFO mapred.JobClient:     Bytes Read=1180
+19/01/11 22:38:54 INFO mapred.JobClient:   File Output Format Counters 
+19/01/11 22:38:54 INFO mapred.JobClient:     Bytes Written=97
+19/01/11 22:38:54 INFO mapred.JobClient:   FileSystemCounters
+19/01/11 22:38:54 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/01/11 22:38:54 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/01/11 22:38:54 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239428
+19/01/11 22:38:54 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/01/11 22:38:54 INFO mapred.JobClient:   Map-Reduce Framework
+19/01/11 22:38:54 INFO mapred.JobClient:     Map output materialized bytes=280
+19/01/11 22:38:54 INFO mapred.JobClient:     Map input records=10
+19/01/11 22:38:54 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/01/11 22:38:54 INFO mapred.JobClient:     Spilled Records=40
+19/01/11 22:38:54 INFO mapred.JobClient:     Map output bytes=180
+19/01/11 22:38:54 INFO mapred.JobClient:     Total committed heap usage (bytes)=1885863936
+19/01/11 22:38:54 INFO mapred.JobClient:     CPU time spent (ms)=3480
+19/01/11 22:38:54 INFO mapred.JobClient:     Map input bytes=240
+19/01/11 22:38:54 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/01/11 22:38:54 INFO mapred.JobClient:     Combine input records=0
+19/01/11 22:38:54 INFO mapred.JobClient:     Reduce input records=20
+19/01/11 22:38:54 INFO mapred.JobClient:     Reduce input groups=20
+19/01/11 22:38:54 INFO mapred.JobClient:     Combine output records=0
+19/01/11 22:38:54 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2032668672
+19/01/11 22:38:54 INFO mapred.JobClient:     Reduce output records=0
+19/01/11 22:38:54 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=7871004672
+19/01/11 22:38:54 INFO mapred.JobClient:     Map output records=20
+Job Finished in 37.588 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m38.439s
+user	0m1.611s
+sys	0m0.105s
+1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/04/10 21:54:32 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/04/10 21:54:33 INFO mapred.JobClient: Running job: job_201904101614_0023
+19/04/10 21:54:34 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/10 21:54:48 INFO mapred.JobClient:  map 20% reduce 0%
+19/04/10 21:54:49 INFO mapred.JobClient:  map 40% reduce 0%
+19/04/10 21:54:54 INFO mapred.JobClient:  map 60% reduce 0%
+19/04/10 21:54:55 INFO mapred.JobClient:  map 80% reduce 0%
+19/04/10 21:54:57 INFO mapred.JobClient:  map 80% reduce 13%
+19/04/10 21:55:00 INFO mapred.JobClient:  map 100% reduce 13%
+19/04/10 21:55:06 INFO mapred.JobClient:  map 100% reduce 26%
+19/04/10 21:55:12 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/10 21:55:17 INFO mapred.JobClient: Job complete: job_201904101614_0023
+19/04/10 21:55:17 INFO mapred.JobClient: Counters: 30
+19/04/10 21:55:17 INFO mapred.JobClient:   Job Counters 
+19/04/10 21:55:17 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/10 21:55:17 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=56411
+19/04/10 21:55:17 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/10 21:55:17 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/10 21:55:17 INFO mapred.JobClient:     Rack-local map tasks=10
+19/04/10 21:55:17 INFO mapred.JobClient:     Launched map tasks=10
+19/04/10 21:55:17 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=22889
+19/04/10 21:55:17 INFO mapred.JobClient:   File Input Format Counters 
+19/04/10 21:55:17 INFO mapred.JobClient:     Bytes Read=1180
+19/04/10 21:55:17 INFO mapred.JobClient:   File Output Format Counters 
+19/04/10 21:55:17 INFO mapred.JobClient:     Bytes Written=97
+19/04/10 21:55:17 INFO mapred.JobClient:   FileSystemCounters
+19/04/10 21:55:17 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/04/10 21:55:17 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/04/10 21:55:17 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239472
+19/04/10 21:55:17 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/04/10 21:55:17 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/10 21:55:17 INFO mapred.JobClient:     Map output materialized bytes=280
+19/04/10 21:55:17 INFO mapred.JobClient:     Map input records=10
+19/04/10 21:55:17 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/04/10 21:55:17 INFO mapred.JobClient:     Spilled Records=40
+19/04/10 21:55:17 INFO mapred.JobClient:     Map output bytes=180
+19/04/10 21:55:17 INFO mapred.JobClient:     Total committed heap usage (bytes)=1888485376
+19/04/10 21:55:17 INFO mapred.JobClient:     CPU time spent (ms)=4610
+19/04/10 21:55:17 INFO mapred.JobClient:     Map input bytes=240
+19/04/10 21:55:17 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/04/10 21:55:17 INFO mapred.JobClient:     Combine input records=0
+19/04/10 21:55:17 INFO mapred.JobClient:     Reduce input records=20
+19/04/10 21:55:17 INFO mapred.JobClient:     Reduce input groups=20
+19/04/10 21:55:17 INFO mapred.JobClient:     Combine output records=0
+19/04/10 21:55:17 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2044739584
+19/04/10 21:55:17 INFO mapred.JobClient:     Reduce output records=0
+19/04/10 21:55:17 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=8173707264
+19/04/10 21:55:17 INFO mapred.JobClient:     Map output records=20
+Job Finished in 45.085 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m46.004s
+user	0m1.660s
+sys	0m0.096s
+2
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/04/10 21:55:19 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/04/10 21:55:19 INFO mapred.JobClient: Running job: job_201904101614_0024
+19/04/10 21:55:20 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/10 21:55:33 INFO mapred.JobClient:  map 20% reduce 0%
+19/04/10 21:55:34 INFO mapred.JobClient:  map 40% reduce 0%
+19/04/10 21:55:39 INFO mapred.JobClient:  map 60% reduce 0%
+19/04/10 21:55:40 INFO mapred.JobClient:  map 80% reduce 0%
+19/04/10 21:55:42 INFO mapred.JobClient:  map 80% reduce 20%
+19/04/10 21:55:45 INFO mapred.JobClient:  map 100% reduce 20%
+19/04/10 21:55:51 INFO mapred.JobClient:  map 100% reduce 26%
+19/04/10 21:55:57 INFO mapred.JobClient:  map 100% reduce 100%
+19/04/10 21:56:02 INFO mapred.JobClient: Job complete: job_201904101614_0024
+19/04/10 21:56:02 INFO mapred.JobClient: Counters: 30
+19/04/10 21:56:02 INFO mapred.JobClient:   Job Counters 
+19/04/10 21:56:02 INFO mapred.JobClient:     Launched reduce tasks=1
+19/04/10 21:56:02 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=54535
+19/04/10 21:56:02 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+19/04/10 21:56:02 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+19/04/10 21:56:02 INFO mapred.JobClient:     Rack-local map tasks=10
+19/04/10 21:56:02 INFO mapred.JobClient:     Launched map tasks=10
+19/04/10 21:56:02 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=23063
+19/04/10 21:56:02 INFO mapred.JobClient:   File Input Format Counters 
+19/04/10 21:56:02 INFO mapred.JobClient:     Bytes Read=1180
+19/04/10 21:56:02 INFO mapred.JobClient:   File Output Format Counters 
+19/04/10 21:56:02 INFO mapred.JobClient:     Bytes Written=97
+19/04/10 21:56:02 INFO mapred.JobClient:   FileSystemCounters
+19/04/10 21:56:02 INFO mapred.JobClient:     FILE_BYTES_READ=226
+19/04/10 21:56:02 INFO mapred.JobClient:     HDFS_BYTES_READ=2420
+19/04/10 21:56:02 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=239472
+19/04/10 21:56:02 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=215
+19/04/10 21:56:02 INFO mapred.JobClient:   Map-Reduce Framework
+19/04/10 21:56:02 INFO mapred.JobClient:     Map output materialized bytes=280
+19/04/10 21:56:02 INFO mapred.JobClient:     Map input records=10
+19/04/10 21:56:02 INFO mapred.JobClient:     Reduce shuffle bytes=252
+19/04/10 21:56:02 INFO mapred.JobClient:     Spilled Records=40
+19/04/10 21:56:02 INFO mapred.JobClient:     Map output bytes=180
+19/04/10 21:56:02 INFO mapred.JobClient:     Total committed heap usage (bytes)=1888485376
+19/04/10 21:56:02 INFO mapred.JobClient:     CPU time spent (ms)=2990
+19/04/10 21:56:02 INFO mapred.JobClient:     Map input bytes=240
+19/04/10 21:56:02 INFO mapred.JobClient:     SPLIT_RAW_BYTES=1240
+19/04/10 21:56:02 INFO mapred.JobClient:     Combine input records=0
+19/04/10 21:56:02 INFO mapred.JobClient:     Reduce input records=20
+19/04/10 21:56:02 INFO mapred.JobClient:     Reduce input groups=20
+19/04/10 21:56:02 INFO mapred.JobClient:     Combine output records=0
+19/04/10 21:56:02 INFO mapred.JobClient:     Physical memory (bytes) snapshot=2029883392
+19/04/10 21:56:02 INFO mapred.JobClient:     Reduce output records=0
+19/04/10 21:56:02 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=8168165376
+19/04/10 21:56:02 INFO mapred.JobClient:     Map output records=20
+Job Finished in 43.569 seconds
+Estimated value of Pi is 3.14155200000000000000
+
+real	0m45.004s
+user	0m1.543s
+sys	0m0.098s
+3
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/04/10 21:56:03 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/04/10 21:56:04 INFO mapred.JobClient: Running job: job_201904101614_0025
+19/04/10 21:56:05 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/10 21:56:19 INFO mapred.JobClient:  map 20% reduce 0%
+19/04/10 21:56:20 INFO mapred.JobClient:  map 40% reduce 0%
+19/04/10 21:56:25 INFO mapred.JobClient:  map 60% reduce 0%
+19/04/10 21:56:26 INFO mapred.JobClient:  map 80% reduce 0%
+19/04/10 21:56:28 INFO mapred.JobClient:  map 80% reduce 20%
+19/04/10 21:56:31 INFO mapred.JobClient:  map 100% reduce 20%
+19/04/10 21:56:37 INFO mapred.JobClient:  map 100% reduce 26%
+
+real	0m38.472s
+user	0m1.530s
+sys	0m0.069s
+4
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.591s
+user	0m0.866s
+sys	0m0.054s
+5
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.604s
+user	0m0.894s
+sys	0m0.039s
+6
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.609s
+user	0m0.904s
+sys	0m0.063s
+7
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.619s
+user	0m0.927s
+sys	0m0.037s
+8
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.565s
+user	0m0.837s
+sys	0m0.058s
+9
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.588s
+user	0m0.875s
+sys	0m0.041s
+10
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.590s
+user	0m0.890s
+sys	0m0.037s
+11
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.584s
+user	0m0.876s
+sys	0m0.038s
+1
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.645s
+user	0m0.899s
+sys	0m0.057s
+2
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.612s
+user	0m0.884s
+sys	0m0.055s
+3
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.596s
+user	0m0.940s
+sys	0m0.033s
+4
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.581s
+user	0m0.845s
+sys	0m0.060s
+5
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.638s
+user	0m0.928s
+sys	0m0.024s
+6
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.624s
+user	0m0.902s
+sys	0m0.062s
+7
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.587s
+user	0m0.866s
+sys	0m0.041s
+8
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.625s
+user	0m0.909s
+sys	0m0.058s
+9
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.583s
+user	0m0.866s
+sys	0m0.049s
+10
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.593s
+user	0m0.928s
+sys	0m0.036s
+11
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.566s
+user	0m0.847s
+sys	0m0.054s
+1
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.559s
+user	0m0.848s
+sys	0m0.032s
+2
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.595s
+user	0m0.895s
+sys	0m0.054s
+3
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.581s
+user	0m0.867s
+sys	0m0.042s
+4
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.598s
+user	0m0.899s
+sys	0m0.024s
+5
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.605s
+user	0m0.884s
+sys	0m0.048s
+6
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.625s
+user	0m0.918s
+sys	0m0.035s
+7
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.611s
+user	0m0.907s
+sys	0m0.053s
+8
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.587s
+user	0m0.870s
+sys	0m0.037s
+9
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.589s
+user	0m0.859s
+sys	0m0.057s
+10
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.581s
+user	0m0.886s
+sys	0m0.038s
+11
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.565s
+user	0m0.852s
+sys	0m0.043s
+1
+Number of Maps  = 10
+Samples per Map = 100000
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Starting Job
+19/04/13 20:03:06 INFO mapred.FileInputFormat: Total input paths to process : 10
+19/04/13 20:03:06 INFO mapred.JobClient: Running job: job_201904121637_0021
+19/04/13 20:03:07 INFO mapred.JobClient:  map 0% reduce 0%
+19/04/13 20:03:20 INFO mapred.JobClient:  map 20% reduce 0%
+19/04/13 20:03:21 INFO mapred.JobClient:  map 60% reduce 0%
+19/04/13 20:03:26 INFO mapred.JobClient:  map 80% reduce 0%
+
+real	0m21.676s
+user	0m1.582s
+sys	0m0.087s
+2
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.619s
+user	0m0.883s
+sys	0m0.071s
+3
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.591s
+user	0m0.875s
+sys	0m0.062s
+4
+Number of Maps  = 10
+Samples per Map = 100000
+Exception in thread "main" java.io.IOException: Tmp directory hdfs://ThinkPad-1:9000/user/xidian/PiEstimator_TMP_3_141592654 already exists.  Please remove it first.
+	at cfhider.PiEstimator.estimate(PiEstimator.java:270)
+	at cfhider.PiEstimator.run(PiEstimator.java:342)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:65)
+	at cfhider.PiEstimator.main(PiEstimator.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+
+real	0m0.568s
+user	0m0.868s
+sys	0m0.038s
+5
+
+real	0m0.071s
+user	0m0.010s
+sys	0m0.001s
