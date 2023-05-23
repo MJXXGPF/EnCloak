@@ -24,7 +24,7 @@ This folder contains the source code to build the c++ shared object.
 Use soot to transform the java or hadoop code into a data flow version.
 
 ### tests  
-Benchmark test cases for the projects.
+Benchmark test cases for the projects. Here is the test cases link: https://github.com/MJXXGPF/EnCloak/blob/master/tests/readme.md.
 
 ## How do I get set up?  
 * Install JDK and SGX on your computer
