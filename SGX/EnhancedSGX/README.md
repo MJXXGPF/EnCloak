@@ -5,5 +5,5 @@ This folder contains the App section, which handles function calls from Java, an
 make clean
 make
 ```
-We will get libSgx.so in SGX Folder.
+We will get enclave.so enclave.signed.so libSGX.so in SGX Folder.
 If we need to test hadoop cases,execute the scpso-hadoop.sh.
