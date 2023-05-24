@@ -16,7 +16,7 @@ SGX SDK 1.9
 gcc 8.1
 
 
-# Run Code Steps 
+# Steps to run the code
 * Install JDK and SGX on your computer
 * Build the c++ shared object in SGX folder
 * Bulid the transform tool in soot-code folder
